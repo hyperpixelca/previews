@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta name="robots" content="noindex,nofollow"><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>$2,500 OFF Your Remodel | Remarkable Home Remodeling</title>
-<!-- RHR $2,500 OFF landing page, v5. Single-column hero as in v3, with a small rounded-square photo of Virgil (name label "Virgil McKenzie, Owner" baked in, matching the ad end cards) centered between the call copy and the Call Virgil Now button. Hero is one composite image: six project-idea photos (kitchens, baths, additions, exteriors) with the RHR logo badge built in; mobile gets a square 2x2 crop. No footer: the site's own site-wide footer renders below this content. Single column, no navigation, no logo link (logo is inside the hero image).
+<!-- RHR $2,500 OFF landing page, v6. Adds a mobile-only sticky call bar (up to 768 px wide) that slides in after the hero call button scrolls out of view. Single-column hero as in v3, with a small rounded-square photo of Virgil (name label "Virgil McKenzie, Owner" baked in, matching the ad end cards) centered between the call copy and the Call Virgil Now button. Hero is one composite image: six project-idea photos (kitchens, baths, additions, exteriors) with the RHR logo badge built in; mobile gets a square 2x2 crop. No footer: the site's own site-wide footer renders below this content. Single column, no navigation, no logo link (logo is inside the hero image).
      Only exits: tel: links (class="call-btn"), the form, the privacy policy link (in the consent line), and on-page Back to top.
      The four "Still browsing? / Explore project ideas" carousels are plain CSS scroll-snap rows of images; no slider library, no off-site links.
      Phone: (916) 848-2026 stays in the markup; every displayed number has class="call-tracking-number" so the call tracking (DNI) script can swap it.
@@ -26,7 +26,7 @@ h1 span{display:block;color:var(--orange);font-size:60px;line-height:1.05;margin
 .lede{font-size:19px;text-align:center;margin:24px auto 0;max-width:560px}
 .call-btn.big{display:block;background:var(--orange);color:#fff;text-decoration:none;text-align:center;border-radius:12px;padding:20px 24px;margin:32px auto 0;max-width:460px;font-weight:800;font-size:26px;line-height:1.2}
 .call-btn.big small{display:block;font-size:16px;font-weight:700;margin-top:4px}
-.virgil{display:block;width:200px;height:200px;margin:20px auto 0;border-radius:16px}
+.virgil{display:block;width:300px;height:300px;margin:24px auto 0;border-radius:18px}
 picture+.call-btn.big{margin-top:20px}
 h2{font-size:22px;font-weight:800;text-align:center}
 .shop .col>p{font-size:18px;text-align:center}
@@ -57,6 +57,15 @@ label span{font-weight:400;opacity:.7}
 .work{padding-bottom:96px}
 .small{display:inline-block;font-size:15px;font-weight:700;text-decoration:none;border-radius:999px;padding:10px 20px;border:1.5px solid var(--navy);color:var(--navy)}
 .small.call-btn{background:var(--orange);border-color:var(--orange);color:#fff}
+/* Sticky call bar: mobile only (up to 768px). Hidden until the hero call button has scrolled up out of view. */
+.sticky-call{display:none}
+@media (max-width:768px){
+ body{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
+ .sticky-call{display:block;position:fixed;left:0;right:0;bottom:0;z-index:1000;background:#fff;box-shadow:0 -4px 18px rgba(18,49,61,.14);padding:10px 16px calc(10px + env(safe-area-inset-bottom));transform:translateY(110%);opacity:0;visibility:hidden;transition:transform .25s ease,opacity .25s ease,visibility 0s linear .25s}
+ .sticky-call.show{transform:none;opacity:1;visibility:visible;transition:transform .25s ease,opacity .25s ease}
+ .sticky-call a{display:flex;align-items:center;justify-content:center;gap:10px;height:54px;border-radius:12px;background:var(--orange);color:#fff;text-decoration:none;font-weight:800;font-size:18px}
+ .sticky-call a span{font-weight:700;font-size:15px;opacity:.95}
+}
 @media (max-width:600px){
  .col{padding:0 20px}
  section{padding:44px 0}
@@ -65,8 +74,8 @@ label span{font-weight:400;opacity:.7}
  h1 span{font-size:46px;margin-bottom:10px}
  .lede{font-size:17px;margin-top:14px}
  .call-btn.big{font-size:23px;margin-top:24px;padding:18px 20px}
- .virgil{width:140px;height:140px;margin-top:14px;border-radius:12px}
- picture+.call-btn.big{margin-top:14px}
+ .virgil{width:260px;height:260px;margin-top:18px;border-radius:14px}
+ picture+.call-btn.big{margin-top:18px}
  .shop .col>p{font-size:17px}
  .car img{flex-basis:72%;width:72%}
  .work{padding-bottom:72px}
@@ -144,4 +153,14 @@ label span{font-weight:400;opacity:.7}
 </div></section>
 
 
+<!-- Mobile-only sticky call bar (hidden on desktop by CSS). -->
+<div class="sticky-call" id="sticky-call"><a class="call-btn" href="tel:+19168482026">Call Virgil Now <span class="call-tracking-number">(916) 848-2026</span></a></div>
+<script>
+/* Show the sticky bar only after the hero call button has scrolled up out of view; hide it again when the button is back.
+   Watches the whole hero (page top down to the button) so fast jumps are caught too; the top margin offsets the hero's bottom padding. */
+(function(){var bar=document.getElementById('sticky-call'),hero=document.querySelector('.hero');
+if(!bar||!hero||!('IntersectionObserver' in window))return;
+var pad=parseInt(getComputedStyle(hero).paddingBottom,10)||0;
+new IntersectionObserver(function(es){es.forEach(function(e){bar.classList.toggle('show',!e.isIntersecting&&e.boundingClientRect.top<0);});},{rootMargin:'-'+pad+'px 0px 0px 0px'}).observe(hero);})();
+</script>
 </body></html>

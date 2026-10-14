@@ -2,7 +2,7 @@
 <html lang="en"><head><meta name="robots" content="noindex,nofollow"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>$2,500 OFF Your Remodel | Remarkable Home Remodeling</title>
-<!-- RHR $2,500 OFF landing page, v9. Hero order: grid image, headline, call copy, Call Virgil Now button, then Virgil's labeled photo. Mobile-only sticky call bar (up to 768 px wide) that slides in after the hero call button scrolls out of view. Single-column hero as in v3; Virgil's rounded-square photo (name label "Virgil McKenzie, Owner" baked in, matching the ad end cards) sits centered below the call button. Hero is one composite image: six project-idea photos (kitchens, baths, additions, exteriors) with the RHR logo badge built in; mobile gets a square 2x2 crop. No footer: the site's own site-wide footer renders below this content. Single column, no navigation, no logo link (logo is inside the hero image).
+<!-- RHR $2,500 OFF landing page, v10. Hero order: grid image, headline, call copy, Call Virgil Now button, then Virgil's labeled photo. Mobile-only sticky call bar (up to 768 px wide) that slides in after the hero call button scrolls out of view. Single-column hero as in v3; Virgil's rounded-square photo (name label "Virgil McKenzie, Owner" baked in, matching the ad end cards) sits centered below the call button. Hero is one composite image: six project-idea photos (kitchens, baths, additions, exteriors) with the RHR logo badge built in; mobile gets a square 2x2 crop. No footer: the site's own site-wide footer renders below this content. Single column, no navigation, no logo link (logo is inside the hero image).
      Only exits: tel: links (class="call-btn"), the form, the privacy policy link (in the consent line), and on-page Back to top.
      The four "Still browsing? / Explore project ideas" carousels are plain CSS scroll-snap rows of images; no slider library, no off-site links.
      Phone: (916) 848-2026 stays in the markup; every displayed number has class="call-tracking-number" so the call tracking (DNI) script can swap it.
@@ -51,6 +51,17 @@ label span{font-weight:400;opacity:.7}
 .work h3{font-size:17px;font-weight:800;margin:28px 0 10px}
 .car{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:4px}
 .car::-webkit-scrollbar{display:none}
+.carw{position:relative}
+.car img{-webkit-user-drag:none;user-select:none;-webkit-user-select:none}
+.car-btn{display:none}
+@media (hover:hover) and (pointer:fine){
+ .car{overscroll-behavior-x:contain}
+ .car-btn{display:flex;position:absolute;top:50%;transform:translateY(-50%);width:38px;height:38px;border-radius:50%;border:0;background:rgba(255,255,255,.92);box-shadow:0 2px 8px rgba(0,0,0,.25);align-items:center;justify-content:center;cursor:pointer;font-size:20px;line-height:1;color:#222;z-index:2;padding:0}
+ .car-btn.prev{left:8px}.car-btn.next{right:8px}
+ .car-btn[disabled]{opacity:0;pointer-events:none}
+ .car-btn:focus-visible{outline:2px solid #222;outline-offset:2px}
+}
+
 .car img{flex:0 0 42%;width:42%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;scroll-snap-align:start;display:block}
 .back{display:flex;justify-content:center;gap:12px;margin-top:40px}
 .work{padding-bottom:96px}
@@ -161,5 +172,19 @@ label span{font-weight:400;opacity:.7}
 (function(){var bar=document.getElementById('sticky-call'),main=document.querySelector('.hero-main');
 if(!bar||!main||!('IntersectionObserver' in window))return;
 new IntersectionObserver(function(es){es.forEach(function(e){bar.classList.toggle('show',!e.isIntersecting&&e.boundingClientRect.top<0);});}).observe(main);})();
+</script>
+<script>
+/* Project idea carousels: arrow buttons on desktop (fine pointers only), native trackpad scroll. Touch keeps native swipe. */
+(function(){
+ document.querySelectorAll('.car').forEach(function(car){
+  var w=document.createElement('div');w.className='carw';car.parentNode.insertBefore(w,car);w.appendChild(car);
+  function mk(cls,lab,txt,dir){var b=document.createElement('button');b.type='button';b.className='car-btn '+cls;b.setAttribute('aria-label',lab);b.textContent=txt;
+   b.addEventListener('click',function(){var im=car.querySelector('img');var step=im?im.getBoundingClientRect().width+10:car.clientWidth*.8;car.scrollBy({left:dir*step,behavior:'smooth'});});w.appendChild(b);return b;}
+  var p=mk('prev','Previous photo','\u2039',-1),n=mk('next','Next photo','\u203A',1);
+  function upd(){p.disabled=car.scrollLeft<=2;n.disabled=car.scrollLeft+car.clientWidth>=car.scrollWidth-2;}
+  car.addEventListener('scroll',upd,{passive:true});window.addEventListener('resize',upd);upd();
+  car.querySelectorAll('img').forEach(function(i){i.draggable=false;i.addEventListener('dragstart',function(e){e.preventDefault();});});
+ });
+})();
 </script>
 </body></html>

@@ -2,13 +2,14 @@
 <html lang="en"><head><meta name="robots" content="noindex,nofollow"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>$2,500 OFF Your Remodel | Remarkable Home Remodeling</title>
-<!-- RHR $2,500 OFF landing page, v4. Below the headline: a 50/50 row with Virgil's photo (left) and the call copy plus Call Virgil Now button (right). Hero is one composite image: six project-idea photos (kitchens, baths, additions, exteriors) with the RHR logo badge built in; mobile gets a square 2x2 crop. No footer: the site's own site-wide footer renders below this content. Single column, no navigation, no logo link (logo is inside the hero image).
+<!-- RHR $2,500 OFF landing page, v5. Single-column hero as in v3, with a small rounded-square photo of Virgil (name label "Virgil McKenzie, Owner" baked in, matching the ad end cards) centered between the call copy and the Call Virgil Now button. Hero is one composite image: six project-idea photos (kitchens, baths, additions, exteriors) with the RHR logo badge built in; mobile gets a square 2x2 crop. No footer: the site's own site-wide footer renders below this content. Single column, no navigation, no logo link (logo is inside the hero image).
      Only exits: tel: links (class="call-btn"), the form, the privacy policy link (in the consent line), and on-page Back to top.
-     The four "Explore project ideas" carousels are plain CSS scroll-snap rows of images; no slider library, no off-site links.
+     The four "Still browsing? / Explore project ideas" carousels are plain CSS scroll-snap rows of images; no slider library, no off-site links.
      Phone: (916) 848-2026 stays in the markup; every displayed number has class="call-tracking-number" so the call tracking (DNI) script can swap it.
      One font (Public Sans), two brand colors: navy #12313d and orange #d4642c. -->
 <style>
 @font-face{font-family:'Public Sans';src:url('assets/fonts/PSX-400.ttf');font-weight:400}
+@font-face{font-family:'Public Sans';src:url('assets/fonts/PSX-400i.ttf');font-weight:400;font-style:italic}
 @font-face{font-family:'Public Sans';src:url('assets/fonts/PSX-700.ttf');font-weight:700}
 @font-face{font-family:'Public Sans';src:url('assets/fonts/PSX-800.ttf');font-weight:800}
 :root{--navy:#12313d;--orange:#d4642c}
@@ -18,16 +19,15 @@ body{font-family:'Public Sans',sans-serif;color:var(--navy);background:#fff;-web
 section{padding:56px 0}
 .hero{padding-top:32px}
 .hero img.photo{display:block;width:100%;height:auto}
-.hero .col{max-width:808px}
+.hero .col{max-width:888px}
 .hero h1{max-width:632px;margin-left:auto;margin-right:auto}
-h1{font-size:32px;line-height:1.2;font-weight:800;margin-top:32px;text-align:center}
+h1{font-size:32px;line-height:1.2;font-weight:800;margin-top:40px;text-align:center}
 h1 span{display:block;color:var(--orange);font-size:60px;line-height:1.05;margin-bottom:12px}
-.callrow{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;max-width:640px;margin:28px auto 0}
-.callrow img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:50% 20%;border-radius:16px}
-.lede{font-size:18px;margin:0}
-.callrow .call-btn.big{margin:24px 0 0;max-width:none}
+.lede{font-size:19px;text-align:center;margin:24px auto 0;max-width:560px}
 .call-btn.big{display:block;background:var(--orange);color:#fff;text-decoration:none;text-align:center;border-radius:12px;padding:20px 24px;margin:32px auto 0;max-width:460px;font-weight:800;font-size:26px;line-height:1.2}
 .call-btn.big small{display:block;font-size:16px;font-weight:700;margin-top:4px}
+.virgil{display:block;width:200px;height:200px;margin:20px auto 0;border-radius:16px}
+picture+.call-btn.big{margin-top:20px}
 h2{font-size:22px;font-weight:800;text-align:center}
 .shop .col>p{font-size:18px;text-align:center}
 form{max-width:460px;margin:28px auto 0}
@@ -47,7 +47,8 @@ label span{font-weight:400;opacity:.7}
 .vslot{margin-top:20px;aspect-ratio:16/9;border:2px dashed rgba(18,49,61,.35);border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;font-size:14px;opacity:.85}
 .vslot i{width:68px;height:48px;border-radius:12px;background:var(--orange);display:flex;align-items:center;justify-content:center}
 .vslot i:after{content:'';border-left:18px solid #fff;border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:4px}
-.work h2{margin-bottom:8px}
+.work h2{margin-bottom:4px}
+.work .sub{text-align:center;font-style:italic;font-weight:400;font-size:18px;opacity:.8;margin-bottom:8px}
 .work h3{font-size:17px;font-weight:800;margin:28px 0 10px}
 .car{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:4px}
 .car::-webkit-scrollbar{display:none}
@@ -60,14 +61,12 @@ label span{font-weight:400;opacity:.7}
  .col{padding:0 20px}
  section{padding:44px 0}
   .hero{padding-top:20px}
- h1{font-size:24px;margin-top:28px}
+ h1{font-size:24px;margin-top:22px}
  h1 span{font-size:46px;margin-bottom:10px}
- .callrow{grid-template-columns:2fr 3fr;gap:16px;margin-top:24px}
- .callrow img{border-radius:12px;aspect-ratio:1/1}
- .lede{font-size:15.5px;line-height:1.45}
- .callrow .call-btn.big{font-size:18px;margin-top:14px;padding:14px 10px}
- .callrow .call-btn.big small{font-size:14px}
+ .lede{font-size:17px;margin-top:14px}
  .call-btn.big{font-size:23px;margin-top:24px;padding:18px 20px}
+ .virgil{width:140px;height:140px;margin-top:14px;border-radius:12px}
+ picture+.call-btn.big{margin-top:14px}
  .shop .col>p{font-size:17px}
  .car img{flex-basis:72%;width:72%}
  .work{padding-bottom:72px}
@@ -86,13 +85,9 @@ label span{font-weight:400;opacity:.7}
   <img class="photo" src="assets/hero-grid.jpg" width="2400" height="1200" alt="Remarkable Home Remodeling logo with kitchen, bathroom, ADU, and exterior design ideas">
  </picture>
  <h1><span>$2,500 OFF</span>any full kitchen, full bath, ADU, in-law suite, home addition, or exteriors project, now through the end of the year.</h1>
- <div class="callrow">
-  <picture><source type="image/webp" srcset="assets/virgil.webp"><img src="assets/virgil.jpg" width="900" height="900" alt="Virgil McKenzie, owner of Remarkable Home Remodeling"></picture>
-  <div>
-   <p class="lede">The quickest way to get a quote on your home renovation project is to call Virgil. Tap the button below to call now.</p>
-   <a class="call-btn big" href="tel:+19168482026">Call Virgil Now<small class="call-tracking-number">(916) 848-2026</small></a>
-  </div>
- </div>
+ <p class="lede">The quickest way to get a quote on your home renovation project is to call Virgil. Tap the button below to call now.</p>
+ <picture><source type="image/webp" srcset="assets/virgil-label.webp"><img class="virgil" src="assets/virgil-label.jpg" width="900" height="900" alt="Virgil McKenzie, Owner"></picture>
+ <a class="call-btn big" href="tel:+19168482026">Call Virgil Now<small class="call-tracking-number">(916) 848-2026</small></a>
 </div></section>
 
 <!-- 2. SHORT FORM -->
@@ -135,7 +130,8 @@ label span{font-weight:400;opacity:.7}
 
 <!-- 4. PROJECT IDEAS (last element, ends with the Back to top / Call Virgil row): four swipeable carousels, CSS scroll-snap only, no library -->
 <section class="work"><div class="col">
- <h2>Still browsing? Explore project ideas.</h2>
+ <h2>Still browsing?</h2>
+ <p class="sub">Explore project ideas</p>
  <h3>Kitchens</h3>
  <div class="car"><img src="assets/work/rhr-kitchens-1.jpg" alt="Kitchen design idea" loading="lazy"><img src="assets/work/rhr-kitchens-2.jpg" alt="Kitchen design idea" loading="lazy"><img src="assets/work/rhr-kitchens-3.jpg" alt="Kitchen design idea" loading="lazy"><img src="assets/work/rhr-kitchens-4.jpg" alt="Kitchen design idea" loading="lazy"><img src="assets/work/rhr-kitchens-5.jpg" alt="Kitchen design idea" loading="lazy"></div>
  <h3>Bathrooms</h3>

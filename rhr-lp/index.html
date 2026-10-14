@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta name="robots" content="noindex,nofollow"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>$2,500 OFF Your Remodel | Remarkable Home Remodeling</title>
+<!-- RHR $2,500 OFF landing page, v3. Hero is one composite image: six project photos (kitchens, baths, additions, exteriors) with the RHR logo badge built in; mobile gets a square 2x2 crop. No footer: the site's own site-wide footer renders below this content. Single column, no navigation, no logo link (logo is inside the hero image).
+     Only exits: tel: links (class="call-btn"), the form, the privacy policy link (in the consent line), and on-page Back to top.
+     The four "See our work" carousels are plain CSS scroll-snap rows of images; no slider library, no off-site links.
+     Phone: (916) 848-2026 stays in the markup; every displayed number has class="call-tracking-number" so the call tracking (DNI) script can swap it.
+     One font (Public Sans), two brand colors: navy #12313d and orange #d4642c. -->
+<style>
+@font-face{font-family:'Public Sans';src:url('assets/fonts/PSX-400.ttf');font-weight:400}
+@font-face{font-family:'Public Sans';src:url('assets/fonts/PSX-700.ttf');font-weight:700}
+@font-face{font-family:'Public Sans';src:url('assets/fonts/PSX-800.ttf');font-weight:800}
+:root{--navy:#12313d;--orange:#d4642c}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Public Sans',sans-serif;color:var(--navy);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.5}
+.col{max-width:680px;margin:0 auto;padding:0 24px}
+section{padding:56px 0}
+.hero{padding-top:32px}
+.hero img.photo{display:block;width:100%;height:auto}
+.hero .col{max-width:888px}
+.hero h1{max-width:632px;margin-left:auto;margin-right:auto}
+h1{font-size:32px;line-height:1.2;font-weight:800;margin-top:40px;text-align:center}
+h1 span{display:block;color:var(--orange);font-size:60px;line-height:1.05;margin-bottom:12px}
+.lede{font-size:19px;text-align:center;margin:24px auto 0;max-width:560px}
+.call-btn.big{display:block;background:var(--orange);color:#fff;text-decoration:none;text-align:center;border-radius:12px;padding:20px 24px;margin:32px auto 0;max-width:460px;font-weight:800;font-size:26px;line-height:1.2}
+.call-btn.big small{display:block;font-size:16px;font-weight:700;margin-top:4px}
+h2{font-size:22px;font-weight:800;text-align:center}
+.shop .col>p{font-size:18px;text-align:center}
+form{max-width:460px;margin:28px auto 0}
+label{display:block;font-size:15px;font-weight:700;margin:0 0 6px}
+.in{display:block;width:100%;height:52px;border:1.5px solid rgba(18,49,61,.3);border-radius:10px;padding:0 16px;font:400 17px 'Public Sans',sans-serif;color:var(--navy);margin-bottom:18px;background:#fff;-webkit-appearance:none;appearance:none}
+.in::placeholder{color:rgba(18,49,61,.5)}
+.in:focus{outline:2px solid var(--orange);outline-offset:1px;border-color:var(--orange)}
+select.in{padding-right:44px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%2312313d' stroke-width='2'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center}
+select.in:invalid{color:rgba(18,49,61,.5)}
+textarea.in{height:auto;padding:14px 16px;line-height:1.45;resize:vertical}
+label span{font-weight:400;opacity:.7}
+.consent{font-size:12.5px;line-height:1.5;opacity:.75;margin:2px 0 16px}
+.consent a{color:var(--navy)}
+.submit{width:100%;height:56px;border:0;border-radius:10px;background:var(--navy);color:#fff;font:800 18px 'Public Sans',sans-serif;cursor:pointer}
+.note{font-size:12.5px;opacity:.65;text-align:center;margin-top:12px}
+.video{text-align:center}
+.vslot{margin-top:20px;aspect-ratio:16/9;border:2px dashed rgba(18,49,61,.35);border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;font-size:14px;opacity:.85}
+.vslot i{width:68px;height:48px;border-radius:12px;background:var(--orange);display:flex;align-items:center;justify-content:center}
+.vslot i:after{content:'';border-left:18px solid #fff;border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:4px}
+.work h2{margin-bottom:8px}
+.work h3{font-size:17px;font-weight:800;margin:28px 0 10px}
+.car{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:4px}
+.car::-webkit-scrollbar{display:none}
+.car img{flex:0 0 42%;width:42%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;scroll-snap-align:start;display:block}
+.back{display:flex;justify-content:center;gap:12px;margin-top:40px}
+.work{padding-bottom:96px}
+.small{display:inline-block;font-size:15px;font-weight:700;text-decoration:none;border-radius:999px;padding:10px 20px;border:1.5px solid var(--navy);color:var(--navy)}
+.small.call-btn{background:var(--orange);border-color:var(--orange);color:#fff}
+@media (max-width:600px){
+ .col{padding:0 20px}
+ section{padding:44px 0}
+  .hero{padding-top:20px}
+ h1{font-size:24px;margin-top:28px}
+ h1 span{font-size:46px;margin-bottom:10px}
+ .lede{font-size:17px;margin-top:18px}
+ .call-btn.big{font-size:23px;margin-top:24px;padding:18px 20px}
+ .shop .col>p{font-size:17px}
+ .car img{flex-basis:72%;width:72%}
+ .work{padding-bottom:72px}
+}
+</style></head>
+<body id="top">
+
+
+<!-- 1. HERO -->
+<section class="hero"><div class="col">
+ <!-- One image (logo is part of it). Desktop: 3x2 grid, 2400x1200. Mobile: 2x2 grid, 1200x1200. Load eagerly. -->
+ <picture>
+  <source media="(max-width:600px)" type="image/webp" srcset="assets/hero-grid-mobile.webp">
+  <source media="(max-width:600px)" srcset="assets/hero-grid-mobile.jpg">
+  <source type="image/webp" srcset="assets/hero-grid.webp">
+  <img class="photo" src="assets/hero-grid.jpg" width="2400" height="1200" alt="Remarkable Home Remodeling: kitchen, bathroom, ADU, and exterior projects">
+ </picture>
+ <h1><span>$2,500 OFF</span>any full kitchen, full bath, ADU, in-law suite, home addition, or exteriors project, now through the end of the year.</h1>
+ <p class="lede">The quickest way to get a quote on your home renovation project is to call Virgil. Tap the button below to call now.</p>
+ <a class="call-btn big" href="tel:+19168482026">Call Virgil Now<small class="call-tracking-number">(916) 848-2026</small></a>
+</div></section>
+
+<!-- 2. SHORT FORM -->
+<section class="shop" id="quote"><div class="col">
+ <p>Just shopping around? Leave your info and Virgil will get back to you.</p>
+ <!-- Real form markup. Point action at your form handler; on success, redirect to /thank-you. -->
+ <form id="lead-form" method="post" action="#">
+  <label for="f-name">Name</label>
+  <input class="in" id="f-name" name="name" type="text" autocomplete="name" placeholder="First and last name" required>
+  <label for="f-phone">Phone</label>
+  <input class="in" id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(916) 555-0123" required>
+  <label for="f-type">Project type</label>
+  <select class="in" id="f-type" name="project_type" required>
+   <option value="" disabled selected>Choose one</option>
+   <option>Kitchen</option>
+   <option>Bathroom</option>
+   <option>ADU / In-law suite / Addition</option>
+   <option>Exterior</option>
+   <option>Other</option>
+  </select>
+  <label for="f-msg">Tell us a little about your project <span>(optional)</span></label>
+  <textarea class="in" id="f-msg" name="message" rows="3" placeholder="e.g. full kitchen remodel, about 200 sq ft"></textarea>
+  <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign"><input type="hidden" name="utm_content"><input type="hidden" name="utm_term"><input type="hidden" name="fbclid">
+  <p class="consent">By submitting, I agree that Remarkable Home Remodeling may contact me by phone or text about my project. Consent is not a condition of purchase. Msg and data rates may apply. Reply STOP to opt out. <a href="[PRIVACY_POLICY_URL]">Privacy Policy</a></p>
+  <button class="submit" type="submit">Send</button>
+  <p class="note">Mockup note: hidden fields for utm_source, utm_medium, utm_campaign, utm_content, utm_term, and fbclid are filled from the page URL. On success, redirect to /thank-you.</p>
+ </form>
+ <script>
+ /* Fill hidden UTM and fbclid fields from the page URL. */
+ (function(){var q=new URLSearchParams(location.search),f=document.getElementById('lead-form');
+ ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'].forEach(function(k){var v=q.get(k);if(v&&f.elements[k])f.elements[k].value=v;});})();
+ </script>
+</div></section>
+
+<!-- 3. VIDEO SLOT -->
+<section class="video"><div class="col">
+ <h2>A quick word from Virgil</h2>
+ <div class="vslot"><i></i>Video coming soon: [YOUTUBE_VIDEO_URL], click-to-load embed</div>
+</div></section>
+
+<!-- 4. OUR WORK (last element, ends with the Back to top / Call Virgil row): four swipeable carousels, CSS scroll-snap only, no library -->
+<section class="work"><div class="col">
+ <h2>Still browsing? See our work.</h2>
+ <h3>Kitchens</h3>
+ <div class="car"><img src="assets/work/rhr-kitchens-1.jpg" alt="Kitchen remodel by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-kitchens-2.jpg" alt="Kitchen remodel by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-kitchens-3.jpg" alt="Kitchen remodel by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-kitchens-4.jpg" alt="Kitchen remodel by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-kitchens-5.jpg" alt="Kitchen remodel by Remarkable Home Remodeling" loading="lazy"></div>
+ <h3>Bathrooms</h3>
+ <div class="car"><img src="assets/work/rhr-bathrooms-1.jpg" alt="Bathroom remodel by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-bathrooms-2.jpg" alt="Bathroom remodel by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-bathrooms-3.jpg" alt="Bathroom remodel by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-bathrooms-4.jpg" alt="Bathroom remodel by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-bathrooms-5.jpg" alt="Bathroom remodel by Remarkable Home Remodeling" loading="lazy"></div>
+ <h3>Additions</h3>
+ <div class="car"><img src="assets/work/rhr-additions-1.jpg" alt="ADU or home addition by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-additions-2.jpg" alt="ADU or home addition by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-additions-3.jpg" alt="ADU or home addition by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-additions-4.jpg" alt="ADU or home addition by Remarkable Home Remodeling" loading="lazy"></div>
+ <h3>Exteriors</h3>
+ <div class="car"><img src="assets/work/rhr-exteriors-1.jpg" alt="Exterior project by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-exteriors-2.jpg" alt="Exterior project by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-exteriors-3.jpg" alt="Exterior project by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-exteriors-4.jpg" alt="Exterior project by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-exteriors-5.jpg" alt="Exterior project by Remarkable Home Remodeling" loading="lazy"></div>
+ <div class="back"><a class="small" href="#top">Back to top</a><a class="small call-btn" href="tel:+19168482026">Call Virgil</a></div>
+</div></section>
+
+
+</body></html>

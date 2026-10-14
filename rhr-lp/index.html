@@ -2,9 +2,9 @@
 <html lang="en"><head><meta name="robots" content="noindex,nofollow"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>$2,500 OFF Your Remodel | Remarkable Home Remodeling</title>
-<!-- RHR $2,500 OFF landing page, v3. Hero is one composite image: six project photos (kitchens, baths, additions, exteriors) with the RHR logo badge built in; mobile gets a square 2x2 crop. No footer: the site's own site-wide footer renders below this content. Single column, no navigation, no logo link (logo is inside the hero image).
+<!-- RHR $2,500 OFF landing page, v4. Below the headline: a 50/50 row with Virgil's photo (left) and the call copy plus Call Virgil Now button (right). Hero is one composite image: six project-idea photos (kitchens, baths, additions, exteriors) with the RHR logo badge built in; mobile gets a square 2x2 crop. No footer: the site's own site-wide footer renders below this content. Single column, no navigation, no logo link (logo is inside the hero image).
      Only exits: tel: links (class="call-btn"), the form, the privacy policy link (in the consent line), and on-page Back to top.
-     The four "See our work" carousels are plain CSS scroll-snap rows of images; no slider library, no off-site links.
+     The four "Explore project ideas" carousels are plain CSS scroll-snap rows of images; no slider library, no off-site links.
      Phone: (916) 848-2026 stays in the markup; every displayed number has class="call-tracking-number" so the call tracking (DNI) script can swap it.
      One font (Public Sans), two brand colors: navy #12313d and orange #d4642c. -->
 <style>
@@ -18,11 +18,14 @@ body{font-family:'Public Sans',sans-serif;color:var(--navy);background:#fff;-web
 section{padding:56px 0}
 .hero{padding-top:32px}
 .hero img.photo{display:block;width:100%;height:auto}
-.hero .col{max-width:888px}
+.hero .col{max-width:808px}
 .hero h1{max-width:632px;margin-left:auto;margin-right:auto}
-h1{font-size:32px;line-height:1.2;font-weight:800;margin-top:40px;text-align:center}
+h1{font-size:32px;line-height:1.2;font-weight:800;margin-top:32px;text-align:center}
 h1 span{display:block;color:var(--orange);font-size:60px;line-height:1.05;margin-bottom:12px}
-.lede{font-size:19px;text-align:center;margin:24px auto 0;max-width:560px}
+.callrow{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;max-width:640px;margin:28px auto 0}
+.callrow img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:50% 20%;border-radius:16px}
+.lede{font-size:18px;margin:0}
+.callrow .call-btn.big{margin:24px 0 0;max-width:none}
 .call-btn.big{display:block;background:var(--orange);color:#fff;text-decoration:none;text-align:center;border-radius:12px;padding:20px 24px;margin:32px auto 0;max-width:460px;font-weight:800;font-size:26px;line-height:1.2}
 .call-btn.big small{display:block;font-size:16px;font-weight:700;margin-top:4px}
 h2{font-size:22px;font-weight:800;text-align:center}
@@ -59,7 +62,11 @@ label span{font-weight:400;opacity:.7}
   .hero{padding-top:20px}
  h1{font-size:24px;margin-top:28px}
  h1 span{font-size:46px;margin-bottom:10px}
- .lede{font-size:17px;margin-top:18px}
+ .callrow{grid-template-columns:2fr 3fr;gap:16px;margin-top:24px}
+ .callrow img{border-radius:12px;aspect-ratio:1/1}
+ .lede{font-size:15.5px;line-height:1.45}
+ .callrow .call-btn.big{font-size:18px;margin-top:14px;padding:14px 10px}
+ .callrow .call-btn.big small{font-size:14px}
  .call-btn.big{font-size:23px;margin-top:24px;padding:18px 20px}
  .shop .col>p{font-size:17px}
  .car img{flex-basis:72%;width:72%}
@@ -76,11 +83,16 @@ label span{font-weight:400;opacity:.7}
   <source media="(max-width:600px)" type="image/webp" srcset="assets/hero-grid-mobile.webp">
   <source media="(max-width:600px)" srcset="assets/hero-grid-mobile.jpg">
   <source type="image/webp" srcset="assets/hero-grid.webp">
-  <img class="photo" src="assets/hero-grid.jpg" width="2400" height="1200" alt="Remarkable Home Remodeling: kitchen, bathroom, ADU, and exterior projects">
+  <img class="photo" src="assets/hero-grid.jpg" width="2400" height="1200" alt="Remarkable Home Remodeling logo with kitchen, bathroom, ADU, and exterior design ideas">
  </picture>
  <h1><span>$2,500 OFF</span>any full kitchen, full bath, ADU, in-law suite, home addition, or exteriors project, now through the end of the year.</h1>
- <p class="lede">The quickest way to get a quote on your home renovation project is to call Virgil. Tap the button below to call now.</p>
- <a class="call-btn big" href="tel:+19168482026">Call Virgil Now<small class="call-tracking-number">(916) 848-2026</small></a>
+ <div class="callrow">
+  <picture><source type="image/webp" srcset="assets/virgil.webp"><img src="assets/virgil.jpg" width="900" height="900" alt="Virgil McKenzie, owner of Remarkable Home Remodeling"></picture>
+  <div>
+   <p class="lede">The quickest way to get a quote on your home renovation project is to call Virgil. Tap the button below to call now.</p>
+   <a class="call-btn big" href="tel:+19168482026">Call Virgil Now<small class="call-tracking-number">(916) 848-2026</small></a>
+  </div>
+ </div>
 </div></section>
 
 <!-- 2. SHORT FORM -->
@@ -121,17 +133,17 @@ label span{font-weight:400;opacity:.7}
  <div class="vslot"><i></i>Video coming soon: [YOUTUBE_VIDEO_URL], click-to-load embed</div>
 </div></section>
 
-<!-- 4. OUR WORK (last element, ends with the Back to top / Call Virgil row): four swipeable carousels, CSS scroll-snap only, no library -->
+<!-- 4. PROJECT IDEAS (last element, ends with the Back to top / Call Virgil row): four swipeable carousels, CSS scroll-snap only, no library -->
 <section class="work"><div class="col">
- <h2>Still browsing? See our work.</h2>
+ <h2>Still browsing? Explore project ideas.</h2>
  <h3>Kitchens</h3>
- <div class="car"><img src="assets/work/rhr-kitchens-1.jpg" alt="Kitchen remodel by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-kitchens-2.jpg" alt="Kitchen remodel by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-kitchens-3.jpg" alt="Kitchen remodel by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-kitchens-4.jpg" alt="Kitchen remodel by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-kitchens-5.jpg" alt="Kitchen remodel by Remarkable Home Remodeling" loading="lazy"></div>
+ <div class="car"><img src="assets/work/rhr-kitchens-1.jpg" alt="Kitchen design idea" loading="lazy"><img src="assets/work/rhr-kitchens-2.jpg" alt="Kitchen design idea" loading="lazy"><img src="assets/work/rhr-kitchens-3.jpg" alt="Kitchen design idea" loading="lazy"><img src="assets/work/rhr-kitchens-4.jpg" alt="Kitchen design idea" loading="lazy"><img src="assets/work/rhr-kitchens-5.jpg" alt="Kitchen design idea" loading="lazy"></div>
  <h3>Bathrooms</h3>
- <div class="car"><img src="assets/work/rhr-bathrooms-1.jpg" alt="Bathroom remodel by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-bathrooms-2.jpg" alt="Bathroom remodel by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-bathrooms-3.jpg" alt="Bathroom remodel by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-bathrooms-4.jpg" alt="Bathroom remodel by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-bathrooms-5.jpg" alt="Bathroom remodel by Remarkable Home Remodeling" loading="lazy"></div>
+ <div class="car"><img src="assets/work/rhr-bathrooms-1.jpg" alt="Bathroom design idea" loading="lazy"><img src="assets/work/rhr-bathrooms-2.jpg" alt="Bathroom design idea" loading="lazy"><img src="assets/work/rhr-bathrooms-3.jpg" alt="Bathroom design idea" loading="lazy"><img src="assets/work/rhr-bathrooms-4.jpg" alt="Bathroom design idea" loading="lazy"><img src="assets/work/rhr-bathrooms-5.jpg" alt="Bathroom design idea" loading="lazy"></div>
  <h3>Additions</h3>
- <div class="car"><img src="assets/work/rhr-additions-1.jpg" alt="ADU or home addition by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-additions-2.jpg" alt="ADU or home addition by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-additions-3.jpg" alt="ADU or home addition by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-additions-4.jpg" alt="ADU or home addition by Remarkable Home Remodeling" loading="lazy"></div>
+ <div class="car"><img src="assets/work/rhr-additions-1.jpg" alt="ADU or home addition idea" loading="lazy"><img src="assets/work/rhr-additions-2.jpg" alt="ADU or home addition idea" loading="lazy"><img src="assets/work/rhr-additions-3.jpg" alt="ADU or home addition idea" loading="lazy"><img src="assets/work/rhr-additions-4.jpg" alt="ADU or home addition idea" loading="lazy"></div>
  <h3>Exteriors</h3>
- <div class="car"><img src="assets/work/rhr-exteriors-1.jpg" alt="Exterior project by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-exteriors-2.jpg" alt="Exterior project by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-exteriors-3.jpg" alt="Exterior project by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-exteriors-4.jpg" alt="Exterior project by Remarkable Home Remodeling" loading="lazy"><img src="assets/work/rhr-exteriors-5.jpg" alt="Exterior project by Remarkable Home Remodeling" loading="lazy"></div>
+ <div class="car"><img src="assets/work/rhr-exteriors-1.jpg" alt="Exterior design idea" loading="lazy"><img src="assets/work/rhr-exteriors-2.jpg" alt="Exterior design idea" loading="lazy"><img src="assets/work/rhr-exteriors-3.jpg" alt="Exterior design idea" loading="lazy"><img src="assets/work/rhr-exteriors-4.jpg" alt="Exterior design idea" loading="lazy"><img src="assets/work/rhr-exteriors-5.jpg" alt="Exterior design idea" loading="lazy"></div>
  <div class="back"><a class="small" href="#top">Back to top</a><a class="small call-btn" href="tel:+19168482026">Call Virgil</a></div>
 </div></section>
 

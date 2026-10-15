@@ -52,10 +52,6 @@
 .rhr-lp .consent a{color:var(--navy)}
 .rhr-lp .submit{width:100%;height:56px;border:0;border-radius:10px;background:var(--navy);color:#fff;font:800 18px 'Public Sans',sans-serif;cursor:pointer}
 .rhr-lp .note{font-size:12.5px;opacity:.65;text-align:center;margin-top:12px}
-.rhr-lp .video{text-align:center}
-.rhr-lp .vslot{margin-top:20px;aspect-ratio:16/9;border:2px dashed rgba(18,49,61,.35);border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;font-size:14px;opacity:.85}
-.rhr-lp .vslot i{width:68px;height:48px;border-radius:12px;background:var(--orange);display:flex;align-items:center;justify-content:center}
-.rhr-lp .vslot i:after{content:'';border-left:18px solid #fff;border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:4px}
 .rhr-lp .work h2{margin-bottom:4px}
 .rhr-lp .work .sub{text-align:center;font-style:italic;font-weight:400;font-size:18px;opacity:.8;margin-bottom:8px}
 .rhr-lp .work h3{font-size:17px;font-weight:800;margin:28px 0 10px}
@@ -149,12 +145,6 @@
  (function(){var q=new URLSearchParams(location.search),f=document.getElementById('rhr-lead-form');
  ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'].forEach(function(k){var v=q.get(k);if(v&&f.elements[k])f.elements[k].value=v;});})();
  </script>
-</div></section>
-
-<!-- 3. VIDEO SLOT -->
-<section class="video"><div class="col">
- <h2>A quick word from Virgil</h2>
- <div class="vslot"><i></i>Video coming soon: [YOUTUBE_VIDEO_URL], click-to-load embed</div>
 </div></section>
 
 <!-- 4. PROJECT IDEAS (last element, ends with the Back to top / Call Virgil row): four swipeable carousels, CSS scroll-snap only, no library -->

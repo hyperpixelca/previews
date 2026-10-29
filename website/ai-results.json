@@ -1,0 +1,800 @@
+{
+ "asOf": "2026-11-01",
+ "tools": [
+  "chatgpt"
+ ],
+ "categories": [
+  {
+   "name": "Restaurants",
+   "new": false,
+   "questions": [
+    "What are the best restaurants in Sacramento?",
+    "What are the best locally owned restaurants in the Sacramento area?",
+    "I'm going out to dinner in Sacramento this weekend. Where should I go?"
+   ],
+   "top": [
+    {
+     "name": "Localis",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 9
+     },
+     "counts": {
+      "chatgpt": 28
+     },
+     "avg": 9.0
+    },
+    {
+     "name": "Kru",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 7
+     },
+     "counts": {
+      "chatgpt": 22
+     },
+     "avg": 7.0
+    },
+    {
+     "name": "The Waterboy",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 6
+     },
+     "counts": {
+      "chatgpt": 18
+     },
+     "avg": 6.0
+    },
+    {
+     "name": "Ella Dining Room & Bar",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 5
+     },
+     "counts": {
+      "chatgpt": 16
+     },
+     "avg": 5.0
+    },
+    {
+     "name": "Mulvaney’s B&L",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 5
+     },
+     "counts": {
+      "chatgpt": 15
+     },
+     "avg": 5.0
+    }
+   ]
+  },
+  {
+   "name": "Coffee and cafes",
+   "new": false,
+   "questions": [
+    "What are the best coffee shops in Sacramento?",
+    "What are the best locally owned cafes in the Sacramento area?",
+    "Where can I get a really good cup of coffee in Sacramento?"
+   ],
+   "top": [
+    {
+     "name": "Camellia Coffee Roasters",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 10
+     },
+     "counts": {
+      "chatgpt": 30
+     },
+     "avg": 10.0
+    },
+    {
+     "name": "Old Soul Co.",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 10
+     },
+     "counts": {
+      "chatgpt": 30
+     },
+     "avg": 10.0
+    },
+    {
+     "name": "Milka Coffee Roasters",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 7
+     },
+     "counts": {
+      "chatgpt": 20
+     },
+     "avg": 7.0
+    },
+    {
+     "name": "Scorpio Coffee",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 7
+     },
+     "counts": {
+      "chatgpt": 20
+     },
+     "avg": 7.0
+    },
+    {
+     "name": "Temple Coffee Roasters",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 7
+     },
+     "counts": {
+      "chatgpt": 20
+     },
+     "avg": 7.0
+    }
+   ]
+  },
+  {
+   "name": "Breakfast",
+   "new": false,
+   "questions": [
+    "What are the best breakfast spots in Sacramento?",
+    "What are the best locally owned breakfast places in the Sacramento area?",
+    "Where should I go for breakfast in Sacramento this Saturday?"
+   ],
+   "top": [
+    {
+     "name": "Bacon & Butter",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 10
+     },
+     "counts": {
+      "chatgpt": 30
+     },
+     "avg": 10.0
+    },
+    {
+     "name": "The Morning Fork",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 10
+     },
+     "counts": {
+      "chatgpt": 29
+     },
+     "avg": 10.0
+    },
+    {
+     "name": "Fox & Goose Public House",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 7
+     },
+     "counts": {
+      "chatgpt": 20
+     },
+     "avg": 7.0
+    },
+    {
+     "name": "Orphan Breakfast House",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 7
+     },
+     "counts": {
+      "chatgpt": 20
+     },
+     "avg": 7.0
+    },
+    {
+     "name": "Tower Cafe",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 7
+     },
+     "counts": {
+      "chatgpt": 20
+     },
+     "avg": 7.0
+    }
+   ]
+  },
+  {
+   "name": "Pizza",
+   "new": false,
+   "questions": [
+    "What are the best pizza places in Sacramento?",
+    "What are the best locally owned pizzerias in the Sacramento area?",
+    "Who makes the best pizza in Sacramento?"
+   ],
+   "top": [
+    {
+     "name": "Giovanni's Old World New York Pizzeria",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 10
+     },
+     "counts": {
+      "chatgpt": 30
+     },
+     "avg": 10.0
+    },
+    {
+     "name": "Masullo Pizza",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 10
+     },
+     "counts": {
+      "chatgpt": 30
+     },
+     "avg": 10.0
+    },
+    {
+     "name": "OneSpeed Pizza",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 10
+     },
+     "counts": {
+      "chatgpt": 30
+     },
+     "avg": 10.0
+    },
+    {
+     "name": "Paesano's Pizzeria",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 8
+     },
+     "counts": {
+      "chatgpt": 24
+     },
+     "avg": 8.0
+    },
+    {
+     "name": "Zelda's Original Gourmet Pizza",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 7
+     },
+     "counts": {
+      "chatgpt": 20
+     },
+     "avg": 7.0
+    }
+   ]
+  },
+  {
+   "name": "Mexican restaurants",
+   "new": false,
+   "questions": [
+    "What are the best Mexican restaurants in Sacramento?",
+    "What are the best family-owned Mexican restaurants in the Sacramento area?",
+    "Where can I get great authentic Mexican food in Sacramento?"
+   ],
+   "top": [
+    {
+     "name": "El Novillero",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 10
+     },
+     "counts": {
+      "chatgpt": 29
+     },
+     "avg": 10.0
+    },
+    {
+     "name": "Centro Cocina Mexicana",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 7
+     },
+     "counts": {
+      "chatgpt": 20
+     },
+     "avg": 7.0
+    },
+    {
+     "name": "Mayahuel",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 7
+     },
+     "counts": {
+      "chatgpt": 20
+     },
+     "avg": 7.0
+    },
+    {
+     "name": "Nopalitos",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 7
+     },
+     "counts": {
+      "chatgpt": 20
+     },
+     "avg": 7.0
+    },
+    {
+     "name": "Chando's Tacos",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 5
+     },
+     "counts": {
+      "chatgpt": 16
+     },
+     "avg": 5.0
+    }
+   ]
+  },
+  {
+   "name": "Ice cream and desserts",
+   "new": false,
+   "questions": [
+    "What are the best ice cream and dessert shops in Sacramento?",
+    "What are the best locally owned dessert shops in the Sacramento area?",
+    "Where should I go for dessert in Sacramento tonight?"
+   ],
+   "top": [
+    {
+     "name": "Gunther's Ice Cream",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 10
+     },
+     "counts": {
+      "chatgpt": 30
+     },
+     "avg": 10.0
+    },
+    {
+     "name": "Rick's Dessert Diner",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 10
+     },
+     "counts": {
+      "chatgpt": 30
+     },
+     "avg": 10.0
+    },
+    {
+     "name": "Ginger Elizabeth Chocolates",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 6
+     },
+     "counts": {
+      "chatgpt": 18
+     },
+     "avg": 6.0
+    },
+    {
+     "name": "Pushkin's Bakery",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 5
+     },
+     "counts": {
+      "chatgpt": 15
+     },
+     "avg": 5.0
+    },
+    {
+     "name": "Beasley & Sons Bakery",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 3
+     },
+     "counts": {
+      "chatgpt": 10
+     },
+     "avg": 3.0
+    }
+   ]
+  },
+  {
+   "name": "Day spas and massage",
+   "new": false,
+   "questions": [
+    "What are the best day spas in Sacramento?",
+    "What are the best locally owned spas for a massage in the Sacramento area?",
+    "Where can I get a really good massage in Sacramento?"
+   ],
+   "top": [
+    {
+     "name": "Le Blanc Day Spa",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 7
+     },
+     "counts": {
+      "chatgpt": 20
+     },
+     "avg": 7.0
+    },
+    {
+     "name": "Zen Day Spa",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 4
+     },
+     "counts": {
+      "chatgpt": 13
+     },
+     "avg": 4.0
+    },
+    {
+     "name": "Asha Urban Baths",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 3
+     },
+     "counts": {
+      "chatgpt": 10
+     },
+     "avg": 3.0
+    },
+    {
+     "name": "Emperia Wellness & Spa",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 3
+     },
+     "counts": {
+      "chatgpt": 10
+     },
+     "avg": 3.0
+    },
+    {
+     "name": "Mae's Acupressure Massage & Acupuncture",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 3
+     },
+     "counts": {
+      "chatgpt": 10
+     },
+     "avg": 3.0
+    }
+   ]
+  },
+  {
+   "name": "Thrift stores",
+   "new": false,
+   "questions": [
+    "What are the best thrift stores in Sacramento?",
+    "What are the best locally owned thrift and vintage shops in the Sacramento area?",
+    "Where should I go thrifting in Sacramento?"
+   ],
+   "top": [
+    {
+     "name": "Hidden Gems Thrift Store",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 10
+     },
+     "counts": {
+      "chatgpt": 30
+     },
+     "avg": 10.0
+    },
+    {
+     "name": "Upscale Thrift",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 9
+     },
+     "counts": {
+      "chatgpt": 26
+     },
+     "avg": 9.0
+    },
+    {
+     "name": "Eco Thrift",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 7
+     },
+     "counts": {
+      "chatgpt": 20
+     },
+     "avg": 7.0
+    },
+    {
+     "name": "Bargain World Thrift Store",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 5
+     },
+     "counts": {
+      "chatgpt": 15
+     },
+     "avg": 5.0
+    },
+    {
+     "name": "Racks Vintage Boutique",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 3
+     },
+     "counts": {
+      "chatgpt": 10
+     },
+     "avg": 3.0
+    }
+   ]
+  },
+  {
+   "name": "Bars",
+   "new": false,
+   "questions": [
+    "What are the best bars in Sacramento?",
+    "What are the best locally owned bars in the Sacramento area?",
+    "Where should I go for drinks with friends in Sacramento?"
+   ],
+   "top": [
+    {
+     "name": "The Snug",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 10
+     },
+     "counts": {
+      "chatgpt": 30
+     },
+     "avg": 10.0
+    },
+    {
+     "name": "The Shady Lady Saloon",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 9
+     },
+     "counts": {
+      "chatgpt": 28
+     },
+     "avg": 9.0
+    },
+    {
+     "name": "The Mercantile Saloon",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 9
+     },
+     "counts": {
+      "chatgpt": 27
+     },
+     "avg": 9.0
+    },
+    {
+     "name": "The Jungle Bird",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 8
+     },
+     "counts": {
+      "chatgpt": 24
+     },
+     "avg": 8.0
+    },
+    {
+     "name": "The Butterscotch Den",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 7
+     },
+     "counts": {
+      "chatgpt": 22
+     },
+     "avg": 7.0
+    }
+   ]
+  },
+  {
+   "name": "Nail salons",
+   "new": false,
+   "questions": [
+    "What are the best nail salons in Sacramento?",
+    "What are the best locally owned nail salons in the Sacramento area?",
+    "Where can I get a great manicure in Sacramento?"
+   ],
+   "top": [
+    {
+     "name": "Daisy's Nail Bar",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 10
+     },
+     "counts": {
+      "chatgpt": 30
+     },
+     "avg": 10.0
+    },
+    {
+     "name": "House of Nails",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 10
+     },
+     "counts": {
+      "chatgpt": 30
+     },
+     "avg": 10.0
+    },
+    {
+     "name": "The Nailtel",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 7
+     },
+     "counts": {
+      "chatgpt": 21
+     },
+     "avg": 7.0
+    },
+    {
+     "name": "Nails X Lounge",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 7
+     },
+     "counts": {
+      "chatgpt": 20
+     },
+     "avg": 7.0
+    },
+    {
+     "name": "Blooming Nails Lounge",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 6
+     },
+     "counts": {
+      "chatgpt": 18
+     },
+     "avg": 6.0
+    }
+   ]
+  },
+  {
+   "name": "Car washes",
+   "new": false,
+   "questions": [
+    "What are the best car washes in Sacramento?",
+    "What are the best locally owned car washes in the Sacramento area?",
+    "Where can I get my car washed and detailed well in Sacramento?"
+   ],
+   "top": [
+    {
+     "name": "A-1 Handwash",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 7
+     },
+     "counts": {
+      "chatgpt": 20
+     },
+     "avg": 7.0
+    },
+    {
+     "name": "Royal Wave Car Wash",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 6
+     },
+     "counts": {
+      "chatgpt": 19
+     },
+     "avg": 6.0
+    },
+    {
+     "name": "Scrub Boys Car Wash",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 6
+     },
+     "counts": {
+      "chatgpt": 17
+     },
+     "avg": 6.0
+    },
+    {
+     "name": "Cares Car Wash",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 4
+     },
+     "counts": {
+      "chatgpt": 11
+     },
+     "avg": 4.0
+    },
+    {
+     "name": "Drippy Suds Mobile Detailing",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 3
+     },
+     "counts": {
+      "chatgpt": 10
+     },
+     "avg": 3.0
+    }
+   ]
+  },
+  {
+   "name": "Barbers",
+   "new": false,
+   "questions": [
+    "What are the best barbershops in Sacramento?",
+    "What are the best locally owned barbershops in the Sacramento area?",
+    "Where can I get a great haircut at a barbershop in Sacramento?"
+   ],
+   "top": [
+    {
+     "name": "Sacred Barbers",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 10
+     },
+     "counts": {
+      "chatgpt": 30
+     },
+     "avg": 10.0
+    },
+    {
+     "name": "Tapered Barbershop",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 7
+     },
+     "counts": {
+      "chatgpt": 21
+     },
+     "avg": 7.0
+    },
+    {
+     "name": "916 Cuts",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 6
+     },
+     "counts": {
+      "chatgpt": 17
+     },
+     "avg": 6.0
+    },
+    {
+     "name": "Anthony's Barbershop",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 3
+     },
+     "counts": {
+      "chatgpt": 10
+     },
+     "avg": 3.0
+    },
+    {
+     "name": "Breezy's Barbershop",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 3
+     },
+     "counts": {
+      "chatgpt": 10
+     },
+     "avg": 3.0
+    }
+   ]
+  }
+ ]
+}

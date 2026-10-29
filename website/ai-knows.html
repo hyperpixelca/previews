@@ -112,11 +112,11 @@
  </div>
 
  <div class="board">
-  <div class="bh"><h2>AI knows these Sacramento area businesses<span class="sq"></span></h2><div class="asof"><span class="ex">Example data</span><br>As of [month year]</div></div>
-  <div class="tlab">Example categories <span>/ sample only until the Google ranking is in</span></div><div class="tabs" id="tabs"></div>
+  <div class="bh"><h2>AI knows these Sacramento area businesses<span class="sq"></span></h2><div class="asof" id="asof"><span class="ex">Example data</span><br>As of [month year]</div></div>
+  <div class="tlab" id="tlab">Example categories <span>/ sample only until the Google ranking is in</span></div><div class="tabs" id="tabs"></div>
   <div class="rows" id="rows"></div>
   <div class="qs" id="qs"><button class="qbtn" type="button"><span>See the questions we asked</span><span class="pl">+</span></button><ol class="ql" id="ql"></ol></div>
-  <p class="src">Categories are based on Sacramento-area Google search volume as of November 1, 2026.</p>
+  <p class="src" id="src">Categories are based on Sacramento-area Google search volume as of November 1, 2026.</p>
  </div>
 </section>
 
@@ -155,21 +155,40 @@ var S={'Restaurants':'Restaurant','Coffee and cafes':'Cafe','Pizza':'Pizzeria','
 var NEW=['Pizza','Plumbers'];
 var A=['Carmichael','East Sac','Natomas','Midtown','Folsom','Roseville','Elk Grove'];
 var P=[[9,9,8],[8,8,7],[7,7,6],[6,5,6],[5,5,4]];
-var cats=Object.keys(Q),tabs=document.getElementById('tabs'),rows=document.getElementById('rows'),ql=document.getElementById('ql');
-function draw(c){
- tabs.querySelectorAll('.tab').forEach(function(t){t.classList.toggle('on',t.dataset.c===c)});
- var ci=cats.indexOf(c),h='';
- P.forEach(function(p,i){var avg=Math.round((p[0]+p[1]+p[2])/3),t=['ChatGPT','Perplexity','Gemini'];
-  h+='<div class="r"><button class="rb" type="button"><span class="rk">0'+(i+1)+'</span><span class="nm">Example '+S[c]+' '+String.fromCharCode(65+i)+(i==0&&ci==1?'<span class="cl">Hyper Pixel client</span>':'')+'<small>'+A[(i+ci)%A.length].toUpperCase()+' / EXAMPLE DATA</small></span><span class="sc"><b>'+avg+'</b>of 10 AI answers</span><span class="pl">+</span></button><div class="det">';
-  t.forEach(function(n,k){h+='<div class="tool"><span>'+n+'</span><div class="bar"><i style="width:'+p[k]*10+'%"></i></div><span class="n">'+p[k]+'/10</span></div>'});
+var T=['ChatGPT','Perplexity','Gemini'],K=['chatgpt','perplexity','gemini'];
+function esc(x){return String(x).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+var D=Object.keys(Q).map(function(c,ci){return {name:c,'new':NEW.indexOf(c)>-1,questions:Q[c],top:P.map(function(p,i){return {name:'Example '+S[c]+' '+String.fromCharCode(65+i),town:A[(i+ci)%A.length],sc:p,client:(i==0&&ci==1),ex:true}})}}),REAL=false;
+var tabs=document.getElementById('tabs'),rows=document.getElementById('rows'),ql=document.getElementById('ql');
+function draw(ci){
+ tabs.querySelectorAll('.tab').forEach(function(t,k){t.classList.toggle('on',k===ci)});
+ var c=D[ci],h='';
+ c.top.forEach(function(e,i){var p=e.sc,avg=(e.avg!=null?Math.round(e.avg):Math.round((p[0]+p[1]+p[2])/3));
+  h+='<div class="r"><button class="rb" type="button"><span class="rk">0'+(i+1)+'</span><span class="nm">'+esc(e.name)+(e.client?'<span class="cl">Hyper Pixel client</span>':'')+'<small>'+esc(e.town).toUpperCase()+(e.ex?' / EXAMPLE DATA':'')+'</small></span><span class="sc"><b>'+avg+'</b>of 10 AI answers</span><span class="pl">+</span></button><div class="det">';
+  T.forEach(function(n,k){h+='<div class="tool"><span>'+n+'</span><div class="bar"><i style="width:'+p[k]*10+'%"></i></div><span class="n">'+p[k]+'/10</span></div>'});
   h+='</div></div>'});
  rows.innerHTML=h;
  rows.querySelectorAll('.rb').forEach(function(b){b.onclick=function(){b.parentNode.classList.toggle('open')}});
- ql.innerHTML=Q[c].map(function(q){return '<li>'+q+'</li>'}).join('')+'<div class="fine">Each question is asked 10 times on ChatGPT, Perplexity and Gemini. Scores are the average across the three tools.</div>';
+ var f=rows.querySelector('.r');if(f)f.classList.add('open');
+ ql.innerHTML=c.questions.map(function(q){return '<li>'+esc(q)+'</li>'}).join('')+'<div class="fine">Each question is asked 10 times on ChatGPT, Perplexity and Gemini. Scores are the average across the three tools.</div>';
 }
-cats.forEach(function(c){var b=document.createElement('button');b.type='button';b.className='tab';b.dataset.c=c;b.innerHTML=c+(NEW.indexOf(c)>-1?'<span class="nw">New this month</span>':'');b.onclick=function(){draw(c)};tabs.appendChild(b)});
-draw(cats[0]);
-rows.querySelector('.r').classList.add('open');
+function build(){
+ tabs.innerHTML='';
+ D.forEach(function(c,ci){var b=document.createElement('button');b.type='button';b.className='tab';b.innerHTML=esc(c.name)+(c['new']?'<span class="nw">New this month</span>':'');b.onclick=function(){draw(ci)};tabs.appendChild(b)});
+ draw(0);
+}
+build();
+fetch('ai-results.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(j){
+ if(!j||!j.categories||!j.categories.length)return;
+ D=j.categories.map(function(c){return {name:c.name,'new':!!c['new'],questions:c.questions||[],top:(c.top||[]).slice(0,5).map(function(e){return {name:e.name,town:e.town||'',sc:K.map(function(k){return (e.scores&&e.scores[k])||0}),client:!!e.client,ex:false,avg:(typeof e.avg==='number'?e.avg:null)}})}});
+ REAL=true;
+ var lg=document.querySelector('.review .long');if(lg)lg.textContent='Internal mockup for Hyper Pixel. Not live. Board shows real AI check results; the sample result card is still example data.';
+ var d=new Date((j.asOf||'')+'T12:00:00'),M=['January','February','March','April','May','June','July','August','September','October','November','December'];
+ var ok=!isNaN(d),ml=ok?M[d.getMonth()]+' '+d.getFullYear():'',full=ok?M[d.getMonth()]+' '+d.getDate()+', '+d.getFullYear():'';
+ document.getElementById('asof').innerHTML=ok?'As of '+ml:'';
+ document.getElementById('tlab').innerHTML="This month's categories";
+ if(ok)document.getElementById('src').textContent='Categories are based on Sacramento-area Google search volume as of '+full+'.';
+ build();
+}).catch(function(){});
 document.querySelector('.qbtn').onclick=function(){document.getElementById('qs').classList.toggle('open')};
 document.getElementById('ck').onsubmit=function(e){e.preventDefault();document.querySelector('.res').scrollIntoView({behavior:'smooth',block:'center'})};
 })();

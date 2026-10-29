@@ -1,0 +1,14 @@
+@font-face{font-family:'IT';src:url('assets/fonts/InterTight[wght].ttf');font-weight:100 900}
+@font-face{font-family:'BM';font-style:italic;src:url('assets/fonts/BodoniModa-Italic[opsz,wght].ttf');font-weight:400 900}
+@font-face{font-family:'BM';src:url('assets/fonts/BodoniModa[opsz,wght].ttf');font-weight:400 900}
+@font-face{font-family:'SM';src:url('assets/fonts/SpaceMono-Regular.ttf')}
+@font-face{font-family:'SM';font-weight:700;src:url('assets/fonts/SpaceMono-Bold.ttf')}
+:root{--paper:#F0ECE1;--ink:#161616;--red:#B23A2C;--mustard:#E5A329;--slate:#536372;--ion:#2EC6D3;--rule:#D8D2C3}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'IT';color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.mono{font-family:'SM'}
+.sq{display:inline-block;width:.19em;height:.19em;background:var(--red);margin-left:.05em}
+.btn{display:inline-block;font-weight:700;font-size:17px;padding:16px 26px;background:var(--ink);color:var(--paper)}
+.btn.red{background:var(--red)}
+.btn.ghost{background:none;color:var(--ink);border:2px solid currentColor;padding:14px 24px}

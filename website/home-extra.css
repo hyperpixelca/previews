@@ -1,0 +1,29 @@
+.reels{padding:96px 72px;background:var(--paper2,#E7E1D2);border-top:2px solid var(--ink,#161616)}
+.reels .head,.clients .head{display:flex;justify-content:space-between;align-items:end;margin-bottom:48px;gap:40px}
+.reels h2,.clients h2{font-size:64px;letter-spacing:-.035em;line-height:1}
+.reels .lede,.clients .lede{max-width:420px;font-size:18px;line-height:1.5;color:#536372}
+.reels .mono-l,.clients .mono-l{font-family:'SM',monospace;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#B23A2C;margin-bottom:18px}
+.rgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+.reel .fr{position:relative;aspect-ratio:9/16;background:repeating-linear-gradient(135deg,#DCD5C4 0 14px,#E2DCCC 14px 28px);border:2px solid #161616;display:flex;align-items:center;justify-content:center}
+.reel .fr .tag{position:absolute;top:12px;left:12px;font-family:'SM',monospace;font-size:11px;letter-spacing:.1em;background:#161616;color:#F0ECE1;padding:4px 7px}
+.reel .fr .play{width:56px;height:56px;border-radius:50%;background:#B23A2C;position:relative}
+.reel .fr .play:after{content:'';position:absolute;left:22px;top:17px;border-left:16px solid #F0ECE1;border-top:11px solid transparent;border-bottom:11px solid transparent}
+.reel .fr .len{position:absolute;bottom:12px;right:12px;font-family:'SM',monospace;font-size:11px;color:#161616}
+.reel .cap{margin-top:14px;font-weight:700;font-size:16px}
+.reel .cap span{display:block;font-family:'SM',monospace;font-weight:400;font-size:12px;color:#536372;margin-top:4px;letter-spacing:.06em}
+.reels .note{margin-top:28px;font-family:'SM',monospace;font-size:12px;color:#536372;letter-spacing:.06em}
+.clients{padding:96px 72px}
+.cgrid2{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid #161616}
+.cgrid2 div{padding:26px 0 26px;border-bottom:1px solid #D8D2C3;font-weight:800;font-size:26px;letter-spacing:-.02em;color:#161616}
+.cgrid2 div:nth-child(4n+1){padding-right:20px}
+.cgrid2 div span{display:block;font-family:'SM',monospace;font-weight:400;font-size:12px;letter-spacing:.08em;color:#536372;margin-top:6px;text-transform:uppercase}
+@media (max-width:760px){
+ .reels,.clients{padding:64px 20px}
+ .reels .head,.clients .head{display:block;margin-bottom:28px}
+ .reels h2,.clients h2{font-size:44px;margin-bottom:14px}
+ .reels .lede,.clients .lede{font-size:16px}
+ .rgrid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin-right:-20px;padding-right:20px}
+ .reel{flex:0 0 62%;scroll-snap-align:start}
+ .cgrid2{grid-template-columns:1fr 1fr;column-gap:16px}
+ .cgrid2 div{font-size:20px;padding:18px 0}
+}

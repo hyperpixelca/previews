@@ -144,7 +144,7 @@
   <p class="lede">When locals ask ChatGPT, Perplexity or Gemini for a recommendation, does your name come up? Check it free.</p>
   <div class="chk">
    <div class="lab">Check your business</div>
-   <form id="ck"><input type="text" inputmode="url" name="site" placeholder="yourbusiness.com" required><input type="tel" name="phone" placeholder="Business phone" required><label class="cons"><input type="checkbox" name="ok"><span>OK to contact me about my results.</span></label><button class="btn red" type="submit">Check my business</button><div class="fine"><p id="fm">Free. Enter your business website and we do the rest.</p><p>Your phone number matches your exact Google Business Profile, so we check the right business.</p><p>Site can't be read, or only have a Facebook or Instagram page? We'll switch you to a short form instead.</p></div><button type="button" class="nows" id="nows">No website? <span>Use your name and city instead</span></button><div class="alt" id="alt"><input name="biz" placeholder="Business name"><input name="city" placeholder="City"><input name="cat" placeholder="What you do, e.g. bakery"></div></form>
+   <form id="ck"><input type="text" inputmode="url" name="site" placeholder="yourbusiness.com" required><input type="tel" name="phone" placeholder="Business phone" required><label class="cons"><input type="checkbox" name="ok"><span>OK to contact me about my results.</span></label><button class="btn red" type="submit">Check my business</button><div class="fine"><p id="fm">Free. Enter your business website and we do the rest.</p><p>Your phone number matches your exact Google Business Profile, so we check the right business.</p></div></form>
    <ol class="nx">
     <li><b>We read your website</b><span>Your name, town and what you do, from your public pages.</span></li>
     <li><b>You confirm the details</b><span>Name, town and what you do. Fix anything we got wrong.</span></li>
@@ -298,7 +298,6 @@ fetch('ai-results.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;re
  build();
 }).catch(function(){});
 document.querySelector('.qbtn').onclick=function(){document.getElementById('qs').classList.toggle('open')};
-document.getElementById('nows').onclick=function(){var a=document.getElementById('alt'),o=a.classList.toggle('open'),u=document.querySelector('#ck [name=site]');u.required=!o;u.style.display=o?'none':'';document.getElementById('fm').textContent=o?'Free. No website needed.':'Free. Enter your business website and we do the rest.';a.querySelector('[name=biz]').required=o;a.querySelector('[name=city]').required=o;a.querySelector('[name=cat]').required=o;this.innerHTML=o?'Have a website? <span>Use it instead</span>':'No website? <span>Use your name and city instead</span>'};
 document.getElementById('ck').onsubmit=function(e){e.preventDefault();document.getElementById('flow').scrollIntoView({behavior:'smooth',block:'start'})};
 })();
 </script>

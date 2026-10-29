@@ -128,7 +128,15 @@
  .lf{grid-template-columns:1fr;gap:18px}
  .lf .row{display:block}.lf .btn{width:100%;margin-bottom:12px}
  .thanks{padding:26px 22px}.thanks h3{font-size:34px}
+ .mix{margin:24px 0 0;padding:20px 20px 4px}
+ .fcol{background:var(--ink);color:var(--paper);padding:20px 20px 24px;border-top:1px solid #333}
+ .fcol .lf .lab{color:#B8B4AA}
+ .fcol .lf input,.fcol .lf textarea{background:#222;color:var(--paper);border-bottom-color:#555;font-size:17px}
+ .fcol .lf input::placeholder,.fcol .lf textarea::placeholder{color:#8A877F}
+ .fcol .lf .row p{color:#B8B4AA}
+ .fcol .thanks{border-top-width:4px;color:var(--ink)}
 }
+
 </style><meta name="robots" content="noindex,nofollow"><link rel="stylesheet" href="preview.css"><script src="preview.js"></script></head><body><div class="w" id="top">
 <div class="review"><span><b>REVIEW</b>&nbsp; Plans builder v2, demo example</span><span class="long">Internal mockup for Hyper Pixel. Not live. All prices proposed, pending Jack's approval.</span></div><nav class="top"><a href="index.html"><img src="assets/marks/hyperpixel-A-primary-color.svg" alt="hyperpixel."></a><ul><li class=""><a href="index.html#services">Services</a></li><li class="on"><a href="plans-builder.html">Plans</a></li><li class=""><a href="how-we-work.html">How we work</a></li><li class=""><a href="about.html">About</a></li><li><a class="btn" href="contact.html">Book a call</a></li></ul><div class="burger"></div></nav>
 <section class="plans"><div class="head"><div><div class="eb">Plans &nbsp;/&nbsp; build your plan</div><h1>Pick your <span style="white-space:nowrap">services<span class="sq"></span></span></h1></div>
@@ -152,7 +160,7 @@
 </div></aside></div>
 </section><section class="lead" id="lead"><div><div class="lab" style="color:var(--red)">03 &nbsp;Send us your mix</div><h2>Like what you built<span class="sq"></span></h2><p class="ld">Send it over with a few details about your business. We'll reach out to talk it through.</p>
 <div class="mix"><div class="lab">Your mix</div><ul id="mixlist"></ul><div class="tot"><b><span id="mixname"></span> <span class="prop inv">Proposed</span></b><span><span id="mixprice"></span><small>/mo</small></span></div><a class="edit" href="#top">Change your picks above. This updates as you go.</a></div></div>
-<div><form class="lf" id="lf" novalidate><input type="hidden" name="credits" id="f_credits"><input type="hidden" name="plan" id="f_plan"><input type="hidden" name="total" id="f_total"><input type="hidden" name="goal" id="f_goal">
+<div class="fcol"><form class="lf" id="lf" novalidate><input type="hidden" name="credits" id="f_credits"><input type="hidden" name="plan" id="f_plan"><input type="hidden" name="total" id="f_total"><input type="hidden" name="goal" id="f_goal">
 <label><span class="lab">Business name <i>*</i></span><input name="business" required autocomplete="organization"></label>
 <label><span class="lab">Your name <i>*</i></span><input name="name" id="f_name" required autocomplete="name"></label>
 <label><span class="lab">Email <i>*</i></span><input type="email" name="email" required autocomplete="email"></label>

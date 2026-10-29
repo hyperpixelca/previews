@@ -13,9 +13,9 @@
 .reel .cap span{display:block;font-family:'SM',monospace;font-weight:400;font-size:12px;color:#536372;margin-top:4px;letter-spacing:.06em}
 .reels .note{margin-top:28px;font-family:'SM',monospace;font-size:12px;color:#536372;letter-spacing:.06em}
 .clients{padding:96px 72px}
-.cgrid2{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid #161616}
-.cgrid2 div{padding:26px 0 26px;border-bottom:1px solid #D8D2C3;font-weight:800;font-size:26px;letter-spacing:-.02em;color:#161616}
-.cgrid2 div:nth-child(4n+1){padding-right:20px}
+.cgrid2{display:grid;grid-template-columns:repeat(3,1fr);column-gap:40px;border-top:2px solid #161616}
+.cgrid2 div{padding:26px 0 26px;border-bottom:1px solid #D8D2C3;font-weight:800;font-size:28px;line-height:1.15;letter-spacing:-.02em;color:#161616}
+
 .cgrid2 div span{display:block;font-family:'SM',monospace;font-weight:400;font-size:12px;letter-spacing:.08em;color:#536372;margin-top:6px;text-transform:uppercase}
 @media (max-width:760px){
  .reels,.clients{padding:64px 20px}

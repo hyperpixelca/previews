@@ -121,20 +121,6 @@
 .fine2{font-family:'SM';font-size:11px;line-height:1.6;color:#A9A49A;margin-top:10px}
 @media (max-width:1100px) and (min-width:761px){.fg{grid-template-columns:1fr 1fr}.fc.dark{grid-column:span 2}}
 @media (max-width:760px){.flow{padding:48px 20px 56px}.flow h2{font-size:34px}.fh{flex-direction:column;align-items:flex-start;gap:12px}.fg{grid-template-columns:1fr;margin-top:28px;gap:18px}.fc{padding:22px 18px}.nx b{font-size:16px}}
-.nows{justify-self:start;font-size:15px;font-weight:700;border-bottom:2px solid var(--ink);padding:0 0 2px;text-align:left}.nows span{font-weight:400;color:var(--slate);margin-left:4px}
-.chk form>[name=site]{order:1}.alt{order:2}.chk form>[name=phone]{order:3}.cons{order:4}.chk form>.btn{order:5}.chk form>.fine{order:6}.nows{order:7}
-.cons{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;line-height:1.4;cursor:pointer}.cons input{width:18px;height:18px;padding:0;margin:1px 0 0;flex:none;accent-color:var(--red);border:0}
-.fine p+p{margin-top:6px}
-.fg{grid-template-columns:repeat(6,minmax(0,1fr))}.fg>.fc{grid-column:span 2}.fg>.fc.wide{grid-column:span 3}
-.src2{font-family:'SM';font-size:11px;letter-spacing:.06em;color:var(--slate);margin:-6px 0 14px}
-.ed{display:grid;gap:10px;margin-bottom:16px}.ed label{display:grid;gap:4px}.ed input{font:600 16px 'IT';padding:11px 12px;background:#fff;border:0;border-bottom:3px solid var(--red);color:var(--ink);outline:0;width:100%}
-.fc .btn{width:100%}
-.scn .tool{grid-template-columns:96px 1fr 76px}.scn .n{font-family:'SM';font-size:11px;letter-spacing:.06em;text-transform:uppercase;text-align:right}
-.bar i.run{background:var(--red)}
-@media (max-width:1100px){.fg{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.fg>.fc,.fg>.fc.wide{grid-column:auto}.fg>.fc.dark{grid-column:span 2}}
-@media (max-width:760px){.fg{grid-template-columns:1fr}.fg>.fc.dark{grid-column:auto}}
-.alt{display:none;gap:12px}.alt.open{display:grid}
-@media (max-width:760px){.nows span{display:block;margin:2px 0 0}}
 </style></head><body><div class="review"><span><b>REVIEW</b>&nbsp; Free tool / Does AI know your business?</span><span class="long">Internal mockup for Hyper Pixel. Not live. All business names and scores are example data.</span></div><nav class="top"><a href="index.html"><img src="assets/marks/hyperpixel-A-primary-color.svg" alt="hyperpixel."></a><ul><li><a href="index.html#services">Services</a></li><li><a href="plans-builder.html">Plans</a></li><li><a href="how-we-work.html">How we work</a></li><li><a href="about.html">About</a></li><li><a href="ai-knows.html">Free AI Check</a></li><li><a class="btn" href="contact.html">Book a call</a></li></ul><div class="burger"></div></nav>
 
 <section class="ak">
@@ -144,12 +130,11 @@
   <p class="lede">When locals ask ChatGPT, Perplexity or Gemini for a recommendation, does your name come up? Check it free.</p>
   <div class="chk">
    <div class="lab">Check your business</div>
-   <form id="ck"><input type="text" inputmode="url" name="site" placeholder="yourbusiness.com" required><input type="tel" name="phone" placeholder="Business phone" required><label class="cons"><input type="checkbox" name="ok"><span>OK to contact me about my results.</span></label><button class="btn red" type="submit">Check my business</button><div class="fine"><p id="fm">Free. Enter your business website and we do the rest.</p><p>Your phone number matches your exact Google Business Profile, so we check the right business.</p></div></form>
+   <form id="ck"><input type="text" inputmode="url" name="site" placeholder="yourbusiness.com" required><button class="btn red" type="submit">Check my business</button><div class="fine">Free. Enter your business website and we do the rest.</div></form>
    <ol class="nx">
     <li><b>We read your website</b><span>Your name, town and what you do, from your public pages.</span></li>
-    <li><b>You confirm the details</b><span>Name, town and what you do. Fix anything we got wrong.</span></li>
     <li><b>We write 3 local questions</b><span>The kind a customer near you would actually ask.</span></li>
-    <li><b>You see your score free</b><span>Usually under a minute. How often ChatGPT, Perplexity and Gemini name you.</span></li>
+    <li><b>You see your score free</b><span>How often ChatGPT, Perplexity and Gemini name you.</span></li>
     <li><b>Full report by email</b><span>Every answer, who AI picks instead, and what to fix.</span></li>
    </ol>
    <a class="seeflow" href="#flow">See what you get <span>&darr;</span></a>
@@ -185,39 +170,19 @@
    <p class="fnote">Each question goes to ChatGPT, Perplexity and Gemini 3 times.</p>
   </div>
   <div class="fc">
-   <div class="fn">02 / IS THIS RIGHT?</div>
-   <p class="src2">From your website and Google listing</p>
-   <div class="ed">
-    <label><span class="fl">Business name</span><input value="Example Bakery"></label>
-    <label><span class="fl">Town</span><input value="Carmichael"></label>
-    <label><span class="fl">Category</span><input value="Bakery"></label>
-   </div>
-   <button class="btn red" type="button">Looks right, run my check</button>
-   <p class="fnote">Fix anything we got wrong. Better details mean better questions.</p>
-  </div>
-  <div class="fc scn">
-   <div class="fn">03 / SCANNING</div>
-   <div class="fl">Scanning ChatGPT / Perplexity / Gemini</div>
-   <div class="tool"><span>ChatGPT</span><div class="bar"><i style="width:100%"></i></div><span class="n">Done</span></div>
-   <div class="tool"><span>Perplexity</span><div class="bar"><i class="run" style="width:45%"></i></div><span class="n">Running</span></div>
-   <div class="tool"><span>Gemini</span><div class="bar"></div><span class="n">Queued</span></div>
-   <p class="fnote">Usually under a minute.</p>
-  </div>
-  <div class="fc wide">
-   <div class="fn">04 / YOUR FREE RESULTS</div>
+   <div class="fn">02 / YOUR FREE RESULTS</div>
    <div class="big"><b>4</b><span>AI score out of 10<br>Named in 11 of 27 answers</span></div>
    <div class="tool"><span>ChatGPT</span><div class="bar"><i style="width:56%"></i></div><span class="n">5/9</span></div>
    <div class="tool"><span>Perplexity</span><div class="bar"><i style="width:44%"></i></div><span class="n">4/9</span></div>
    <div class="tool"><span>Gemini</span><div class="bar"><i style="width:22%"></i></div><span class="n">2/9</span></div>
    <div class="stat2"><div><b>6</b><span>other local businesses AI named instead of you</span></div><div><b>Q3</b><span>your weakest question</span></div></div>
   </div>
-  <div class="fc dark wide">
-   <div class="fn">05 / THE FULL REPORT</div>
+  <div class="fc dark">
+   <div class="fn">03 / THE FULL REPORT</div>
    <ul class="rp">
     <li><b>Every AI answer, word for word</b><span>See exactly how each tool describes you, or why it skipped you.</span></li>
     <li><b>Who AI recommends instead</b><span>The 6 businesses named in your place, and how often.</span></li>
     <li><b>Question by question</b><span>Where you show up and where you don't.</span></li>
-    <li><b>What AI says vs. your Google listing</b><span>Hours, address, phone and services. We flag mismatches so you know what to fix.</span></li>
     <li><b>What to fix first</b><span>A short, plain list of changes most likely to move your score.</span></li>
    </ul>
    <div class="lock"><div class="blur"><i></i><i></i><i></i></div><span>Locked until you add your email</span></div>

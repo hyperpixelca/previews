@@ -121,6 +121,9 @@
 .fine2{font-family:'SM';font-size:11px;line-height:1.6;color:#A9A49A;margin-top:10px}
 @media (max-width:1100px) and (min-width:761px){.fg{grid-template-columns:1fr 1fr}.fc.dark{grid-column:span 2}}
 @media (max-width:760px){.flow{padding:48px 20px 56px}.flow h2{font-size:34px}.fh{flex-direction:column;align-items:flex-start;gap:12px}.fg{grid-template-columns:1fr;margin-top:28px;gap:18px}.fc{padding:22px 18px}.nx b{font-size:16px}}
+html{scroll-behavior:smooth}#leaderboard,#how{scroll-margin-top:84px}
+.jl{display:inline-block;margin-top:16px;font-size:15px;font-weight:700;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--red);padding-bottom:2px}.jl span{color:var(--red)}
+.how .jl.back{margin-top:40px;color:var(--paper);border-bottom-color:var(--mustard)}.how .jl.back span{color:var(--mustard)}
 </style></head><body><div class="review"><span><b>REVIEW</b>&nbsp; Free tool / Does AI know your business?</span><span class="long">Internal mockup for Hyper Pixel. Not live. All business names and scores are example data.</span></div><nav class="top"><a href="index.html"><img src="assets/marks/hyperpixel-A-primary-color.svg" alt="hyperpixel."></a><ul><li><a href="index.html#services">Services</a></li><li><a href="plans-builder.html">Plans</a></li><li><a href="how-we-work.html">How we work</a></li><li><a href="about.html">About</a></li><li><a href="ai-knows.html">Free AI Check</a></li><li><a class="btn" href="contact.html">Book a call</a></li></ul><div class="burger"></div></nav>
 
 <section class="ak">
@@ -141,12 +144,13 @@
   </div>
  </div>
 
- <div class="board">
+ <div class="board" id="leaderboard">
   <div class="bh"><h2>AI knows these Sacramento area businesses<span class="sq"></span></h2><div class="asof" id="asof"><span class="ex">Example data</span><br>As of [month year]</div></div>
   <div class="tlab" id="tlab">Example categories <span>/ sample only until the Google ranking is in</span></div><div class="tabs" id="tabs"></div>
   <div class="rows" id="rows"></div>
   <div class="qs" id="qs"><button class="qbtn" type="button"><span>See the questions we asked</span><span class="pl">+</span></button><ol class="ql" id="ql"></ol></div>
   <p class="src" id="src">Categories are based on Sacramento-area Google search volume as of November 1, 2026.</p>
+  <a class="jl" href="#how">How we check the leaderboard <span>&darr;</span></a>
  </div>
 </section>
 
@@ -193,7 +197,7 @@
 </section>
 
 <section class="how" id="how">
- <div class="eb">HOW WE CHECK</div>
+ <div class="eb">HOW WE CHECK THE LEADERBOARD</div>
  <h2>Same questions. Same tools. Same rules for everyone.</h2>
  <div class="steps">
   <div class="st"><div class="mono">01</div><h3>The 10 most-searched categories</h3><p>Each month's categories are the types of local business people in the Sacramento area search for most on Google. We recheck every month, and a category that moves up gets a <span class="hw-nw">New this month</span> tag.</p></div>
@@ -201,6 +205,7 @@
   <div class="st"><div class="mono">03</div><h3>Sacramento area only</h3><p>Only businesses headquartered in the Sacramento area count. National chains are left out, even when AI names them.</p></div>
   <div class="st"><div class="mono">04</div><h3>Top 5, refreshed monthly</h3><p>We show the top 5 per category with an as-of date. Hyper Pixel clients are marked as clients.</p></div>
  </div>
+ <a class="jl back" href="#leaderboard"><span>&uarr;</span> Back to leaderboard</a>
 </section>
 
 <section class="ins">

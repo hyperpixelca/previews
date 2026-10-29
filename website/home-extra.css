@@ -31,7 +31,7 @@
 /* homepage AI check feature */
 .aif{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;padding:96px 72px;border-top:2px solid #161616;background:#F0ECE1}
 .aif h2{font-size:64px;letter-spacing:-.035em;line-height:1;margin-bottom:22px;max-width:620px}
-.aif-l p{font-size:19px;line-height:1.5;color:#536372;max-width:470px;margin-bottom:32px}
+.aif-l p{font-size:19px;line-height:1.5;color:#536372;max-width:540px;margin-bottom:32px}
 .aif .mono-l{font-family:'SM',monospace;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#B23A2C;margin-bottom:18px}
 .aif-b{display:block;border:2px solid #161616;background:#F7F4EC;padding:28px 30px;text-decoration:none;color:#161616}
 .aif-h{display:flex;justify-content:space-between;align-items:start;gap:16px;padding-bottom:16px;border-bottom:2px solid #161616;font-weight:800;font-size:22px;letter-spacing:-.02em;line-height:1.1}

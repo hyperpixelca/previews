@@ -1,12 +1,12 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Plans | hyperpixel.</title><link rel="stylesheet" href="common.css"><style>
 .plans{padding:88px 72px 96px}
-.head{display:grid;grid-template-columns:1fr 520px;gap:64px;align-items:end;margin-bottom:56px}
+.head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,520px);gap:64px;align-items:end;margin-bottom:56px}
 .head h1{font-size:104px;line-height:.94;letter-spacing:-.045em;font-weight:800}
 .head .serif{font-size:30px;margin-bottom:14px}
 .head p{font-size:20px;line-height:1.45}
 .credit{margin-top:18px;display:flex;gap:12px;align-items:center;font-family:'SM';font-size:14px;letter-spacing:.06em}
 .tbl{border-top:2px solid var(--ink)}
-.tr{display:grid;grid-template-columns:1fr 250px 250px 250px;border-bottom:1.5px solid var(--rule)}
+.tr{display:grid;grid-template-columns:minmax(220px,1fr) repeat(3,minmax(0,250px));border-bottom:1.5px solid var(--rule)}
 .tr>div{padding:20px 22px}
 .tr>div+div{border-left:1.5px solid var(--rule)}
 .th>div{padding:28px 22px 26px}
@@ -16,6 +16,8 @@
 .th .t.t5{border-top-color:var(--ink)}.th .t.t7{border-top-color:var(--red);background:#E9E3D4}
 .price{font-size:54px;font-weight:800;letter-spacing:-.04em;line-height:1}
 .price small{font-size:18px;font-weight:600;letter-spacing:0;margin-left:2px}
+@media (min-width:1181px){.price{font-size:48px}}
+@media (min-width:761px) and (max-width:1180px){.price{font-size:40px}.price small{font-size:15px}}
 .pb .prop{margin-top:10px}
 .th .line{font-weight:600;font-size:16px;margin-top:14px}
 .th .list{font-family:'SM';font-size:12px;color:var(--slate);margin-top:6px}

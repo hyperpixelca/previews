@@ -157,6 +157,9 @@
 
 .lf input,.lf textarea,.fcol .lf input,.fcol .lf textarea,#pform .lf input{background:#fff!important;color:var(--ink)!important;border-bottom:3px solid var(--red)!important}
 .lf input:focus{box-shadow:inset 0 -2px 0 var(--red)}
+.lf input.err,.fcol .lf input.err,#pform .lf input.err{background:var(--red)!important;color:#fff!important;border-bottom-color:#7A231A!important;font-family:'SM',monospace}
+.lf input.err::placeholder{color:rgba(255,255,255,.9)!important}
+.lf input.err:focus{box-shadow:none}
 </style><meta name="robots" content="noindex,nofollow"><link rel="stylesheet" href="preview.css"><script src="preview.js"></script></head><body><div class="w" id="top">
 <div class="review"><span><b>REVIEW</b>&nbsp; Plans builder v2, demo example</span><span class="long">Internal mockup for Hyper Pixel. Not live. All prices proposed, pending Jack's approval.</span></div><nav class="top"><a href="index.html"><img src="assets/marks/hyperpixel-A-primary-color.svg" alt="hyperpixel."></a><ul><li class=""><a href="index.html#services">Services</a></li><li class="on"><a href="plans-builder.html">Plans</a></li><li class=""><a href="how-we-work.html">How we work</a></li><li class=""><a href="about.html">About</a></li><li><a class="btn" href="contact.html">Book a call</a></li></ul><div class="burger"></div></nav>
 <section class="plans"><div class="head"><div><div class="eb">Plans &nbsp;/&nbsp; build your plan</div><h1>Pick your <span style="white-space:nowrap">services<span class="sq"></span></span></h1></div>
@@ -247,8 +250,11 @@ const mq=matchMedia('(max-width:760px)');
 $('panel').insertBefore($('pform'),$('tolead'));
 function placeForm(){const fc=document.querySelector('.fcol');if(mq.matches){$('pform').appendChild(fc)}else{document.querySelector('.lead').appendChild(fc)}}
 placeForm();mq.addEventListener('change',placeForm);
-$('tolead').onclick=e=>{if(mq.matches){e.preventDefault();$('lf').requestSubmit()}};
+$('tolead').onclick=e=>{if(mq.matches){e.preventDefault();if(!$('panel').classList.contains('open')){$('panel').classList.add('open');return}$('lf').requestSubmit()}};
 
-$('lf').addEventListener('submit',e=>{e.preventDefault();const f=e.target;const bad=[...f.querySelectorAll('[required]')].filter(i=>!i.value.trim()||(i.type==='email'&&!/.+@.+\..+/.test(i.value)));f.querySelectorAll('input').forEach(i=>i.style.outline='');if(bad.length){bad.forEach(i=>i.style.outline='2px solid var(--mustard)');bad[0].focus();return}const n=$('f_name').value.trim().split(' ')[0];$('tyname').textContent=n?', '+n:'';$('lead').classList.add('sent');$('panel').classList.add('sent');if(mq.matches){$('thanks').scrollIntoView({behavior:'smooth',block:'start'})}else{$('lead').scrollIntoView({behavior:'smooth'})}});
+$('lf').addEventListener('submit',e=>{e.preventDefault();const f=e.target;const bad=[...f.querySelectorAll('[required]')].filter(i=>!i.value.trim()||(i.type==='email'&&!/.+@.+\..+/.test(i.value)));f.querySelectorAll('input').forEach(clr);if(bad.length){bad.forEach(i=>{i.classList.add('err');i.value='';i.placeholder=i.type==='email'?'Missing email here':'Missing information here'});bad[0].focus();return}const n=$('f_name').value.trim().split(' ')[0];$('tyname').textContent=n?', '+n:'';$('lead').classList.add('sent');$('panel').classList.add('sent');if(mq.matches){$('thanks').scrollIntoView({behavior:'smooth',block:'start'})}else{$('lead').scrollIntoView({behavior:'smooth'})}});
 render();
+
+function clr(i){i.classList.remove('err');i.placeholder=i.dataset.ph||''}
+$('lf').querySelectorAll('input').forEach(i=>{i.dataset.ph=i.placeholder;i.addEventListener('input',()=>clr(i))});
 </script></body></html>

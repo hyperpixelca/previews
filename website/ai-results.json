@@ -1,7 +1,8 @@
 {
  "asOf": "2026-11-01",
  "tools": [
-  "chatgpt"
+  "chatgpt",
+  "perplexity"
  ],
  "categories": [
   {
@@ -14,57 +15,67 @@
    ],
    "top": [
     {
-     "name": "Localis",
-     "town": "Sacramento",
-     "scores": {
-      "chatgpt": 9
-     },
-     "counts": {
-      "chatgpt": 28
-     },
-     "avg": 9.0
-    },
-    {
      "name": "Kru",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 7
+      "chatgpt": 7,
+      "perplexity": 10
      },
      "counts": {
-      "chatgpt": 22
+      "chatgpt": 22,
+      "perplexity": 30
      },
-     "avg": 7.0
+     "avg": 8.5
     },
     {
-     "name": "The Waterboy",
+     "name": "Localis",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 6
+      "chatgpt": 9,
+      "perplexity": 7
      },
      "counts": {
-      "chatgpt": 18
+      "chatgpt": 28,
+      "perplexity": 20
      },
-     "avg": 6.0
+     "avg": 8.0
+    },
+    {
+     "name": "Bacon & Butter",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 4,
+      "perplexity": 7
+     },
+     "counts": {
+      "chatgpt": 11,
+      "perplexity": 20
+     },
+     "avg": 5.5
     },
     {
      "name": "Ella Dining Room & Bar",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 5
+      "chatgpt": 5,
+      "perplexity": 5
      },
      "counts": {
-      "chatgpt": 16
+      "chatgpt": 16,
+      "perplexity": 14
      },
      "avg": 5.0
     },
     {
-     "name": "Mulvaney’s B&L",
+     "name": "Frank Fat’s",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 5
+      "chatgpt": 1,
+      "perplexity": 9
      },
      "counts": {
-      "chatgpt": 15
+      "chatgpt": 3,
+      "perplexity": 27
      },
      "avg": 5.0
     }
@@ -83,56 +94,66 @@
      "name": "Camellia Coffee Roasters",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 10
+      "chatgpt": 10,
+      "perplexity": 9
      },
      "counts": {
-      "chatgpt": 30
+      "chatgpt": 30,
+      "perplexity": 27
      },
-     "avg": 10.0
+     "avg": 9.5
     },
     {
      "name": "Old Soul Co.",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 10
+      "chatgpt": 10,
+      "perplexity": 7
      },
      "counts": {
-      "chatgpt": 30
+      "chatgpt": 30,
+      "perplexity": 20
      },
-     "avg": 10.0
-    },
-    {
-     "name": "Milka Coffee Roasters",
-     "town": "Sacramento",
-     "scores": {
-      "chatgpt": 7
-     },
-     "counts": {
-      "chatgpt": 20
-     },
-     "avg": 7.0
-    },
-    {
-     "name": "Scorpio Coffee",
-     "town": "Sacramento",
-     "scores": {
-      "chatgpt": 7
-     },
-     "counts": {
-      "chatgpt": 20
-     },
-     "avg": 7.0
+     "avg": 8.5
     },
     {
      "name": "Temple Coffee Roasters",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 7
+      "chatgpt": 7,
+      "perplexity": 8
      },
      "counts": {
-      "chatgpt": 20
+      "chatgpt": 20,
+      "perplexity": 25
      },
-     "avg": 7.0
+     "avg": 7.5
+    },
+    {
+     "name": "Milka Coffee Roasters",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 7,
+      "perplexity": 3
+     },
+     "counts": {
+      "chatgpt": 20,
+      "perplexity": 10
+     },
+     "avg": 5.0
+    },
+    {
+     "name": "Pachamama Coffee",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 4,
+      "perplexity": 6
+     },
+     "counts": {
+      "chatgpt": 11,
+      "perplexity": 19
+     },
+     "avg": 5.0
     }
    ]
   },
@@ -149,10 +170,12 @@
      "name": "Bacon & Butter",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 10
+      "chatgpt": 10,
+      "perplexity": 10
      },
      "counts": {
-      "chatgpt": 30
+      "chatgpt": 30,
+      "perplexity": 29
      },
      "avg": 10.0
     },
@@ -160,21 +183,25 @@
      "name": "The Morning Fork",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 10
+      "chatgpt": 10,
+      "perplexity": 6
      },
      "counts": {
-      "chatgpt": 29
+      "chatgpt": 29,
+      "perplexity": 19
      },
-     "avg": 10.0
+     "avg": 8.0
     },
     {
      "name": "Fox & Goose Public House",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 7
+      "chatgpt": 7,
+      "perplexity": 7
      },
      "counts": {
-      "chatgpt": 20
+      "chatgpt": 20,
+      "perplexity": 20
      },
      "avg": 7.0
     },
@@ -182,10 +209,12 @@
      "name": "Orphan Breakfast House",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 7
+      "chatgpt": 7,
+      "perplexity": 7
      },
      "counts": {
-      "chatgpt": 20
+      "chatgpt": 20,
+      "perplexity": 20
      },
      "avg": 7.0
     },
@@ -193,10 +222,12 @@
      "name": "Tower Cafe",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 7
+      "chatgpt": 7,
+      "perplexity": 7
      },
      "counts": {
-      "chatgpt": 20
+      "chatgpt": 20,
+      "perplexity": 20
      },
      "avg": 7.0
     }
@@ -215,10 +246,12 @@
      "name": "Giovanni's Old World New York Pizzeria",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 10
+      "chatgpt": 10,
+      "perplexity": 10
      },
      "counts": {
-      "chatgpt": 30
+      "chatgpt": 30,
+      "perplexity": 30
      },
      "avg": 10.0
     },
@@ -226,10 +259,12 @@
      "name": "Masullo Pizza",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 10
+      "chatgpt": 10,
+      "perplexity": 10
      },
      "counts": {
-      "chatgpt": 30
+      "chatgpt": 30,
+      "perplexity": 30
      },
      "avg": 10.0
     },
@@ -237,34 +272,40 @@
      "name": "OneSpeed Pizza",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 10
+      "chatgpt": 10,
+      "perplexity": 9
      },
      "counts": {
-      "chatgpt": 30
+      "chatgpt": 30,
+      "perplexity": 26
      },
-     "avg": 10.0
-    },
-    {
-     "name": "Paesano's Pizzeria",
-     "town": "Sacramento",
-     "scores": {
-      "chatgpt": 8
-     },
-     "counts": {
-      "chatgpt": 24
-     },
-     "avg": 8.0
+     "avg": 9.5
     },
     {
      "name": "Zelda's Original Gourmet Pizza",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 7
+      "chatgpt": 7,
+      "perplexity": 8
      },
      "counts": {
-      "chatgpt": 20
+      "chatgpt": 20,
+      "perplexity": 25
      },
-     "avg": 7.0
+     "avg": 7.5
+    },
+    {
+     "name": "Pizzasaurus Rex",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 3,
+      "perplexity": 6
+     },
+     "counts": {
+      "chatgpt": 10,
+      "perplexity": 18
+     },
+     "avg": 4.5
     }
    ]
   },
@@ -281,56 +322,66 @@
      "name": "El Novillero",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 10
+      "chatgpt": 10,
+      "perplexity": 10
      },
      "counts": {
-      "chatgpt": 29
+      "chatgpt": 29,
+      "perplexity": 30
      },
      "avg": 10.0
+    },
+    {
+     "name": "Tres Hermanas Mexican Restaurant",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 5,
+      "perplexity": 8
+     },
+     "counts": {
+      "chatgpt": 15,
+      "perplexity": 24
+     },
+     "avg": 6.5
     },
     {
      "name": "Centro Cocina Mexicana",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 7
+      "chatgpt": 7,
+      "perplexity": 6
      },
      "counts": {
-      "chatgpt": 20
+      "chatgpt": 20,
+      "perplexity": 17
      },
-     "avg": 7.0
+     "avg": 6.5
     },
     {
      "name": "Mayahuel",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 7
+      "chatgpt": 7,
+      "perplexity": 3
      },
      "counts": {
-      "chatgpt": 20
+      "chatgpt": 20,
+      "perplexity": 8
      },
-     "avg": 7.0
-    },
-    {
-     "name": "Nopalitos",
-     "town": "Sacramento",
-     "scores": {
-      "chatgpt": 7
-     },
-     "counts": {
-      "chatgpt": 20
-     },
-     "avg": 7.0
+     "avg": 5.0
     },
     {
      "name": "Chando's Tacos",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 5
+      "chatgpt": 5,
+      "perplexity": 4
      },
      "counts": {
-      "chatgpt": 16
+      "chatgpt": 16,
+      "perplexity": 13
      },
-     "avg": 5.0
+     "avg": 4.5
     }
    ]
   },
@@ -347,10 +398,12 @@
      "name": "Gunther's Ice Cream",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 10
+      "chatgpt": 10,
+      "perplexity": 10
      },
      "counts": {
-      "chatgpt": 30
+      "chatgpt": 30,
+      "perplexity": 30
      },
      "avg": 10.0
     },
@@ -358,10 +411,12 @@
      "name": "Rick's Dessert Diner",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 10
+      "chatgpt": 10,
+      "perplexity": 10
      },
      "counts": {
-      "chatgpt": 30
+      "chatgpt": 30,
+      "perplexity": 30
      },
      "avg": 10.0
     },
@@ -369,34 +424,40 @@
      "name": "Ginger Elizabeth Chocolates",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 6
+      "chatgpt": 6,
+      "perplexity": 7
      },
      "counts": {
-      "chatgpt": 18
+      "chatgpt": 18,
+      "perplexity": 22
      },
-     "avg": 6.0
+     "avg": 6.5
     },
     {
-     "name": "Pushkin's Bakery",
+     "name": "Osaka-Ya",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 5
+      "chatgpt": 3,
+      "perplexity": 4
      },
      "counts": {
-      "chatgpt": 15
+      "chatgpt": 10,
+      "perplexity": 11
      },
-     "avg": 5.0
+     "avg": 3.5
     },
     {
-     "name": "Beasley & Sons Bakery",
+     "name": "Real Pie Company",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 3
+      "chatgpt": 1,
+      "perplexity": 6
      },
      "counts": {
-      "chatgpt": 10
+      "chatgpt": 2,
+      "perplexity": 17
      },
-     "avg": 3.0
+     "avg": 3.5
     }
    ]
   },
@@ -410,59 +471,69 @@
    ],
    "top": [
     {
-     "name": "Le Blanc Day Spa",
-     "town": "Sacramento",
-     "scores": {
-      "chatgpt": 7
-     },
-     "counts": {
-      "chatgpt": 20
-     },
-     "avg": 7.0
-    },
-    {
-     "name": "Zen Day Spa",
-     "town": "Sacramento",
-     "scores": {
-      "chatgpt": 4
-     },
-     "counts": {
-      "chatgpt": 13
-     },
-     "avg": 4.0
-    },
-    {
      "name": "Asha Urban Baths",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 3
+      "chatgpt": 3,
+      "perplexity": 7
      },
      "counts": {
-      "chatgpt": 10
+      "chatgpt": 10,
+      "perplexity": 20
      },
-     "avg": 3.0
+     "avg": 5.0
     },
     {
-     "name": "Emperia Wellness & Spa",
+     "name": "Le Blanc Day Spa",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 3
+      "chatgpt": 7,
+      "perplexity": 0
      },
      "counts": {
-      "chatgpt": 10
+      "chatgpt": 20,
+      "perplexity": 0
      },
-     "avg": 3.0
+     "avg": 3.5
     },
     {
-     "name": "Mae's Acupressure Massage & Acupuncture",
+     "name": "Sacramento Massage Studio",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 3
+      "chatgpt": 3,
+      "perplexity": 4
      },
      "counts": {
-      "chatgpt": 10
+      "chatgpt": 8,
+      "perplexity": 12
      },
-     "avg": 3.0
+     "avg": 3.5
+    },
+    {
+     "name": "Oak Park Massage Clinic",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 0,
+      "perplexity": 5
+     },
+     "counts": {
+      "chatgpt": 0,
+      "perplexity": 16
+     },
+     "avg": 2.5
+    },
+    {
+     "name": "All Seasons Day Spa",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 1,
+      "perplexity": 3
+     },
+     "counts": {
+      "chatgpt": 3,
+      "perplexity": 10
+     },
+     "avg": 2.0
     }
    ]
   },
@@ -476,59 +547,69 @@
    ],
    "top": [
     {
+     "name": "Eco Thrift",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 7,
+      "perplexity": 7
+     },
+     "counts": {
+      "chatgpt": 20,
+      "perplexity": 22
+     },
+     "avg": 7.0
+    },
+    {
      "name": "Hidden Gems Thrift Store",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 10
+      "chatgpt": 10,
+      "perplexity": 4
      },
      "counts": {
-      "chatgpt": 30
+      "chatgpt": 30,
+      "perplexity": 11
      },
-     "avg": 10.0
+     "avg": 7.0
     },
     {
      "name": "Upscale Thrift",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 9
+      "chatgpt": 9,
+      "perplexity": 4
      },
      "counts": {
-      "chatgpt": 26
+      "chatgpt": 26,
+      "perplexity": 12
      },
-     "avg": 9.0
-    },
-    {
-     "name": "Eco Thrift",
-     "town": "Sacramento",
-     "scores": {
-      "chatgpt": 7
-     },
-     "counts": {
-      "chatgpt": 20
-     },
-     "avg": 7.0
-    },
-    {
-     "name": "Bargain World Thrift Store",
-     "town": "Sacramento",
-     "scores": {
-      "chatgpt": 5
-     },
-     "counts": {
-      "chatgpt": 15
-     },
-     "avg": 5.0
+     "avg": 6.5
     },
     {
      "name": "Racks Vintage Boutique",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 3
+      "chatgpt": 3,
+      "perplexity": 6
      },
      "counts": {
-      "chatgpt": 10
+      "chatgpt": 10,
+      "perplexity": 17
      },
-     "avg": 3.0
+     "avg": 4.5
+    },
+    {
+     "name": "WEAVE Thrift",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 0,
+      "perplexity": 8
+     },
+     "counts": {
+      "chatgpt": 0,
+      "perplexity": 24
+     },
+     "avg": 4.0
     }
    ]
   },
@@ -542,59 +623,69 @@
    ],
    "top": [
     {
-     "name": "The Snug",
-     "town": "Sacramento",
-     "scores": {
-      "chatgpt": 10
-     },
-     "counts": {
-      "chatgpt": 30
-     },
-     "avg": 10.0
-    },
-    {
      "name": "The Shady Lady Saloon",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 9
+      "chatgpt": 9,
+      "perplexity": 10
      },
      "counts": {
-      "chatgpt": 28
+      "chatgpt": 28,
+      "perplexity": 30
      },
-     "avg": 9.0
+     "avg": 9.5
     },
     {
-     "name": "The Mercantile Saloon",
+     "name": "The Snug",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 9
+      "chatgpt": 10,
+      "perplexity": 9
      },
      "counts": {
-      "chatgpt": 27
+      "chatgpt": 30,
+      "perplexity": 26
      },
-     "avg": 9.0
-    },
-    {
-     "name": "The Jungle Bird",
-     "town": "Sacramento",
-     "scores": {
-      "chatgpt": 8
-     },
-     "counts": {
-      "chatgpt": 24
-     },
-     "avg": 8.0
+     "avg": 9.5
     },
     {
      "name": "The Butterscotch Den",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 7
+      "chatgpt": 7,
+      "perplexity": 7
      },
      "counts": {
-      "chatgpt": 22
+      "chatgpt": 22,
+      "perplexity": 20
      },
      "avg": 7.0
+    },
+    {
+     "name": "The Jungle Bird",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 8,
+      "perplexity": 4
+     },
+     "counts": {
+      "chatgpt": 24,
+      "perplexity": 13
+     },
+     "avg": 6.0
+    },
+    {
+     "name": "The Roost",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 7,
+      "perplexity": 5
+     },
+     "counts": {
+      "chatgpt": 21,
+      "perplexity": 16
+     },
+     "avg": 6.0
     }
    ]
   },
@@ -611,56 +702,66 @@
      "name": "Daisy's Nail Bar",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 10
+      "chatgpt": 10,
+      "perplexity": 0
      },
      "counts": {
-      "chatgpt": 30
+      "chatgpt": 30,
+      "perplexity": 0
      },
-     "avg": 10.0
+     "avg": 5.0
     },
     {
      "name": "House of Nails",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 10
+      "chatgpt": 10,
+      "perplexity": 0
      },
      "counts": {
-      "chatgpt": 30
+      "chatgpt": 30,
+      "perplexity": 0
      },
-     "avg": 10.0
+     "avg": 5.0
+    },
+    {
+     "name": "Lacquered Co",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 2,
+      "perplexity": 8
+     },
+     "counts": {
+      "chatgpt": 5,
+      "perplexity": 23
+     },
+     "avg": 5.0
+    },
+    {
+     "name": "Nature Love Salon",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 3,
+      "perplexity": 7
+     },
+     "counts": {
+      "chatgpt": 8,
+      "perplexity": 20
+     },
+     "avg": 5.0
     },
     {
      "name": "The Nailtel",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 7
+      "chatgpt": 7,
+      "perplexity": 2
      },
      "counts": {
-      "chatgpt": 21
+      "chatgpt": 21,
+      "perplexity": 5
      },
-     "avg": 7.0
-    },
-    {
-     "name": "Nails X Lounge",
-     "town": "Sacramento",
-     "scores": {
-      "chatgpt": 7
-     },
-     "counts": {
-      "chatgpt": 20
-     },
-     "avg": 7.0
-    },
-    {
-     "name": "Blooming Nails Lounge",
-     "town": "Sacramento",
-     "scores": {
-      "chatgpt": 6
-     },
-     "counts": {
-      "chatgpt": 18
-     },
-     "avg": 6.0
+     "avg": 4.5
     }
    ]
   },
@@ -677,54 +778,64 @@
      "name": "A-1 Handwash",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 7
+      "chatgpt": 7,
+      "perplexity": 3
      },
      "counts": {
-      "chatgpt": 20
+      "chatgpt": 20,
+      "perplexity": 10
      },
-     "avg": 7.0
+     "avg": 5.0
     },
     {
      "name": "Royal Wave Car Wash",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 6
+      "chatgpt": 6,
+      "perplexity": 3
      },
      "counts": {
-      "chatgpt": 19
+      "chatgpt": 19,
+      "perplexity": 10
      },
-     "avg": 6.0
-    },
-    {
-     "name": "Scrub Boys Car Wash",
-     "town": "Sacramento",
-     "scores": {
-      "chatgpt": 6
-     },
-     "counts": {
-      "chatgpt": 17
-     },
-     "avg": 6.0
+     "avg": 4.5
     },
     {
      "name": "Cares Car Wash",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 4
+      "chatgpt": 4,
+      "perplexity": 3
      },
      "counts": {
-      "chatgpt": 11
+      "chatgpt": 11,
+      "perplexity": 8
      },
-     "avg": 4.0
+     "avg": 3.5
     },
     {
-     "name": "Drippy Suds Mobile Detailing",
+     "name": "GEM Express Car Wash",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 3
+      "chatgpt": 3,
+      "perplexity": 3
      },
      "counts": {
-      "chatgpt": 10
+      "chatgpt": 10,
+      "perplexity": 10
+     },
+     "avg": 3.0
+    },
+    {
+     "name": "Scrub Boys Car Wash",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 6,
+      "perplexity": 0
+     },
+     "counts": {
+      "chatgpt": 17,
+      "perplexity": 1
      },
      "avg": 3.0
     }
@@ -743,56 +854,66 @@
      "name": "Sacred Barbers",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 10
+      "chatgpt": 10,
+      "perplexity": 8
      },
      "counts": {
-      "chatgpt": 30
+      "chatgpt": 30,
+      "perplexity": 24
      },
-     "avg": 10.0
-    },
-    {
-     "name": "Tapered Barbershop",
-     "town": "Sacramento",
-     "scores": {
-      "chatgpt": 7
-     },
-     "counts": {
-      "chatgpt": 21
-     },
-     "avg": 7.0
-    },
-    {
-     "name": "916 Cuts",
-     "town": "Sacramento",
-     "scores": {
-      "chatgpt": 6
-     },
-     "counts": {
-      "chatgpt": 17
-     },
-     "avg": 6.0
+     "avg": 9.0
     },
     {
      "name": "Anthony's Barbershop",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 3
+      "chatgpt": 3,
+      "perplexity": 6
      },
      "counts": {
-      "chatgpt": 10
+      "chatgpt": 10,
+      "perplexity": 19
      },
-     "avg": 3.0
+     "avg": 4.5
     },
     {
-     "name": "Breezy's Barbershop",
+     "name": "Barber Blues",
      "town": "Sacramento",
      "scores": {
-      "chatgpt": 3
+      "chatgpt": 3,
+      "perplexity": 6
      },
      "counts": {
-      "chatgpt": 10
+      "chatgpt": 9,
+      "perplexity": 19
      },
-     "avg": 3.0
+     "avg": 4.5
+    },
+    {
+     "name": "Butch & Screwball Barbers",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 0,
+      "perplexity": 9
+     },
+     "counts": {
+      "chatgpt": 0,
+      "perplexity": 28
+     },
+     "avg": 4.5
+    },
+    {
+     "name": "Hot Rods Chop Shop",
+     "town": "Sacramento",
+     "scores": {
+      "chatgpt": 3,
+      "perplexity": 6
+     },
+     "counts": {
+      "chatgpt": 9,
+      "perplexity": 18
+     },
+     "avg": 4.5
     }
    ]
   }

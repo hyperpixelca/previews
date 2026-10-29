@@ -7,8 +7,5 @@ nav a.btn{cursor:pointer}
 .pv-menu a.cta{margin-top:18px;border:0;background:#B23A2C;color:#F0ECE1;font-size:20px;text-align:center;padding:16px}
 .pv-menu .x{align-self:flex-end;font:700 30px 'SM',monospace;cursor:pointer;margin-bottom:12px}
 
-.pv-menu a.ai{position:relative;margin-top:16px;border:0;background:#161616;color:#F0ECE1;border-left:6px solid #B23A2C;padding:16px 52px 18px 18px;font-size:28px;line-height:1.08}
-.pv-menu a.ai .tag{display:inline-block;font:700 11px 'SM',monospace;letter-spacing:.14em;text-transform:uppercase;background:#B23A2C;color:#F0ECE1;padding:4px 8px;margin-bottom:10px}
-.pv-menu a.ai .t{display:block}
-.pv-menu a.ai .ar{position:absolute;right:18px;bottom:16px;font-size:28px;color:#B23A2C}
-.pv-menu a.ai+a.cta{margin-top:10px}
+.pv-menu a.ai{font-size:34px;line-height:1.12}
+.pv-menu a.ai .t{text-decoration:underline;text-decoration-color:#E5A329;text-decoration-thickness:4px;text-underline-offset:6px;text-decoration-skip-ink:none}

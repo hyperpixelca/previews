@@ -137,9 +137,13 @@
  .fcol .thanks{border-top-width:4px;color:var(--ink)}
  .lead{display:none}
  #pform{display:none;margin-top:6px;border-top:1px solid #333;padding-top:20px}
- .panel.form #pform{display:block}.panel.form #tolead{display:none}.panel.form .alt{display:none}
+
  .panel.form.open{max-height:92vh}
  .panel:not(.open) #pform{display:none!important}
+ .panel.open #pform{display:block}
+ #pform .lf .row{display:none}
+ .panel.sent #tolead,.panel.sent .alt{display:none}
+ #pform .pnote{font-family:'SM';font-size:12px;color:#B8B4AA;margin:14px 0 0}
  .pfl{margin-bottom:16px;color:var(--mustard)!important}
  .panel .thanks .lab{color:var(--slate)}
  #pform .fcol{background:none;padding:0;border:0}
@@ -166,7 +170,7 @@
 <div class="sec"><div class="cr"><div class="lab">Included each month</div><b id="cnt"></b></div><div class="meter"><div class="seg"></div><div class="seg"></div><div class="seg"></div><div class="seg"></div><div class="seg"></div><div class="seg"></div><div class="seg"></div></div><ul class="inc" id="inc"></ul></div>
 <div class="sec pb"><div class="tname" id="tname"></div><div class="price"><span id="tprice"></span><small>/mo</small></div><div style="margin-top:10px"><span class="prop inv">Proposed</span></div><div class="ln" id="tline"></div><div class="adn" id="adn">Ad spend is billed separately.</div></div>
 <div class="tip" id="tip"><span id="tiptx"></span><a class="tadd" id="tadd"></a></div>
-<a class="btn" href="#lead" id="tolead">Send us this mix</a><a class="alt" href="contact.html">Or book a call</a><div id="pform"><div class="lab pfl">03 &nbsp;Send us your mix</div></div>
+<a class="btn" href="#lead" id="tolead">Send us this mix</a><a class="alt" href="contact.html">Or book a call</a><div id="pform"><div class="lab pfl">Your details</div></div>
 <div class="onb pb">Onboarding fee $500. A 1-year agreement gets our best offer, with a 6-month option <span class="prop inv">Proposed</span></div>
 </div></aside></div>
 </section><section class="lead" id="lead"><div><div class="lab" style="color:var(--red)">03 &nbsp;Send us your mix</div><h2>Like what you built<span class="sq"></span></h2><p class="ld">Send it over with a few details about your business. We'll reach out to talk it through.</p>
@@ -237,10 +241,10 @@ goal=h.get('goal'); const pre=(h.get('on')||'').split(',');
 opts.forEach(o=>{if(pre.includes(o.dataset.k))o.classList.add('on')});
 if(h.has('open'))$('panel').classList.add('open');
 const mq=matchMedia('(max-width:760px)');
-$('panel').appendChild($('pform'));
+$('panel').insertBefore($('pform'),$('tolead'));
 function placeForm(){const fc=document.querySelector('.fcol');if(mq.matches){$('pform').appendChild(fc)}else{document.querySelector('.lead').appendChild(fc)}}
 placeForm();mq.addEventListener('change',placeForm);
-$('tolead').onclick=e=>{if(mq.matches){e.preventDefault();const P=$('panel');P.classList.add('open','form');setTimeout(()=>$('pform').scrollIntoView({behavior:'smooth',block:'start'}),60)}};
+$('tolead').onclick=e=>{if(mq.matches){e.preventDefault();$('lf').requestSubmit()}};
 
 $('lf').addEventListener('submit',e=>{e.preventDefault();const f=e.target;const bad=[...f.querySelectorAll('[required]')].filter(i=>!i.value.trim()||(i.type==='email'&&!/.+@.+\..+/.test(i.value)));f.querySelectorAll('input').forEach(i=>i.style.borderBottomColor='');if(bad.length){bad.forEach(i=>i.style.borderBottomColor='var(--red)');bad[0].focus();return}const n=$('f_name').value.trim().split(' ')[0];$('tyname').textContent=n?', '+n:'';$('lead').classList.add('sent');$('panel').classList.add('sent');if(mq.matches){$('thanks').scrollIntoView({behavior:'smooth',block:'start'})}else{$('lead').scrollIntoView({behavior:'smooth'})}});
 render();

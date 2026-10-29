@@ -4,7 +4,7 @@
  if(p==='home-mobile.html'&&!m){location.replace('index.html');return;}
  document.addEventListener('DOMContentLoaded',function(){
   var d=document.createElement('div');d.className='pv-menu';
-  d.innerHTML='<div class="x">X</div><a href="index.html#services">Services</a><a href="plans-builder.html">Plans</a><a href="how-we-work.html">How we work</a><a href="about.html">About</a><a href="ai-knows.html">Free AI Check</a><a class="cta" href="contact.html">Book a call</a>';
+  d.innerHTML='<div class="x">X</div><a href="index.html#services">Services</a><a href="plans-builder.html">Plans</a><a href="how-we-work.html">How we work</a><a href="about.html">About</a><a class="ai" href="ai-knows.html"><span class="tag">Free tool</span><span class="t">Does AI know your business?</span><span class="ar">&rarr;</span></a><a class="cta" href="contact.html">Book a call</a>';
   document.body.appendChild(d);
   d.querySelector('.x').onclick=function(){d.classList.remove('open')};
   document.querySelectorAll('.burger').forEach(function(b){b.onclick=function(){d.classList.add('open')}});

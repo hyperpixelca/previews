@@ -35,6 +35,7 @@
 .rk{font-family:'SM';font-size:15px;color:var(--red);font-weight:700}
 .nm{font-size:22px;font-weight:700;letter-spacing:-.02em;line-height:1.15}
 .nm small{display:block;font-family:'SM';font-size:11.5px;font-weight:400;letter-spacing:.06em;color:var(--slate);margin-top:5px}
+.visit{display:inline-block;margin:10px 0 2px;font-family:'SM';font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--slate);text-decoration:none;border-bottom:1.5px solid transparent;padding-bottom:1px}.visit:hover,.visit:focus-visible{color:var(--ink);border-bottom-color:var(--mustard)}
 .cl{display:inline-block;font-family:'SM';font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;border:1.5px solid var(--ink);padding:1px 6px;margin-left:8px;vertical-align:middle}
 .sc{font-size:15px;line-height:1.3;text-align:right}.sc b{font-size:30px;letter-spacing:-.04em;font-weight:800;margin-right:4px}
 .pl{font-family:'SM';font-size:20px;text-align:center;transition:transform .15s}
@@ -234,6 +235,7 @@ var NEW=['Pizza','Plumbers'];
 var A=['Carmichael','East Sac','Natomas','Midtown','Folsom','Roseville','Elk Grove'];
 var P=[[9,9,8],[8,8,7],[7,7,6],[6,5,6],[5,5,4]];
 var T=['ChatGPT','Perplexity','Gemini'],K=['chatgpt','perplexity','gemini'];
+function utm(u){if(!u)return '';try{var x=new URL(/^https?:\/\//i.test(u)?u:'https://'+u);x.searchParams.set('utm_source','hyperpixelca.com');x.searchParams.set('utm_medium','referral');x.searchParams.set('utm_campaign','ai-leaderboard');return x.href}catch(_){return ''}}
 function esc(x){return String(x).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 var D=Object.keys(Q).map(function(c,ci){return {name:c,'new':NEW.indexOf(c)>-1,questions:Q[c],top:P.map(function(p,i){return {name:'Example '+S[c]+' '+String.fromCharCode(65+i),town:A[(i+ci)%A.length],sc:p,client:(i==0&&ci==1),ex:true}})}}),REAL=false,PART=false;
 var tabs=document.getElementById('tabs'),rows=document.getElementById('rows'),ql=document.getElementById('ql');
@@ -243,6 +245,7 @@ function draw(ci){
  c.top.forEach(function(e,i){var p=e.sc,pv=p.filter(function(v){return v!=null}),avg=(e.avg!=null?Math.round(e.avg):(pv.length?Math.round(pv.reduce(function(a,b){return a+b},0)/pv.length):0));
   h+='<div class="r"><button class="rb" type="button"><span class="rk">0'+(i+1)+'</span><span class="nm">'+esc(e.name)+(e.client?'<span class="cl">Hyper Pixel client</span>':'')+'<small>'+esc(e.town).toUpperCase()+(e.ex?' / EXAMPLE DATA':'')+'</small></span><span class="sc"><b>'+avg+'</b>of 10 AI answers</span><span class="pl">+</span></button><div class="det">';
   T.forEach(function(n,k){var v=p[k];h+=(v==null)?'<div class="tool pd"><span>'+n+'</span><span class="pt">Pending - run in progress</span><span class="n"></span></div>':'<div class="tool"><span>'+n+'</span><div class="bar"><i style="width:'+v*10+'%"></i></div><span class="n">'+v+'/10</span></div>'});
+  var vu=utm(e.url);if(vu)h+='<a class="visit" href="'+esc(vu)+'" target="_blank" rel="noopener">Visit website <span aria-hidden="true">&#8599;</span></a>';
   h+='</div></div>'});
  rows.innerHTML=h;
  rows.querySelectorAll('.rb').forEach(function(b){b.onclick=function(){b.parentNode.classList.toggle('open')}});
@@ -258,7 +261,7 @@ build();
 fetch('ai-results.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(j){
  if(!j||!j.categories||!j.categories.length)return;
  var TL=(j.tools&&j.tools.length)?j.tools:K;
- D=j.categories.map(function(c){return {name:c.name,'new':!!c['new'],questions:c.questions||[],top:(c.top||[]).slice(0,5).map(function(e){return {name:e.name,town:e.town||'',sc:K.map(function(k){return (TL.indexOf(k)>-1&&e.scores&&typeof e.scores[k]==='number')?e.scores[k]:null}),client:!!e.client,ex:false,avg:(typeof e.avg==='number'?e.avg:null)}})}});
+ D=j.categories.map(function(c){return {name:c.name,'new':!!c['new'],questions:c.questions||[],top:(c.top||[]).slice(0,5).map(function(e){return {name:e.name,town:e.town||'',sc:K.map(function(k){return (TL.indexOf(k)>-1&&e.scores&&typeof e.scores[k]==='number')?e.scores[k]:null}),client:!!e.client,ex:false,url:e.url||e.website||'',avg:(typeof e.avg==='number'?e.avg:null)}})}});
  REAL=true;PART=TL.length<K.length;
  var lg=document.querySelector('.review .long');if(lg)lg.textContent='Internal mockup for Hyper Pixel. Not live. Board shows real AI check results. The What you get section is example data.';
  var d=new Date((j.asOf||'')+'T12:00:00'),M=['January','February','March','April','May','June','July','August','September','October','November','December'];

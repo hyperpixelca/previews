@@ -28,7 +28,8 @@
       "gemini": 30,
       "perplexity": 20
      },
-     "avg": 8.7
+     "avg": 8.7,
+     "url": "https://localissacramento.com"
     },
     {
      "name": "Kru",
@@ -43,7 +44,8 @@
       "gemini": 24,
       "perplexity": 30
      },
-     "avg": 8.3
+     "avg": 8.3,
+     "url": "https://www.krurestaurant.com"
     },
     {
      "name": "Frank Fat’s",
@@ -58,7 +60,8 @@
       "gemini": 25,
       "perplexity": 27
      },
-     "avg": 6.0
+     "avg": 6.0,
+     "url": "https://frankfats.com"
     },
     {
      "name": "Ella Dining Room & Bar",
@@ -73,7 +76,8 @@
       "gemini": 22,
       "perplexity": 14
      },
-     "avg": 5.7
+     "avg": 5.7,
+     "url": "https://elladiningroomandbar.com"
     },
     {
      "name": "Bacon & Butter",
@@ -88,7 +92,8 @@
       "gemini": 16,
       "perplexity": 20
      },
-     "avg": 5.3
+     "avg": 5.3,
+     "url": "https://baconandbuttersac.com"
     }
    ]
   },
@@ -114,7 +119,8 @@
       "gemini": 30,
       "perplexity": 27
      },
-     "avg": 9.7
+     "avg": 9.7,
+     "url": "https://camelliacoffeeroasters.com"
     },
     {
      "name": "Temple Coffee Roasters",
@@ -129,7 +135,8 @@
       "gemini": 30,
       "perplexity": 25
      },
-     "avg": 8.3
+     "avg": 8.3,
+     "url": "https://templecoffee.com"
     },
     {
      "name": "Old Soul Co.",
@@ -144,7 +151,8 @@
       "gemini": 23,
       "perplexity": 20
      },
-     "avg": 8.3
+     "avg": 8.3,
+     "url": "https://oldsoulco.com"
     },
     {
      "name": "Milka Coffee Roasters",
@@ -159,7 +167,8 @@
       "gemini": 30,
       "perplexity": 10
      },
-     "avg": 6.7
+     "avg": 6.7,
+     "url": "https://www.milkacoffee.com"
     },
     {
      "name": "Pachamama Coffee",
@@ -174,7 +183,8 @@
       "gemini": 30,
       "perplexity": 19
      },
-     "avg": 6.7
+     "avg": 6.7,
+     "url": "https://pachamamacoffee.com"
     }
    ]
   },
@@ -200,7 +210,8 @@
       "gemini": 30,
       "perplexity": 29
      },
-     "avg": 10.0
+     "avg": 10.0,
+     "url": "https://baconandbuttersac.com"
     },
     {
      "name": "The Morning Fork",
@@ -215,7 +226,8 @@
       "gemini": 30,
       "perplexity": 19
      },
-     "avg": 8.7
+     "avg": 8.7,
+     "url": "https://www.themorningfork.com"
     },
     {
      "name": "Fox & Goose Public House",
@@ -230,7 +242,8 @@
       "gemini": 30,
       "perplexity": 20
      },
-     "avg": 8.0
+     "avg": 8.0,
+     "url": "https://foxandgoose.com"
     },
     {
      "name": "Tower Cafe",
@@ -245,7 +258,8 @@
       "gemini": 30,
       "perplexity": 20
      },
-     "avg": 8.0
+     "avg": 8.0,
+     "url": "https://www.towercafe.com"
     },
     {
      "name": "Orphan Breakfast House",
@@ -260,7 +274,8 @@
       "gemini": 28,
       "perplexity": 20
      },
-     "avg": 7.7
+     "avg": 7.7,
+     "url": "https://www.orphanbreakfast.com"
     }
    ]
   },
@@ -286,7 +301,8 @@
       "gemini": 30,
       "perplexity": 30
      },
-     "avg": 10.0
+     "avg": 10.0,
+     "url": "https://www.masullopizza.com"
     },
     {
      "name": "Giovanni's Old World New York Pizzeria",
@@ -301,7 +317,8 @@
       "gemini": 29,
       "perplexity": 30
      },
-     "avg": 10.0
+     "avg": 10.0,
+     "url": "https://www.giovannisnypizzeria.com"
     },
     {
      "name": "OneSpeed Pizza",
@@ -316,7 +333,8 @@
       "gemini": 30,
       "perplexity": 26
      },
-     "avg": 9.7
+     "avg": 9.7,
+     "url": "https://www.onespeedpizza.com"
     },
     {
      "name": "Zelda's Original Gourmet Pizza",
@@ -331,7 +349,8 @@
       "gemini": 17,
       "perplexity": 25
      },
-     "avg": 7.0
+     "avg": 7.0,
+     "url": "https://www.zeldasgourmetpizza.com"
     },
     {
      "name": "Pizzasaurus Rex",
@@ -346,7 +365,8 @@
       "gemini": 26,
       "perplexity": 18
      },
-     "avg": 6.0
+     "avg": 6.0,
+     "url": "https://www.eatpizzasaurusrex.com"
     }
    ]
   },
@@ -372,7 +392,8 @@
       "gemini": 19,
       "perplexity": 30
      },
-     "avg": 8.7
+     "avg": 8.7,
+     "url": "https://www.elnov.com"
     },
     {
      "name": "Tres Hermanas Mexican Restaurant",
@@ -402,7 +423,8 @@
       "gemini": 17,
       "perplexity": 8
      },
-     "avg": 5.3
+     "avg": 5.3,
+     "url": "https://experiencemayahuel.com"
     },
     {
      "name": "Chando's Tacos",
@@ -417,7 +439,8 @@
       "gemini": 16,
       "perplexity": 13
      },
-     "avg": 4.7
+     "avg": 4.7,
+     "url": "https://chandostacos.com"
     },
     {
      "name": "Lalo's Restaurant",
@@ -458,7 +481,8 @@
       "gemini": 30,
       "perplexity": 30
      },
-     "avg": 10.0
+     "avg": 10.0,
+     "url": "https://gunthersicecream.com"
     },
     {
      "name": "Rick's Dessert Diner",
@@ -473,7 +497,8 @@
       "gemini": 30,
       "perplexity": 30
      },
-     "avg": 10.0
+     "avg": 10.0,
+     "url": "https://www.ricksdessertdiner.com"
     },
     {
      "name": "Ginger Elizabeth Chocolates",
@@ -488,7 +513,8 @@
       "gemini": 27,
       "perplexity": 22
      },
-     "avg": 7.3
+     "avg": 7.3,
+     "url": "https://gingerelizabeth.com"
     },
     {
      "name": "Vic's Ice Cream",
@@ -503,7 +529,8 @@
       "gemini": 20,
       "perplexity": 10
      },
-     "avg": 4.0
+     "avg": 4.0,
+     "url": "https://www.vicsicecream.com"
     },
     {
      "name": "Babes Ice Cream & Donuts",
@@ -518,7 +545,8 @@
       "gemini": 17,
       "perplexity": 16
      },
-     "avg": 3.7
+     "avg": 3.7,
+     "url": "https://babesicecreamdonuts.com"
     }
    ]
   },
@@ -544,7 +572,8 @@
       "gemini": 30,
       "perplexity": 20
      },
-     "avg": 6.7
+     "avg": 6.7,
+     "url": "https://ashaurbanbaths.com"
     },
     {
      "name": "Sacramento Massage Studio",
@@ -559,7 +588,8 @@
       "gemini": 20,
       "perplexity": 12
      },
-     "avg": 4.7
+     "avg": 4.7,
+     "url": "https://sacramentomassagestudio.com"
     },
     {
      "name": "Spa La Lé",
@@ -574,7 +604,8 @@
       "gemini": 23,
       "perplexity": 0
      },
-     "avg": 3.3
+     "avg": 3.3,
+     "url": "https://www.spalale.com"
     },
     {
      "name": "Le Blanc Day Spa",
@@ -589,7 +620,8 @@
       "gemini": 5,
       "perplexity": 0
      },
-     "avg": 3.0
+     "avg": 3.0,
+     "url": "https://leblancdayspa.com"
     },
     {
      "name": "Arden Hills Resort Club & Spa",
@@ -604,7 +636,8 @@
       "gemini": 9,
       "perplexity": 10
      },
-     "avg": 2.0
+     "avg": 2.0,
+     "url": "https://ardenhills.club"
     }
    ]
   },
@@ -630,7 +663,8 @@
       "gemini": 26,
       "perplexity": 22
      },
-     "avg": 7.7
+     "avg": 7.7,
+     "url": "https://ecothrift.com/sacramento/"
     },
     {
      "name": "Upscale Thrift",
@@ -660,7 +694,8 @@
       "gemini": 29,
       "perplexity": 24
      },
-     "avg": 6.0
+     "avg": 6.0,
+     "url": "https://www.weaveinc.org/weave-thrift"
     },
     {
      "name": "FreeStyle Clothing Exchange",
@@ -675,7 +710,8 @@
       "gemini": 30,
       "perplexity": 12
      },
-     "avg": 4.7
+     "avg": 4.7,
+     "url": "https://www.freestyleclothing.com/locations"
     },
     {
      "name": "Hidden Gems Thrift Store",
@@ -731,7 +767,8 @@
       "gemini": 28,
       "perplexity": 30
      },
-     "avg": 9.3
+     "avg": 9.3,
+     "url": "https://www.shadyladybar.com"
     },
     {
      "name": "The Butterscotch Den",
@@ -746,7 +783,8 @@
       "gemini": 28,
       "perplexity": 20
      },
-     "avg": 7.7
+     "avg": 7.7,
+     "url": "https://www.thebutterscotchden.com"
     },
     {
      "name": "The Jungle Bird",
@@ -761,7 +799,8 @@
       "gemini": 30,
       "perplexity": 13
      },
-     "avg": 7.3
+     "avg": 7.3,
+     "url": "https://thejunglebird.com"
     },
     {
      "name": "The Roost",
@@ -776,7 +815,8 @@
       "gemini": 15,
       "perplexity": 16
      },
-     "avg": 5.7
+     "avg": 5.7,
+     "url": "https://www.theroost916.com"
     }
    ]
   },
@@ -802,7 +842,8 @@
       "gemini": 30,
       "perplexity": 20
      },
-     "avg": 6.7
+     "avg": 6.7,
+     "url": "https://naturelovesalon.com"
     },
     {
      "name": "The Nailtel",
@@ -817,7 +858,8 @@
       "gemini": 27,
       "perplexity": 5
      },
-     "avg": 6.0
+     "avg": 6.0,
+     "url": "https://www.thenailtel.com"
     },
     {
      "name": "Lacquered Co",
@@ -832,7 +874,8 @@
       "gemini": 13,
       "perplexity": 23
      },
-     "avg": 4.7
+     "avg": 4.7,
+     "url": "https://www.lacquerednailsalon.com"
     },
     {
      "name": "Nails X Lounge",
@@ -847,7 +890,8 @@
       "gemini": 13,
       "perplexity": 0
      },
-     "avg": 3.7
+     "avg": 3.7,
+     "url": "https://nailsxlounge.com"
     },
     {
      "name": "Monet Nails & Spa",
@@ -888,7 +932,8 @@
       "gemini": 21,
       "perplexity": 10
      },
-     "avg": 5.3
+     "avg": 5.3,
+     "url": "https://www.royalwavecarwash.com"
     },
     {
      "name": "Scrub Boys Car Wash",
@@ -903,7 +948,8 @@
       "gemini": 29,
       "perplexity": 1
      },
-     "avg": 5.3
+     "avg": 5.3,
+     "url": "https://scrubboys.com"
     },
     {
      "name": "A-1 Handwash",
@@ -918,7 +964,8 @@
       "gemini": 10,
       "perplexity": 10
      },
-     "avg": 4.3
+     "avg": 4.3,
+     "url": "https://a1handcarwash.com"
     },
     {
      "name": "Pavilion Car Care",
@@ -933,7 +980,8 @@
       "gemini": 30,
       "perplexity": 10
      },
-     "avg": 4.3
+     "avg": 4.3,
+     "url": "https://pavilioncarcare.com"
     },
     {
      "name": "Orbit Wash",
@@ -948,7 +996,8 @@
       "gemini": 15,
       "perplexity": 5
      },
-     "avg": 3.3
+     "avg": 3.3,
+     "url": "https://orbitwash.com"
     }
    ]
   },
@@ -974,7 +1023,8 @@
       "gemini": 25,
       "perplexity": 24
      },
-     "avg": 8.7
+     "avg": 8.7,
+     "url": "https://sacredbarbers.com"
     },
     {
      "name": "Anthony's Barbershop",
@@ -989,7 +1039,8 @@
       "gemini": 29,
       "perplexity": 19
      },
-     "avg": 6.3
+     "avg": 6.3,
+     "url": "https://sacramentobarbershop.com"
     },
     {
      "name": "Barber Blues",
@@ -1004,7 +1055,8 @@
       "gemini": 29,
       "perplexity": 19
      },
-     "avg": 6.3
+     "avg": 6.3,
+     "url": "https://www.barberblues.net"
     },
     {
      "name": "Butch & Screwball Barbers",
@@ -1019,7 +1071,8 @@
       "gemini": 11,
       "perplexity": 28
      },
-     "avg": 4.3
+     "avg": 4.3,
+     "url": "https://bsbarbers.com"
     },
     {
      "name": "Hot Rods Chop Shop",
@@ -1034,7 +1087,8 @@
       "gemini": 10,
       "perplexity": 18
      },
-     "avg": 4.0
+     "avg": 4.0,
+     "url": "https://hotrodschopshop.com"
     }
    ]
   }

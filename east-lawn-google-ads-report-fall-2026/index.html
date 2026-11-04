@@ -359,7 +359,7 @@ function drawSplit(){
 
 /* Taps stacked bars (CSS) */
 function drawTaps(){
- var b=[["East Sacramento (\u20262000)",[14,11,14],39],["Sierra Hills / Greenback (\u20262020)",[6,15,9],30],["Elk Grove (\u20262031)",[6,8,9],23],["South Sacramento (\u20262026)",[5,3,1],9]];
+ var b=[["East Sacramento (\u20262000)",[14,11,14],39],["Sierra Hills / Greenback (\u20262020)",[6,15,9],30],["Elk Grove (\u20262031)",[6,8,9],23],["South Sacramento (\u20262026)",[5,3,1],9],["Other numbers on the site",[5,0,3],8]];
  var cols=[["#384920","#fff",1],["#5A762B","#fff",.6],["#E8CA64","#2c2a29",1]],names=["Google Ads","Google search (free)","Other"],max=39;
  document.getElementById("tapBars").innerHTML=b.map(function(x){
   return '<div class="sbar"><div class="row"><span>'+x[0]+'</span><span>'+x[2]+'</span></div><div class="track" style="width:'+(x[2]/max*100).toFixed(1)+'%">'+x[1].map(function(v,j){return '<div class="seg" title="'+names[j]+': '+v+'" style="width:'+(v/x[2]*100).toFixed(2)+'%;background:'+(j===1?'rgba(90,118,43,.6)':cols[j][0])+';color:'+cols[j][1]+'">'+v+'</div>'}).join("")+'</div></div>'}).join("");

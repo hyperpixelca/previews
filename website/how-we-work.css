@@ -1,0 +1,12 @@
+.hero h1{font-size:clamp(52px,6.7vw,96px)}
+.split{align-items:start;grid-template-columns:1fr 1.25fr;gap:64px}
+.roles-intro .big{margin:22px 0 28px}.roles-intro p{font-size:21px}.roles-intro .note{font-size:12px}
+.service-roles{border-top:2px solid var(--ink);min-width:0}.role{border-bottom:1.5px solid var(--rule)}
+.role summary{display:flex;align-items:baseline;gap:18px;padding:24px 0;font-size:25px;font-weight:700;letter-spacing:-.02em;cursor:pointer;list-style:none}
+.role summary::-webkit-details-marker,.q summary::-webkit-details-marker{display:none}.role summary::after{content:'+';color:var(--red);margin-left:auto;font-family:'SM';font-weight:400}
+.role[open] summary::after{content:'−'}.role-number{font-family:'SM';font-size:12px;font-weight:400;color:var(--red)}
+.role-body{padding:0 0 26px 34px;display:grid;gap:20px}.role-body h3{font-family:'SM';font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--slate);margin-bottom:8px}.role-body p{font-size:19px;line-height:1.5}
+.q summary{cursor:pointer;list-style:none}.q h3{display:flex}.q h3::after{content:'+'}.q[open] h3::after{content:'−'}.q summary:focus-visible,.role summary:focus-visible{outline:3px solid var(--red);outline-offset:5px}
+.next-step p{font-size:23px;line-height:1.5}.next-step .btn{margin-top:28px;background:var(--paper);color:var(--ink)}.next-step .contact-preview-note{font-size:14px;line-height:1.5;margin-top:24px;max-width:400px}
+@media(min-width:761px) and (max-width:1100px){.hero,.sec,.contact{padding-left:40px;padding-right:40px}.hero{grid-template-columns:1fr 1fr;gap:32px}.hero .lede{font-size:21px}.stepx{grid-template-columns:64px .8fr 1.2fr;gap:24px}.stepx h3{font-size:44px}.split{gap:40px;grid-template-columns:1fr 1.2fr}.faq{gap:36px}}
+@media(max-width:760px){.hero h1{font-size:48px}.split{grid-template-columns:1fr;gap:32px}.roles-intro .big{margin:18px 0 20px}.roles-intro p{font-size:18px}.role summary{font-size:21px;gap:14px;padding:22px 0}.role-body{padding-left:28px}.role-body p{font-size:17px}.next-step p{font-size:19px}.q h3{font-size:20px}}

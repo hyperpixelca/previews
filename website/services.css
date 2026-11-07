@@ -1,0 +1,49 @@
+/* Pixel Atom / Editorial Swiss. REVIEW. Scoped to Services. */
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+.service-hero{padding:88px 72px 68px}
+.hero-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:64px;align-items:end}
+.hero-grid h1{font-size:clamp(58px,7.2vw,104px);line-height:.97;letter-spacing:-.045em;font-weight:800}
+.hero-copy .serif{font-size:30px;line-height:1.2;margin-bottom:18px}
+.hero-copy>p:not(.serif):not(.micro){font-size:21px;line-height:1.45;max-width:470px}
+.hero-copy .btn{margin-top:28px}
+.micro{font-family:'SM';font-size:11px;line-height:1.65;color:var(--slate);margin-top:16px;max-width:360px}
+.service-index{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);margin:0 72px 36px}
+.service-index a{padding:20px 10px 20px 0;font-size:17px;font-weight:650;border-bottom:1px solid var(--rule);display:flex;gap:12px;align-items:baseline}
+.service-index span{font:11px 'SM';color:var(--red)}
+.service-index a:hover,.text-link:hover{color:var(--red)}
+.services-list{padding:0 72px}
+.service{padding:48px 0 64px;border-bottom:2px solid var(--ink);scroll-margin-top:20px}
+.service-top{display:grid;grid-template-columns:84px minmax(0,1fr) 150px;gap:24px;align-items:start;margin-bottom:32px}
+.number{font:12px 'SM';color:var(--red);padding-top:14px;border-top:5px solid var(--red)}
+.service-title h2{font-size:clamp(34px,4.2vw,60px);line-height:1;letter-spacing:-.035em}
+.service-title>p{font-size:20px;line-height:1.4;max-width:650px;margin-top:14px}
+.service-rate{text-align:right;padding-top:4px}
+.service-rate b{display:block;font-size:36px;letter-spacing:-.035em;line-height:1.1;margin-bottom:10px}
+.service-rate small{font-size:16px;letter-spacing:0;font-weight:500}
+.service-body{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:48px;align-items:stretch}
+.work-slot{min-height:370px;display:flex;flex-direction:column;justify-content:space-between;border:1.5px solid var(--slate);background:var(--paper2);padding:20px}
+.slot-head{display:flex;justify-content:space-between;gap:12px;font:10px/1.5 'SM';text-transform:uppercase;letter-spacing:.06em;color:var(--slate)}
+.slot-center{padding:30px 24px;max-width:360px}
+.slot-mark{display:block;width:22px;height:22px;border:2px solid var(--slate);margin-bottom:22px}
+.slot-center strong{font-size:28px;line-height:1.1;letter-spacing:-.02em;display:block;font-weight:650}
+.slot-center p{font-size:16px;line-height:1.45;color:var(--slate);margin-top:12px}
+.work-slot figcaption{font:10px/1.5 'SM';letter-spacing:.04em;border-top:1px solid var(--rule);padding-top:12px;color:var(--slate)}
+.service-detail{display:flex;flex-direction:column;padding:4px 0;min-width:0}
+.scope-label{font:11px 'SM';letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:16px}
+.scope{font-size:23px;line-height:1.45;letter-spacing:-.01em}
+.scope-note{font-size:16px;line-height:1.5;color:var(--slate);margin-top:18px;margin-bottom:24px}
+details{border-top:1.5px solid var(--rule);border-bottom:1.5px solid var(--rule);margin-top:auto}
+summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;cursor:pointer;padding:18px 0;font-size:17px;font-weight:650}
+summary::-webkit-details-marker{display:none}summary:after{content:'+';font:22px 'SM';color:var(--red)}details[open] summary:after{content:'−'}
+.responsibilities{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding:4px 0 24px}
+.responsibilities h3{font:11px 'SM';text-transform:uppercase;color:var(--slate);margin-bottom:10px}.responsibilities p{font-size:16px;line-height:1.45}
+.service-link{display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:17px;font-weight:700;margin-top:24px;padding-bottom:10px;border-bottom:2px solid var(--ink)}
+.service-link span{font:26px 'SM';color:var(--red)}
+.services-close{padding:72px;display:grid;grid-template-columns:1.35fr 1fr;gap:64px;align-items:center;background:var(--paper2);margin-top:64px}
+.services-close h2{font-size:64px;line-height:1;letter-spacing:-.035em;margin-bottom:20px}
+.services-close>div>p:not(.micro){font-size:21px;line-height:1.45;max-width:600px}
+.close-actions{display:flex;flex-direction:column;align-items:flex-start}.text-link{font-size:17px;font-weight:600;margin-top:22px;border-bottom:1px solid var(--ink);padding-bottom:4px}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--red);outline-offset:5px}
+@media(min-width:761px) and (max-width:1100px){.service-hero{padding:60px 40px}.hero-grid{gap:32px}.hero-grid h1{font-size:64px}.hero-copy .serif{font-size:26px}.hero-copy>p:not(.serif):not(.micro){font-size:19px}.service-index{margin-left:40px;margin-right:40px;grid-template-columns:repeat(3,minmax(0,1fr))}.services-list{padding:0 40px}.service-body{gap:28px}.service-top{grid-template-columns:66px minmax(0,1fr) 125px;gap:20px}.scope{font-size:21px}.services-close{padding:56px 40px;gap:32px}.services-close h2{font-size:48px}}
+@media(max-width:760px){html{scroll-padding-top:12px}.service-hero{padding:44px 20px 36px}.hero-grid{grid-template-columns:1fr;gap:28px}.hero-grid h1{font-size:clamp(46px,12.5vw,70px)}.hero-copy .serif{font-size:26px;margin-bottom:14px}.hero-copy>p:not(.serif):not(.micro){font-size:18px}.hero-copy .btn{margin-top:22px}.service-index{margin:0 20px 12px;grid-template-columns:1fr 1fr}.service-index a{font-size:15px;padding:15px 8px 15px 0;gap:9px}.service-index span{font-size:10px}.services-list{padding:0 20px}.service{padding:36px 0 40px}.service-top{grid-template-columns:1fr auto;gap:18px 12px;margin-bottom:24px}.number{grid-column:1/-1;width:64px;padding-top:10px}.service-title h2{font-size:36px}.service-title>p{font-size:17px;margin-top:12px}.service-rate b{font-size:27px}.service-rate small{font-size:13px}.service-rate .prop{font-size:9px;padding:2px 4px}.service-body{grid-template-columns:1fr;gap:28px}.work-slot{min-height:290px;padding:16px}.slot-center{padding:28px 14px;max-width:330px}.slot-center strong{font-size:27px}.slot-head{font-size:9px}.scope{font-size:20px}.scope-note{font-size:16px}.responsibilities{grid-template-columns:1fr;gap:20px}.service-link{font-size:16px}.services-close{margin-top:40px;padding:44px 20px;grid-template-columns:1fr;gap:28px}.services-close h2{font-size:43px}.services-close>div>p:not(.micro){font-size:18px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

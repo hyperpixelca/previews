@@ -178,7 +178,7 @@
 <div class="sec pb"><div class="tname" id="tname"></div><div class="price"><span id="tprice"></span><small>/mo</small></div><div style="margin-top:10px"><span class="prop inv">Proposed</span></div><div class="ln" id="tline"></div><div class="adn" id="adn">Ad spend is billed separately.</div></div>
 <p class="adn show" id="assetnote" role="status" style="padding:16px 0">Social without Content requires you to supply usable photos and video.</p><div class="tip" id="tip"><span id="tiptx"></span><a class="tadd" id="tadd"></a></div>
 <a class="btn" href="#lead" id="tolead">Request a quote</a><a class="alt" href="contact.html">Or book a call</a><div id="pform"><div class="lab pfl">Your details</div></div>
-<div class="onb pb" id="onb">$500 onboarding per service on a 6-month agreement. Waived with a 1-year agreement or when you choose all seven services.</div>
+<div class="onb pb" id="onb">One-time setup fee: $500 per service on a 6-month agreement. Waived with a 1-year agreement or when you choose all seven services.</div>
 </div></aside></div>
 </section><section class="lead" id="lead"><div><div class="lab" style="color:var(--red)">03 &nbsp;Send us your mix</div><h2>Like what you built<span class="sq"></span></h2><p class="ld">Send it over with a few details about your business. We'll reach out to talk it through.</p>
 <div class="mix"><div class="lab">Your mix</div><ul id="mixlist"></ul><div class="tot"><b><span id="mixname"></span> <span class="prop inv">Proposed</span></b><span><span id="mixprice"></span><small>/mo</small></span></div><a class="edit" href="#top">Change your picks above. This updates as you go.</a></div></div>
@@ -224,7 +224,7 @@ function render(){
  if(!n)items.push('<li class="open">No services selected yet.</li>');
  $('inc').innerHTML=items.join('');
  $('tname').textContent=t.name; $('mprice').textContent=t.price; $('tprice').textContent=t.price;
- var _n=on.length;$('onb').textContent=_n>=7?'Setup fee waived. All seven services selected, on a 6-month or 1-year agreement.':_n?('Onboarding: $'+(500*_n).toLocaleString()+' for '+_n+' service'+(_n>1?'s':'')+' on a 6-month agreement. Waived with a 1-year agreement or all seven services.'):'$500 onboarding per service on a 6-month agreement. Waived with a 1-year agreement or when you choose all seven services.';
+ var _n=on.length;$('onb').textContent=_n>=7?'One-time setup fee: waived. All seven services selected, on a 6-month or 1-year agreement.':_n?('One-time setup fee: $'+(500*_n).toLocaleString()+' for '+_n+' service'+(_n>1?'s':'')+' on a 6-month agreement. Waived with a 1-year agreement or all seven services.'):'One-time setup fee: $500 per service on a 6-month agreement. Waived with a 1-year agreement or when you choose all seven services.';
  $('tline').textContent='Estimated monthly total before discounts. Bundle savings pending approval. Final scope and pricing confirmed after your quote request.';
  $('assetnote').hidden=!(on.includes('social')&&!on.includes('content'));
  $('tolead').setAttribute('aria-disabled',String(!n));

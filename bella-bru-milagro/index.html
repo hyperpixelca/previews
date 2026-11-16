@@ -99,7 +99,8 @@
 .mlg-contact .mlg-btn--line{color:#fff;border-color:rgba(255,255,255,.8)}
 .mlg-sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);box-shadow:0 -4px 18px rgba(0,0,0,.12)}
 .mlg-sticky .mlg-btn{flex:1;min-height:48px;padding:10px 12px;font-size:14px}
-.mlg-spacer{height:76px}
+@media (max-width:1023px){body{padding-bottom:76px}}
+.sqs-edit-mode-active .mlg-sticky,.sqs-editing .mlg-sticky,.sqs-edit-mode .mlg-sticky,body.sqs-is-page-editing .mlg-sticky{display:none!important}
 @media (min-width:700px){
  .mlg .mlg-btns{flex-direction:row;flex-wrap:wrap}
  .mlg-hero h1{font-size:56px}
@@ -124,7 +125,7 @@
  .mlg-gal__grid{grid-template-columns:repeat(3,1fr);gap:10px}
  .mlg-gal__grid figure.mlg-wide{grid-column:span 3;aspect-ratio:21/8}
  .mlg-contact__in{display:grid;grid-template-columns:1.2fr 1fr;gap:72px;align-items:end}
- .mlg-sticky,.mlg-spacer{display:none}
+ .mlg-sticky{display:none}
 }
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": ["EventVenue", "LocalBusiness"], "name": "Milagro Event Center by Bella Bru", "url": "https://www.bellabrucafe.com/milagro-event-center", "telephone": "+1-916-704-9749", "email": "bellabru.christina@gmail.com", "image": "https://hyperpixelca.github.io/previews/bella-bru-milagro/images/milagro-event-center-carmichael-reception-hall.webp", "address": {"@type": "PostalAddress", "streetAddress": "6241 Fair Oaks Blvd, Suite D", "addressLocality": "Carmichael", "addressRegion": "CA", "postalCode": "95608", "addressCountry": "US"}, "geo": {"@type": "GeoCoordinates", "latitude": 38.6154844, "longitude": -121.3298591}, "maximumAttendeeCapacity": 300, "hasMap": "https://www.google.com/maps/dir//Milagro+Event+Center+by+Bella+Bru,+6241+Fair+Oaks+Blvd+Suite+D,+Carmichael,+CA+95608", "parentOrganization": {"@type": "Organization", "name": "Bella Bru Cafe", "url": "https://www.bellabrucafe.com/"}, "sameAs": ["https://www.facebook.com/bellabrucafe/", "https://www.instagram.com/bellabrucafe"], "amenityFeature": [{"@type": "LocationFeatureSpecification", "name": "Free parking", "value": true}, {"@type": "LocationFeatureSpecification", "name": "Private patio with fireplace", "value": true}, {"@type": "LocationFeatureSpecification", "name": "Sound system", "value": true}, {"@type": "LocationFeatureSpecification", "name": "LED TV wall and projector screens", "value": true}, {"@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true}]}</script>
@@ -234,7 +235,6 @@
   </div>
  </div>
 </section>
-<div class="mlg-spacer" aria-hidden="true"></div>
 <nav class="mlg-sticky" aria-label="Contact Milagro">
  <a class="mlg-btn mlg-btn--primary" href="tel:+19167049749">Call</a>
  <a class="mlg-btn mlg-btn--line" href="mailto:bellabru.christina@gmail.com?subject=Private%20Event%20Inquiry%20-%20Milagro%20Event%20Center">Email</a>

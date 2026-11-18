@@ -19,6 +19,7 @@
 .bbhero-a-slide.is-active{opacity:1;visibility:visible;z-index:1;}
 .bbhero-a-slide picture,.bbhero-a-slide .bbhero-a-img{display:block;width:100%;height:100%;}
 .bbhero-a-slide .bbhero-a-img{object-fit:cover;object-position:center center;}
+.bbhero-a-slide::before{content:"";position:absolute;left:0;right:0;bottom:0;height:88px;background:linear-gradient(to top,rgba(0,0,0,.42),rgba(0,0,0,0));pointer-events:none;z-index:2;}
 .bbhero-a-slide.has-copy::after{content:"";position:absolute;left:0;right:0;bottom:0;height:52%;background:linear-gradient(to top,rgba(0,0,0,.62) 0%,rgba(0,0,0,.28) 55%,rgba(0,0,0,0) 100%);pointer-events:none;z-index:2;}
 .bbhero-a-copy{position:absolute;left:0;right:0;bottom:0;z-index:3;padding:clamp(20px,4vw,56px) clamp(20px,5vw,80px) clamp(64px,9vw,92px);max-width:42rem;text-shadow:0 1px 2px rgba(0,0,0,.35);}
 .bbhero-a-title{font-family:"ltc-bodoni-175","Bodoni Moda","Bodoni 72",Didot,Georgia,serif;font-weight:400;font-size:clamp(32px,5.2vw,64px);line-height:1.05;letter-spacing:-.01em;margin:0 0 8px;color:#fff;text-transform:none;}
@@ -42,8 +43,8 @@
 .bbhero-a.is-paused .bbhero-a-icon-pause,.bbhero-a:not(.is-paused) .bbhero-a-icon-play{display:none;}
 @media (max-width:767px){
   .bbhero-a-copy{padding:20px 20px 72px;max-width:100%;}
-  .bbhero-a-title{font-size:clamp(28px,9vw,40px);}
-  .bbhero-a-prev,.bbhero-a-next{width:40px;height:40px;}
+  .bbhero-a-title{font-size:clamp(28px,8.4vw,38px);}
+  .bbhero-a-prev,.bbhero-a-next{width:40px;height:40px;top:26%;}
 }
 @media (prefers-reduced-motion:reduce){
   .bbhero-a-slide{transition:none;}

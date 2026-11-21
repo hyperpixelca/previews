@@ -194,3 +194,48 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--red);outline-offse
  .ats .contact .next-step p.pnote{font-size:11px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* v1.2: cost comparison */
+.anchor-note.then{font-family:'IT';font-size:22px;font-weight:700;letter-spacing:-.01em;color:var(--ink);margin-top:12px}
+.cost{display:grid;grid-template-columns:1.05fr 1fr;gap:80px;align-items:center;padding:96px 72px;background:var(--paper2);border-bottom:2px solid var(--ink)}
+.cost .eb{display:flex;align-items:center;gap:14px}
+.cost .ex{font-family:'SM';font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;border:1.5px dashed var(--slate);color:var(--slate);padding:2px 8px}
+.cost h2{font-size:52px;line-height:1.04;letter-spacing:-.035em;font-weight:800}
+.cost-a{color:var(--slate);font-weight:600;letter-spacing:-.015em;font-size:28px;line-height:1.3;margin-top:28px;max-width:600px}
+.cost-viz{background:var(--paper);border:2px solid var(--ink);padding:36px 36px 30px}
+.bar-row{margin-bottom:30px}
+.bar-lab{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:12px}
+.bar-lab span{font-family:'SM';font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--slate)}
+.bar-lab b{font-size:56px;letter-spacing:-.045em;line-height:1;font-weight:800}
+.bar-lab b small{font-size:18px;font-weight:600;letter-spacing:0;margin-left:2px}
+.bar{height:22px;background:var(--rule)}
+.bar i{display:block;height:100%;background:var(--ink)}
+.bar-row.hp .bar i{background:var(--red)}
+.bar-row.hp .bar-lab b{color:var(--red)}
+.bar-sub{font-family:'SM';font-size:12px;letter-spacing:.04em;color:var(--slate);margin-top:8px}
+.cost-out{border-top:2px solid var(--ink);padding-top:22px;display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:baseline}
+.cost-out b{font-size:34px;letter-spacing:-.03em;line-height:1;white-space:nowrap}
+.cost-out span{font-size:17px;line-height:1.5}
+.cost-fine{font-family:'SM';font-size:11.5px;line-height:1.6;letter-spacing:.03em;color:var(--slate);margin-top:22px;border-top:1px solid var(--rule);padding-top:14px}
+/* v1.2: niches */
+.who-serif{display:block;font-size:34px;line-height:1.15;margin:-12px 0 22px}
+.niche-lab{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin-bottom:18px;padding-bottom:14px;border-bottom:2px solid var(--ink)}
+.niches{list-style:none;display:flex;flex-wrap:wrap;gap:10px}
+.niches li{font-size:19px;font-weight:650;letter-spacing:-.01em;border:1.5px solid var(--ink);padding:10px 16px;background:var(--paper)}
+.niches li.yours{border-style:dashed;border-color:var(--red);color:var(--red);background:none}
+.niche-line{font-size:24px;line-height:1.35;font-weight:700;letter-spacing:-.02em;margin-top:30px;max-width:560px}
+.tier .off{font-family:'SM';font-size:12px;letter-spacing:.04em;color:var(--red);margin-top:10px}
+@media(min-width:761px) and (max-width:1180px){.cost{grid-template-columns:1fr;gap:44px;padding:64px 40px}.cost h2{font-size:44px}}
+@media(max-width:760px){
+ .anchor-note.then{font-size:18px}
+ .cost{grid-template-columns:1fr;gap:32px;padding:48px 20px}
+ .cost h2{font-size:31px}
+ .cost-a{font-size:20px;margin-top:18px}
+ .cost-viz{padding:22px 18px 20px}
+ .bar-lab b{font-size:38px}.bar-lab span{font-size:11px}
+ .bar{height:16px}
+ .cost-out{grid-template-columns:1fr;gap:8px}.cost-out b{font-size:28px}.cost-out span{font-size:16px}
+ .cost-fine{font-size:10.5px}
+ .who-serif{font-size:24px;margin:-8px 0 16px}
+ .niches li{font-size:15px;padding:8px 12px}
+ .niche-line{font-size:20px}
+}

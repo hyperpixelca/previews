@@ -259,3 +259,18 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--red);outline-offse
  .cost.v13 .bar-lab b{font-size:32px}
  .cost.v13 .cost-out b{font-size:26px}
 }
+
+/* v1.3 DIY vs done for you */
+.diy .diy-q{font-family:'BM';font-style:italic;font-size:44px;line-height:1.12;max-width:980px;margin-top:8px;font-variation-settings:'opsz' 72}
+.diy .diy-a{font-size:22px;font-weight:700;margin:18px 0 40px;color:var(--red)}
+.diy-cols{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:2px solid var(--ink)}
+.diy-col{padding:28px 32px 32px 0}
+.diy-col.hp{padding:28px 0 32px 32px;border-left:2px solid var(--ink)}
+.diy-t{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--slate);margin-bottom:16px}
+.diy-col.hp .diy-t{color:var(--red)}
+.diy-col ul{list-style:none;padding:0;margin:0}
+.diy-col li{font-size:19px;line-height:1.45;padding:10px 0 10px 24px;border-bottom:1.5px solid var(--rule);position:relative}
+.diy-col li:before{content:'';position:absolute;left:0;top:19px;width:9px;height:9px;border:1.5px solid var(--slate)}
+.diy-col.hp li:before{background:var(--red);border-color:var(--red)}
+.diy-col.hp li:last-child{font-weight:700}
+@media (max-width:760px){.diy .diy-q{font-size:28px}.diy .diy-a{font-size:19px;margin:14px 0 28px}.diy-cols{grid-template-columns:1fr}.diy-col,.diy-col.hp{padding:22px 0}.diy-col.hp{border-left:0;border-top:2px solid var(--ink)}.diy-col li{font-size:17px}}

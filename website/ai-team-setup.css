@@ -239,3 +239,23 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--red);outline-offse
  .niches li{font-size:15px;padding:8px 12px}
  .niche-line{font-size:20px}
 }
+/* v1.3: headline hero + role ladder */
+.ats-hero.v13 h1{font-size:clamp(52px,6.1vw,88px);line-height:.98;letter-spacing:-.045em;max-width:760px}
+.ats-hero.v13 .serif{font-size:38px;margin-top:26px}
+.ats-hero.v13 .pitch{font-size:20px}
+.cost.v13 h2{font-size:58px}
+.cost.v13 .cost-a{font-size:24px}
+.cost.v13 .bar-row{margin-bottom:22px}
+.cost.v13 .bar-lab b{font-size:44px}
+.cost.v13 .bar{height:16px}
+.cost.v13 .cost-out b{font-size:30px}
+@media(max-width:760px){
+ .ats-hero.v13 h1{font-size:clamp(40px,11vw,52px)}
+ .ats-hero.v13 .serif{font-size:26px;margin-top:16px}
+ .ats-hero.v13 .pitch{font-size:17px}
+ .cost.v13 h2{font-size:34px}
+ .cost.v13 .cost-a{font-size:18px}
+ .cost.v13 .bar-lab{flex-wrap:wrap;gap:4px 12px}
+ .cost.v13 .bar-lab b{font-size:32px}
+ .cost.v13 .cost-out b{font-size:26px}
+}

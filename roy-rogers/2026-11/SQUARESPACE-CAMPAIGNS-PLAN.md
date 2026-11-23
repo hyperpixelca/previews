@@ -11,7 +11,7 @@ Reply-to: gaynellrogers@gmail.com
 References:
 - Main structure and tone: 2025-11-26 test, subject "Happy Thanksgiving - New Song & Video Release by Roy Rogers" (prior-issues-inbox #4).
 - Current brand, merch, socials, and booking: 2026-07-13 Rare Solo Tour issue.
-- Copy: Gaynell's Word doc, used verbatim except obvious spacing (double spaces, "co -writer"). Typos are flagged, not silently corrected.
+- Copy: Gaynell's Word doc, used verbatim except obvious spacing and the typo fixes Jack approved on 2026-11-23 (see Copy fixes applied). February 29th, 2027 was left as written.
 
 Allowed Campaigns sections only: Text, Image, Button, Spacer, Line, Blog, Product, Discount. Header and footer are built in. Max 40 sections including header and footer. One button per section. An image section holds up to 4 images (banner or grid). No video embed (use a link or a GIF).
 
@@ -90,9 +90,9 @@ First Vinyl Release:
 
 ### 4. Text
 
-Body, centered, Gaynell verbatim (spacing only):
+Body, centered, Gaynell's copy with Jack's approved typo fixes:
 
-“The Sky’s The Limit is the first release in 10 years from blues/rock slide guitar master Roy Rogers, and it is now available on special vinyl! RR decided to release his first vinyl in a heavier 180 weight product, and it sounds fantastic. A blend of guitar textures, rock, and acoustic work to be enjoyed the old-fashioned way - on a turn table! (It was recorded on 2’ tape as well - nice a warm!)
+“The Sky’s The Limit” is the first release in 10 years from blues/rock slide guitar master Roy Rogers, and it is now available on special vinyl! RR decided to release his first vinyl in a heavier 180 weight product, and it sounds fantastic. A blend of guitar textures, rock, and acoustic work to be enjoyed the old-fashioned way - on a turntable! (It was recorded on 2’ tape as well - nice and warm!)
 
 It comes with a separate custom color poster of the cover and RR will autograph it for you if you order through his web store before December 9th so we can get it to you before the holiday mail rush. Go to roy-rogers.com/store
 
@@ -119,11 +119,11 @@ Show Dates in California
 Show dates in the July 2026 text-only pattern (also used in April 2026): centered, normal weight, date on one line, Gaynell's venue line under it, then a gold bold GET TICKETS text link when we have one. No show posters (those appeared only in the 2025 Thanksgiving issues, and we do not have posters this year). No dashed placeholder boxes in the email. Shows without a ticket link are just the date and venue.
 
 November 28th
-The Nashville Social Club, Carsen City, California
+The Nashville Social Club, Carson City, Nevada
 GET TICKETS -> https://www.eventbrite.com/e/roy-rogers-and-the-delta-rhythm-kings-eight-time-grammy-nominee-tickets-2002168712516
 
 December 5th
-Hopmonk Tavern, The Abby, Sebastopol, California
+Hopmonk Tavern, The Abbey, Sebastopol, California
 GET TICKETS -> https://www.eventim.us/event/roy-rogers-and-the-delta-rhythm-kings/685852
 (Jack approved this Eventim link, the homepage Buy Tickets URL, also confirmed from KC Turner's Aug 25 email that Gaynell forwarded. Do not use the leftover Sept 27 Bill Bowker link on the shows page.)
 
@@ -135,7 +135,7 @@ Announcing Rare Acoustic Solo Shows in Florida in February!
 
 ### 10. Text
 
-RR will be performing his rare acoustic solo shows in Florida! A few fun road stories & tall tales along the way. Ut’s a great chance to see Roy’s guitar work up close and personal.
+RR will be performing his rare acoustic solo shows in Florida! A few fun road stories & tall tales along the way. It’s a great chance to see Roy’s guitar work up close and personal.
 
 Take a ‘winter’ break out of the cold and come down and see us!
 
@@ -147,7 +147,7 @@ GET TICKETS -> https://www.eventbrite.com/e/roy-rogers-tickets-2003260333584
 (From the roy-rogers.com homepage Buy Tickets button, without the ?aff tracking parameter. Jack approved adding this link.)
 
 February 29th, 2027
-Fogertyville, Sarasota, Florida
+Fogartyville, Sarasota, Florida
 (No ticket line in the email. This date is not on roy-rogers.com. See open items.)
 
 Look for more dates to be added soon so check the site often for some exciting 2027 news.
@@ -164,24 +164,24 @@ Link "the site" to https://www.roy-rogers.com/shows
 
 ### 13. Text
 
-Heading (her wording, including the space in You Tube):
+Heading (her wording, YouTube spelling corrected):
 
-RR Official You Tube Channel
+RR Official YouTube Channel
 
 ### 14. Text
 
-Don’t forget to check out RR’s new You Tube channel, many of you have viewed and shared these great little snippets especially this one using a rare Turkey Pan guitar - so appropriate for this week! (Even has a recipe at the end of the pan!)
+Don’t forget to check out RR’s new YouTube channel, many of you have viewed and shared these great little snippets especially this one using a rare Turkey Pan guitar - so appropriate for this week! (Even has a recipe at the end of the pan!)
 
 [PLACEHOLDER: Turkey Pan snippet URL]
 Gaynell asked to link the Turkey Pan snippet here. No URL was provided. Campaigns cannot embed video; use this link (or a GIF) once the URL is confirmed.
 
 Thanks to guitar maker Bruce Potter for this gift. FYI on the recording of “I Would Undo Anything” by RR and frequent co-writer Donna Johnston of CT. (A retired school teacher!)
 
-Roy’s Official You Tube Channel for some stunning snippets and live shows!
+Roy’s Official YouTube Channel for some stunning snippets and live shows!
 
-Link "Roy’s Official You Tube Channel" to https://www.youtube.com/@RoyRogersSlide_OfficialChannel
+Link "Roy’s Official YouTube Channel" to https://www.youtube.com/@RoyRogersSlide_OfficialChannel
 
-Her production note "Please put the actual this Post he link to the Turkey Pan snippet and then" is not printed as body copy. It is the placeholder above. "Post the link to Roy’s Official You Tube Channel..." is handled as that linked line plus the Subscribe button.
+Her production note "Please put the actual this Post he link to the Turkey Pan snippet and then" is not printed as body copy. It is the placeholder above. "Post the link to Roy’s Official YouTube Channel..." is handled as that linked line plus the Subscribe button.
 
 ### 15. Button
 
@@ -199,7 +199,7 @@ Gaynell’s Kitchen
 
 ### 18. Text
 
-The new Book from my wife Gaynell’s Kitchen: Down Home Cooking from A Wayward Southern Belle is in it’s 3rd printing. A memoir and cookbook, it’s a rare lens into her life in music, film, cancer journey’s and a wide breath of cooking for some people you will recognize from the entertainment world! You can only get copies at RR shows and her website at gaynellskitchen.com.
+The new book from my wife Gaynell’s Kitchen: Down Home Cooking from A Wayward Southern Belle is in its 3rd printing. A memoir and cookbook, it’s a rare lens into her life in music, film, cancer journey and a wide breadth of cooking for some people you will recognize from the entertainment world! You can only get copies at RR shows and her website at gaynellskitchen.com.
 
 Link gaynellskitchen.com to https://www.gaynellskitchen.com
 
@@ -294,53 +294,30 @@ Follow us on all our socials below to build our social media family!
 ## Open items (for Jack; not shown as boxes in the email)
 
 1. **Turkey Pan snippet URL.** Jack will send the Facebook video link; then make a GIF the way we do for Remarkable, linked to the video. Campaigns cannot embed video.
-2. **Nov 28 venue / city.** The email uses Gaynell's wording verbatim: "The Nashville Social Club, Carsen City, California." Her emails, Eventbrite, and roy-rogers.com all say Nashville Social Club, 1105 South Carson Street, Carson City, NV, 7:30 PM (doors 6:30). Ops confirmed this is Nevada. Confirm whether to correct the city and state in the email.
-3. **Sarasota / Fogertyville ticket link.** The only show still without a link. The email lists the date and venue only. This show is not on roy-rogers.com. Still needs a link from Gaynell. Also confirm the venue spelling (Fogertyville vs Fogartyville).
+2. **Sarasota / Fogartyville ticket link.** The only show still without a link. The email lists the date and venue only (spelling corrected to Fogartyville). This show is not on roy-rogers.com. Still needs a link from Gaynell.
+3. **February 29th, 2027.** Left as written. 2027 is not a leap year, so that date does not exist, and it is not on roy-rogers.com/shows. Flag only; do not change the date unless Gaynell confirms a new one.
 4. **Send day.** Tuesday, Wednesday, or Thursday morning; Jack has not chosen, and said not to worry about it yet.
 
 ---
 
-## Typos and questions in Gaynell's copy (left as written in the mockup)
+## Copy fixes applied (Jack approved, 2026-11-23)
 
-- Opening quote on the vinyl paragraph is never closed.
-- "nice a warm" (likely "nice and warm").
-- "turn table" (often written "turntable").
-- "Ut’s a great chance" (likely "It’s").
-- "You Tube" used throughout (usually "YouTube").
-- "it’s 3rd printing" (its).
-- "cancer journey’s" (journeys).
-- "a wide breath of cooking" (likely "breadth").
-- "Carsen City, California" vs Carson City, NV (see open item 2). This is a fact to confirm, not just a typo.
-- "The Abby" vs "the Abbey," the live-music room at HopMonk Tavern Sebastopol.
-- "Fogertyville," Sarasota: the venue in Sarasota is Fogartyville (Fogartyville Community Media & Arts Center).
-- "February 29th, 2027": 2027 is not a leap year, so that date does not exist. Also not currently listed on roy-rogers.com/shows.
-- "Café Eleven" matches the listing style "Cafe Eleven" on the shows page.
+Left as written (not a typo fix): February 29th, 2027. See open items.
 
-Production notes from the Word doc were not used as body copy: the turkey-with-a-slide-guitar suggestion (no such photo was provided; the vinyl package is the lead), "Cover, Poster and actual record as the lead photo," "Show book cover," "Thanks Jack!," and the garbled Turkey Pan instruction.
+Fixes in the email body and this plan:
 
----
-
-## URL checks (curl, 2026-11-23)
-
-HTTPS versions all returned 200 and were used in the mockup. HTTP versions of roy-rogers.com and soundcloud.com returned 500 in this environment (likely no HTTPS upgrade from here) and were not used.
-
-- https://www.roy-rogers.com/ 200
-- https://www.roy-rogers.com/store 200
-- https://www.roy-rogers.com/store/p/rr-drk-baseball-cap 200
-- https://www.roy-rogers.com/store/p/coffee-roy-rogers-rock-slide-roast 200
-- https://www.roy-rogers.com/shows 200
-- https://www.roy-rogers.com/the-skys-the-limit 200
-- https://soundcloud.com/chops-not-chaps-music 200
-- https://instagram.com/royrogersslide/ 200 (redirects to an Instagram login interstitial, typical when unauthenticated)
-- https://www.facebook.com/roy.rogers.slide.zone 200
-- https://twitter.com/RoyRogersSlide 200 (redirects to https://x.com/RoyRogersSlide)
-- https://www.youtube.com/channel/UC3Bl7Zo6xIp9jiMNAoK4IgQ 200
-- https://www.youtube.com/@RoyRogersSlide_OfficialChannel 200
-- https://www.gaynellskitchen.com 200
-- https://www.gaynellskitchen.com/book 200
-- Both logo URLs 200
-
----
+1. Carsen City, California -> Carson City, Nevada
+2. Ut’s -> It’s
+3. Fogertyville -> Fogartyville
+4. Unclosed opening quote on the vinyl title: “The Sky’s The Limit is... -> “The Sky’s The Limit” is...
+5. nice a warm -> nice and warm
+6. turn table -> turntable
+7. You Tube -> YouTube (heading, body, and channel link text)
+8. it’s 3rd printing -> its 3rd printing (the later “it’s a rare lens” was left as is)
+9. cancer journey’s -> cancer journey
+10. wide breath -> wide breadth
+11. The Abby -> The Abbey
+12. The new Book -> The new book (obvious capitalization typo)
 
 ## What this is not
 

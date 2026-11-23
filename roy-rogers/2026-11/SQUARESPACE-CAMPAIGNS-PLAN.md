@@ -11,7 +11,7 @@ Reply-to: gaynellrogers@gmail.com
 References:
 - Main structure and tone: 2025-11-26 test, subject "Happy Thanksgiving - New Song & Video Release by Roy Rogers" (prior-issues-inbox #4).
 - Current brand, merch, socials, and booking: 2026-07-13 Rare Solo Tour issue.
-- Copy: Gaynell's Word doc, used verbatim except obvious spacing and the typo fixes Jack approved on 2026-11-23 (see Copy fixes applied). February 29th, 2027 was left as written.
+- Copy: Gaynell's Word doc, used verbatim except obvious spacing, the typo fixes Jack approved on 2026-11-23 (see Copy fixes applied), and the Feb 28 date change Jack approved the same day.
 
 Allowed Campaigns sections only: Text, Image, Button, Spacer, Line, Blog, Product, Discount. Header and footer are built in. Max 40 sections including header and footer. One button per section. An image section holds up to 4 images (banner or grid). No video embed (use a link or a GIF).
 
@@ -146,7 +146,7 @@ Café Eleven, St. Augustine, Florida
 GET TICKETS -> https://www.eventbrite.com/e/roy-rogers-tickets-2003260333584
 (From the roy-rogers.com homepage Buy Tickets button, without the ?aff tracking parameter. Jack approved adding this link.)
 
-February 29th, 2027
+February 28th, 2027
 Fogartyville, Sarasota, Florida
 (No ticket line in the email. This date is not on roy-rogers.com. See open items.)
 
@@ -295,14 +295,14 @@ Follow us on all our socials below to build our social media family!
 
 1. **Turkey Pan snippet URL.** Jack will send the Facebook video link; then make a GIF the way we do for Remarkable, linked to the video. Campaigns cannot embed video.
 2. **Sarasota / Fogartyville ticket link.** The only show still without a link. The email lists the date and venue only (spelling corrected to Fogartyville). This show is not on roy-rogers.com. Still needs a link from Gaynell.
-3. **February 29th, 2027.** Left as written. 2027 is not a leap year, so that date does not exist, and it is not on roy-rogers.com/shows. Flag only; do not change the date unless Gaynell confirms a new one.
+3. **February 28th, 2027, Sarasota.** Jack approved changing Gaynell's Feb 29 date (which does not exist; 2027 is not a leap year) to February 28th, 2027 (a Sunday). No day of week is shown in the email. Still no ticket link, and the date is not on roy-rogers.com/shows.
 4. **Send day.** Tuesday, Wednesday, or Thursday morning; Jack has not chosen, and said not to worry about it yet.
 
 ---
 
 ## Copy fixes applied (Jack approved, 2026-11-23)
 
-Left as written (not a typo fix): February 29th, 2027. See open items.
+Date change Jack approved (2026-11-23): February 29th, 2027 -> February 28th, 2027 (a Sunday). No day of week is shown in the email.
 
 Fixes in the email body and this plan:
 

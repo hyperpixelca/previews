@@ -149,11 +149,14 @@ Take a ‘winter’ break out of the cold and come down and see us!
 February 27th, 2027
 Café Eleven, St. Augustine, Florida
 
+GET TICKETS -> https://www.eventbrite.com/e/roy-rogers-tickets-2003260333584
+(From the roy-rogers.com homepage Buy Tickets button, without the ?aff tracking parameter. Jack approved adding this link.)
+
 February 29th, 2027
 Fogertyville, Sarasota, Florida
 
-[PLACEHOLDER: Florida ticket links, if needed]
-Unlike the California dates, Gaynell did not leave blank ticket-link lines here. Confirm whether these two dates should have ticket links.
+[PLACEHOLDER: Sarasota / Fogertyville ticket link]
+This date is not on roy-rogers.com. No ticket link yet.
 
 Look for more dates to be added soon so check the site often for some exciting 2027 news.
 
@@ -301,7 +304,7 @@ Follow us on all our socials below to build our social media family!
 1. **Turkey Pan snippet URL.** No URL was provided. Campaigns cannot embed the video.
 2. **Dec 5 Hopmonk ticket link.** Left blank in the doc and not in the emails. A public listing exists on KC Turner Presents for Dec 5 at HopMonk / the Abbey, but it was not used, because Gaynell did not supply the link.
 3. **Nov 28 venue / city.** Keep flagged. Doc: "Carsen City, California." Emails: "Carson City." Eventbrite and roy-rogers.com/shows both say Nashville Social Club, 1105 South Carson Street, Carson City, NV, 7:30 PM to 9:30 PM. The Eventbrite ticket link she sent is already used for GET TICKETS.
-4. **Florida ticket links.** No links, and no blank ticket lines. roy-rogers.com/shows currently lists Feb 27, 2027 at Cafe Eleven, St. Augustine, and does not list the Feb 29 Sarasota date. Do not add links until confirmed.
+4. **Sarasota / Fogertyville ticket link.** Feb 27 Cafe Eleven now has a GET TICKETS link (homepage Eventbrite, approved). The Feb 29 Sarasota date is not on roy-rogers.com and still has no link.
 5. **Send day.** Tuesday, Wednesday, or Thursday morning; Jack has not chosen.
 
 ---

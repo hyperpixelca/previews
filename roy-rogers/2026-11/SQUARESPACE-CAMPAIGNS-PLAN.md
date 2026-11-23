@@ -15,7 +15,7 @@ References:
 
 Allowed Campaigns sections only: Text, Image, Button, Spacer, Line, Blog, Product, Discount. Header and footer are built in. Max 40 sections including header and footer. One button per section. An image section holds up to 4 images (banner or grid). No video embed (use a link or a GIF).
 
-This plan uses 29 sections including header and footer.
+This plan uses 31 sections including header and footer.
 
 Campaigns will add its own Unsubscribe and Powered by Squarespace lines in the footer. Do not paste those by hand.
 
@@ -171,8 +171,21 @@ RR Official YouTube Channel
 
 Don’t forget to check out RR’s new YouTube channel, many of you have viewed and shared these great little snippets especially this one using a rare Turkey Pan guitar - so appropriate for this week! (Even has a recipe at the end of the pan!)
 
-[PLACEHOLDER: Turkey Pan snippet URL]
-Gaynell asked to link the Turkey Pan snippet here. No URL was provided. Campaigns cannot embed video; use this link (or a GIF) once the URL is confirmed.
+### 15. Image (banner)
+
+Turkey Pan snippet GIF, made the way we do Remarkable email GIFs (560x560, about 4 seconds at 6 fps, play-button overlay). Upload roy-rogers-turkey-pan.gif from the out folder. Click-through link:
+
+https://youtube.com/shorts/37B6AF6IAco
+
+Alt: Watch the Turkey Pan guitar snippet on YouTube
+
+Display about 400px wide, centered, in the email mockup. Campaigns cannot embed video, so the GIF plus the link is the snippet.
+
+### 16. Text
+
+Watch the Turkey Pan snippet
+
+Link that line to https://youtube.com/shorts/37B6AF6IAco (gold, underlined, like the other text links). Put it directly under the GIF.
 
 Thanks to guitar maker Bruce Potter for this gift. FYI on the recording of “I Would Undo Anything” by RR and frequent co-writer Donna Johnston of CT. (A retired school teacher!)
 
@@ -180,29 +193,29 @@ Roy’s Official YouTube Channel for some stunning snippets and live shows!
 
 Link "Roy’s Official YouTube Channel" to https://www.youtube.com/@RoyRogersSlide_OfficialChannel
 
-Her production note "Please put the actual this Post he link to the Turkey Pan snippet and then" is not printed as body copy. It is the placeholder above. "Post the link to Roy’s Official YouTube Channel..." is handled as that linked line plus the Subscribe button.
+Her production note "Please put the actual this Post he link to the Turkey Pan snippet and then" is not printed as body copy. It is handled by the GIF, the click-through, and the Watch the Turkey Pan snippet link. "Post the link to Roy’s Official YouTube Channel..." is handled as that linked line plus the Subscribe button. Jack sent the YouTube Short on 2026-11-23.
 
-### 15. Button
+### 17. Button
 
 - Label: SUBSCRIBE
 - URL: https://www.youtube.com/@RoyRogersSlide_OfficialChannel
 - Style: primary gold
 
-### 16. Line
+### 18. Line
 
-### 17. Text
+### 19. Text
 
 Heading:
 
 Gaynell’s Kitchen
 
-### 18. Text
+### 20. Text
 
 The new book from my wife Gaynell’s Kitchen: Down Home Cooking from A Wayward Southern Belle is in its 3rd printing. A memoir and cookbook, it’s a rare lens into her life in music, film, cancer journey and a wide breadth of cooking for some people you will recognize from the entertainment world! You can only get copies at RR shows and her website at gaynellskitchen.com.
 
 Link gaynellskitchen.com to https://www.gaynellskitchen.com
 
-### 19. Image (grid, 2 images)
+### 21. Image (grid, 2 images)
 
 Both book covers, in one Image section (grid). If Campaigns crops the mixed aspect ratios badly, switch to two stacked Image banner sections.
 
@@ -213,7 +226,7 @@ Both book covers, in one Image section (grid). If Campaigns crops the mixed aspe
    Alt: Gaynell’s Kitchen full jacket: front, spine, and back cover
    Optional link: https://www.gaynellskitchen.com
 
-### 20. Button
+### 22. Button
 
 - Label: VISIT THE SITE
 - URL: https://www.gaynellskitchen.com
@@ -221,9 +234,9 @@ Both book covers, in one Image section (grid). If Campaigns crops the mixed aspe
 
 (July 2026 linked some book CTAs to https://www.gaynellskitchen.com/book, which still resolves. This year's copy points at the homepage, so the mockup uses that.)
 
-### 21. Line
+### 23. Line
 
-### 22. Text
+### 24. Text
 
 Heading:
 
@@ -231,7 +244,7 @@ MERCH
 
 No extra merch body copy was provided this year ("Merch page and the socials as usual"). Do not invent a merch blurb. The Product section plus the shop button covers it, as in July 2026.
 
-### 23. Product
+### 25. Product
 
 Two products from the July 2026 issue (same items, titles, price, and images):
 
@@ -246,15 +259,15 @@ Two products from the July 2026 issue (same items, titles, price, and images):
 
 The Shop CTAs live inside the Product section. Do not add separate Button sections for them.
 
-### 24. Button
+### 26. Button
 
 - Label: SHOP ALL MERCH
 - URL: https://www.roy-rogers.com/store
 - Style: primary gold
 
-### 25. Line
+### 29. Line
 
-### 26. Text
+### 30. Text
 
 Booking block as usual, from the July 2026 issue (not in Gaynell's November Word doc, but used in the current approved layout):
 
@@ -276,7 +289,7 @@ From the 2025 Thanksgiving issue:
 
 Follow us on all our socials below to build our social media family!
 
-### 29. Footer (built-in)
+### 31. Footer (built-in)
 
 - Footer logo: RR-SLIDE-ZONE-LOGO-TEST5.jpg, links to https://www.roy-rogers.com/
 - Social icons, in this July 2026 order, HTTPS confirmed:
@@ -292,8 +305,7 @@ Follow us on all our socials below to build our social media family!
 
 ## Open items (for Jack; not shown as boxes in the email)
 
-1. **Turkey Pan snippet URL.** Jack will send the Facebook video link; then make a GIF the way we do for Remarkable, linked to the video. Campaigns cannot embed video.
-2. **Send day.** Tuesday, Wednesday, or Thursday morning; Jack has not chosen, and said not to worry about it yet.
+1. **Send day.** Tuesday, Wednesday, or Thursday morning; Jack has not chosen, and said not to worry about it yet.
 
 ---
 
@@ -302,6 +314,8 @@ Follow us on all our socials below to build our social media family!
 Date change Jack approved (2026-11-23): February 29th, 2027 -> February 28th, 2027 (a Sunday). No day of week is shown in the email.
 
 Florida shows, Jack's decision (2026-11-23): no ticket links. February 27th, 2027, Cafe Eleven, St. Augustine, and February 28th, 2027, Fogartyville, Sarasota, are date announcements only. The Cafe Eleven Eventbrite link was removed. The California shows keep their GET TICKETS links.
+
+Turkey Pan GIF (2026-11-23): Jack sent https://youtube.com/shorts/37B6AF6IAco. The dashed placeholder was replaced with a 560x560 email GIF (about 4 seconds, 6 fps, play-button overlay) that clicks through to the Short, plus a Watch the Turkey Pan snippet text link under it. The official channel link and Subscribe button are unchanged.
 
 Fixes in the email body and this plan:
 

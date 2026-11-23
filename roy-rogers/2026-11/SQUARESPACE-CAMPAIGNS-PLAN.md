@@ -116,23 +116,16 @@ Show Dates in California
 
 ### 8. Text
 
-Show dates, bold, centered, gold GET TICKETS text links (same pattern as the 2025 Thanksgiving issue). Keep the placeholders visible until Jack confirms.
+Show dates in the July 2026 text-only pattern (also used in April 2026): centered, normal weight, date on one line, Gaynell's venue line under it, then a gold bold GET TICKETS text link when we have one. No show posters (those appeared only in the 2025 Thanksgiving issues, and we do not have posters this year). No dashed placeholder boxes in the email. Shows without a ticket link are just the date and venue.
 
 November 28th
-
-[PLACEHOLDER: Nov 28 venue / city]
-Doc says: The Nashville Social Club, Carsen City, California.
-Emails say: Carson City.
-Eventbrite (her corrected link) lists: Nashville Social Club, 1105 South Carson Street, Carson City, NV. Saturday, November 28, 7:30 PM to 9:30 PM.
-
+The Nashville Social Club, Carsen City, California
 GET TICKETS -> https://www.eventbrite.com/e/roy-rogers-and-the-delta-rhythm-kings-eight-time-grammy-nominee-tickets-2002168712516
-(This is the corrected link Gaynell sent in email, not in the Word doc's blank ticket line.)
 
 December 5th
 Hopmonk Tavern, The Abby, Sebastopol, California
-
-[PLACEHOLDER: Dec 5 Hopmonk ticket link]
-Gaynell left this ticket line blank. Do not invent a URL.
+GET TICKETS -> https://www.eventim.us/event/roy-rogers-and-the-delta-rhythm-kings/685852
+(Jack approved this Eventim link, the homepage Buy Tickets URL, also confirmed from KC Turner's Aug 25 email that Gaynell forwarded. Do not use the leftover Sept 27 Bill Bowker link on the shows page.)
 
 ### 9. Text
 
@@ -146,17 +139,16 @@ RR will be performing his rare acoustic solo shows in Florida! A few fun road st
 
 Take a ‘winter’ break out of the cold and come down and see us!
 
+Same July 2026 text-only show pattern as section 8.
+
 February 27th, 2027
 Café Eleven, St. Augustine, Florida
-
 GET TICKETS -> https://www.eventbrite.com/e/roy-rogers-tickets-2003260333584
 (From the roy-rogers.com homepage Buy Tickets button, without the ?aff tracking parameter. Jack approved adding this link.)
 
 February 29th, 2027
 Fogertyville, Sarasota, Florida
-
-[PLACEHOLDER: Sarasota / Fogertyville ticket link]
-This date is not on roy-rogers.com. No ticket link yet.
+(No ticket line in the email. This date is not on roy-rogers.com. See open items.)
 
 Look for more dates to be added soon so check the site often for some exciting 2027 news.
 
@@ -299,13 +291,12 @@ Follow us on all our socials below to build our social media family!
 
 ---
 
-## Placeholders still open (do not invent)
+## Open items (for Jack; not shown as boxes in the email)
 
-1. **Turkey Pan snippet URL.** No URL was provided. Campaigns cannot embed the video.
-2. **Dec 5 Hopmonk ticket link.** Left blank in the doc and not in the emails. A public listing exists on KC Turner Presents for Dec 5 at HopMonk / the Abbey, but it was not used, because Gaynell did not supply the link.
-3. **Nov 28 venue / city.** Keep flagged. Doc: "Carsen City, California." Emails: "Carson City." Eventbrite and roy-rogers.com/shows both say Nashville Social Club, 1105 South Carson Street, Carson City, NV, 7:30 PM to 9:30 PM. The Eventbrite ticket link she sent is already used for GET TICKETS.
-4. **Sarasota / Fogertyville ticket link.** Feb 27 Cafe Eleven now has a GET TICKETS link (homepage Eventbrite, approved). The Feb 29 Sarasota date is not on roy-rogers.com and still has no link.
-5. **Send day.** Tuesday, Wednesday, or Thursday morning; Jack has not chosen.
+1. **Turkey Pan snippet URL.** Jack will send the Facebook video link; then make a GIF the way we do for Remarkable, linked to the video. Campaigns cannot embed video.
+2. **Nov 28 venue / city.** The email uses Gaynell's wording verbatim: "The Nashville Social Club, Carsen City, California." Her emails, Eventbrite, and roy-rogers.com all say Nashville Social Club, 1105 South Carson Street, Carson City, NV, 7:30 PM (doors 6:30). Ops confirmed this is Nevada. Confirm whether to correct the city and state in the email.
+3. **Sarasota / Fogertyville ticket link.** The only show still without a link. The email lists the date and venue only. This show is not on roy-rogers.com. Still needs a link from Gaynell. Also confirm the venue spelling (Fogertyville vs Fogartyville).
+4. **Send day.** Tuesday, Wednesday, or Thursday morning; Jack has not chosen, and said not to worry about it yet.
 
 ---
 
@@ -319,7 +310,7 @@ Follow us on all our socials below to build our social media family!
 - "it’s 3rd printing" (its).
 - "cancer journey’s" (journeys).
 - "a wide breath of cooking" (likely "breadth").
-- "Carsen City, California" vs Carson City, NV (see placeholder 3). This is a fact to confirm, not just a typo.
+- "Carsen City, California" vs Carson City, NV (see open item 2). This is a fact to confirm, not just a typo.
 - "The Abby" vs "the Abbey," the live-music room at HopMonk Tavern Sebastopol.
 - "Fogertyville," Sarasota: the venue in Sarasota is Fogartyville (Fogartyville Community Media & Arts Center).
 - "February 29th, 2027": 2027 is not a leap year, so that date does not exist. Also not currently listed on roy-rogers.com/shows.

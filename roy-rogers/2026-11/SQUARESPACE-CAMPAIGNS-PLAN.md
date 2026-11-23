@@ -143,12 +143,11 @@ Same July 2026 text-only show pattern as section 8.
 
 February 27th, 2027
 Café Eleven, St. Augustine, Florida
-GET TICKETS -> https://www.eventbrite.com/e/roy-rogers-tickets-2003260333584
-(From the roy-rogers.com homepage Buy Tickets button, without the ?aff tracking parameter. Jack approved adding this link.)
 
 February 28th, 2027
 Fogartyville, Sarasota, Florida
-(No ticket line in the email. This date is not on roy-rogers.com. See open items.)
+
+Both Florida shows are date announcements only: date, venue, and city, with no GET TICKETS line. Jack decided this on 2026-11-23, matching how he reads Gaynell's Word doc, which left ticket-link blanks for the California shows but not for the Florida shows. The Cafe Eleven Eventbrite link was removed from the email.
 
 Look for more dates to be added soon so check the site often for some exciting 2027 news.
 
@@ -294,15 +293,15 @@ Follow us on all our socials below to build our social media family!
 ## Open items (for Jack; not shown as boxes in the email)
 
 1. **Turkey Pan snippet URL.** Jack will send the Facebook video link; then make a GIF the way we do for Remarkable, linked to the video. Campaigns cannot embed video.
-2. **Sarasota / Fogartyville ticket link.** The only show still without a link. The email lists the date and venue only (spelling corrected to Fogartyville). This show is not on roy-rogers.com. Still needs a link from Gaynell.
-3. **February 28th, 2027, Sarasota.** Jack approved changing Gaynell's Feb 29 date (which does not exist; 2027 is not a leap year) to February 28th, 2027 (a Sunday). No day of week is shown in the email. Still no ticket link, and the date is not on roy-rogers.com/shows.
-4. **Send day.** Tuesday, Wednesday, or Thursday morning; Jack has not chosen, and said not to worry about it yet.
+2. **Send day.** Tuesday, Wednesday, or Thursday morning; Jack has not chosen, and said not to worry about it yet.
 
 ---
 
 ## Copy fixes applied (Jack approved, 2026-11-23)
 
 Date change Jack approved (2026-11-23): February 29th, 2027 -> February 28th, 2027 (a Sunday). No day of week is shown in the email.
+
+Florida shows, Jack's decision (2026-11-23): no ticket links. February 27th, 2027, Cafe Eleven, St. Augustine, and February 28th, 2027, Fogartyville, Sarasota, are date announcements only. The Cafe Eleven Eventbrite link was removed. The California shows keep their GET TICKETS links.
 
 Fixes in the email body and this plan:
 

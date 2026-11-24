@@ -15,7 +15,7 @@ References:
 
 Allowed Campaigns sections only: Text, Image, Button, Spacer, Line, Blog, Product, Discount. Header and footer are built in. Max 40 sections including header and footer. One button per section. An image section holds up to 4 images (banner or grid). No video embed (use a link or a GIF).
 
-This plan uses 31 sections including header and footer.
+This plan uses 33 sections including header and footer.
 
 Campaigns will add its own Unsubscribe and Powered by Squarespace lines in the footer. Do not paste those by hand.
 
@@ -187,6 +187,14 @@ Watch the Turkey Pan snippet
 
 Link that line to https://youtube.com/shorts/37B6AF6IAco (gold, underlined, like the other text links). Put it directly under the GIF.
 
+### 17. Text
+
+Happy Thanksgiving to All!
+
+Gaynell asked for this line in her 2026-11-23 review (subject "Rr Newsletter - Gobble Gobble"). It is a Text section of its own, centered, placed right after the Turkey Pan GIF and the Watch the Turkey Pan snippet link, and before the Bruce Potter paragraph.
+
+### 18. Text
+
 Thanks to guitar maker Bruce Potter for this gift. FYI on the recording of “I Would Undo Anything” by RR and frequent co-writer Donna Johnston of CT. (A retired school teacher!)
 
 Roy’s Official YouTube Channel for some stunning snippets and live shows!
@@ -195,27 +203,27 @@ Link "Roy’s Official YouTube Channel" to https://www.youtube.com/@RoyRogersSli
 
 Her production note "Please put the actual this Post he link to the Turkey Pan snippet and then" is not printed as body copy. It is handled by the GIF, the click-through, and the Watch the Turkey Pan snippet link. "Post the link to Roy’s Official YouTube Channel..." is handled as that linked line plus the Subscribe button. Jack sent the YouTube Short on 2026-11-23.
 
-### 17. Button
+### 19. Button
 
 - Label: SUBSCRIBE
 - URL: https://www.youtube.com/@RoyRogersSlide_OfficialChannel
 - Style: primary gold
 
-### 18. Line
+### 20. Line
 
-### 19. Text
+### 21. Text
 
 Heading:
 
 Gaynell’s Kitchen
 
-### 20. Text
+### 22. Text
 
 The new book from my wife Gaynell’s Kitchen: Down Home Cooking from A Wayward Southern Belle is in its 3rd printing. A memoir and cookbook, it’s a rare lens into her life in music, film, cancer journey and a wide breadth of cooking for some people you will recognize from the entertainment world! You can only get copies at RR shows and her website at gaynellskitchen.com.
 
 Link gaynellskitchen.com to https://www.gaynellskitchen.com
 
-### 21. Image (grid, 2 images)
+### 23. Image (grid, 2 images)
 
 Both book covers, in one Image section (grid). If Campaigns crops the mixed aspect ratios badly, switch to two stacked Image banner sections.
 
@@ -226,7 +234,7 @@ Both book covers, in one Image section (grid). If Campaigns crops the mixed aspe
    Alt: Gaynell’s Kitchen full jacket: front, spine, and back cover
    Optional link: https://www.gaynellskitchen.com
 
-### 22. Button
+### 24. Button
 
 - Label: VISIT THE SITE
 - URL: https://www.gaynellskitchen.com
@@ -234,9 +242,9 @@ Both book covers, in one Image section (grid). If Campaigns crops the mixed aspe
 
 (July 2026 linked some book CTAs to https://www.gaynellskitchen.com/book, which still resolves. This year's copy points at the homepage, so the mockup uses that.)
 
-### 23. Line
+### 25. Line
 
-### 24. Text
+### 26. Text
 
 Heading:
 
@@ -244,22 +252,18 @@ MERCH
 
 No extra merch body copy was provided this year ("Merch page and the socials as usual"). Do not invent a merch blurb. The Product section plus the shop button covers it, as in July 2026.
 
-### 25. Product
+### 27. Product
 
-Two products from the July 2026 issue (same items, titles, price, and images):
+One product only. Gaynell's 2026-11-23 review: take the hats off because they are sold out, and just feature the coffee and the store.
 
-1. RR & DRK Baseball Cap, $20.00
-   Image: the cap photo already on the Squarespace site (used in the July email)
-   URL: https://www.roy-rogers.com/store/p/rr-drk-baseball-cap
-   CTA: Shop
-2. Coffee | Roy Rogers Rock Slide Roast, $20.00
+1. Coffee | Roy Rogers Rock Slide Roast, $20.00
    Image: the coffee photo already on the Squarespace site (used in the July email)
    URL: https://www.roy-rogers.com/store/p/coffee-roy-rogers-rock-slide-roast
    CTA: Shop
 
-The Shop CTAs live inside the Product section. Do not add separate Button sections for them.
+The Shop CTA lives inside the Product section. Do not add a separate Button section for it. Do not include the RR & DRK Baseball Cap.
 
-### 26. Button
+### 28. Button
 
 - Label: SHOP ALL MERCH
 - URL: https://www.roy-rogers.com/store
@@ -281,15 +285,15 @@ andrew@cmcartists.com
 
 Mailto links on both addresses.
 
-### 27. Line
+### 31. Line
 
-### 28. Text
+### 32. Text
 
 From the 2025 Thanksgiving issue:
 
 Follow us on all our socials below to build our social media family!
 
-### 31. Footer (built-in)
+### 33. Footer (built-in)
 
 - Footer logo: RR-SLIDE-ZONE-LOGO-TEST5.jpg, links to https://www.roy-rogers.com/
 - Social icons, in this July 2026 order, HTTPS confirmed:
@@ -316,6 +320,8 @@ Date change Jack approved (2026-11-23): February 29th, 2027 -> February 28th, 20
 Florida shows, Jack's decision (2026-11-23): no ticket links. February 27th, 2027, Cafe Eleven, St. Augustine, and February 28th, 2027, Fogartyville, Sarasota, are date announcements only. The Cafe Eleven Eventbrite link was removed. The California shows keep their GET TICKETS links.
 
 Turkey Pan GIF (2026-11-23): Jack sent https://youtube.com/shorts/37B6AF6IAco. The dashed placeholder was replaced with a 560x560 email GIF (about 4 seconds, 6 fps, play-button overlay) that clicks through to the Short, plus a Watch the Turkey Pan snippet text link under it. The official channel link and Subscribe button are unchanged.
+
+Gaynell review (2026-11-23, 4:10 PM PT, subject "Rr Newsletter - Gobble Gobble"): she said it looks great, with two changes. (1) Take the hats off because they are sold out; just feature the coffee and the store. (2) After the Turkey pan clip, put "Happy Thanksgiving to All!" as its own Text section, right after the GIF and the Watch the Turkey Pan snippet link.
 
 Fixes in the email body and this plan:
 

@@ -10,5 +10,5 @@ nav a.btn{cursor:pointer}
 .pv-menu a.ai{font-size:34px;line-height:1.12}
 .pv-menu a.ai .t{text-decoration:underline;text-decoration-color:#E5A329;text-decoration-thickness:4px;text-underline-offset:6px;text-decoration-skip-ink:none}
 
-/* Bodoni Moda (serif accent) weight bump site-wide (600, 800, then 900) - Jack 2026-11-24: thin hairlines hard to read */
-.serif,.sig,.diy-q,.control blockquote,.split blockquote,.ai blockquote{font-weight:900}
+/* Bodoni Moda (serif accent) weight bump site-wide (600, 800, 900, then 700) - Jack 2026-11-24: thin hairlines hard to read */
+.serif,.sig,.diy-q,.control blockquote,.split blockquote,.ai blockquote{font-weight:700}

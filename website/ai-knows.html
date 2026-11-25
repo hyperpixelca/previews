@@ -57,20 +57,9 @@
 .qs.open .ql{display:block}
 .ql li{counter-increment:q;display:grid;grid-template-columns:40px 1fr;padding:12px 0;border-bottom:1px solid var(--rule);font-size:17px;line-height:1.4}
 .ql li:before{content:'0' counter(q);font-family:'SM';font-size:13px;color:var(--red);padding-top:3px}
+.hc{border-top:2px solid var(--ink);margin-top:14px;padding-top:14px}.hc-t{font-family:'SM';font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--slate)}.hc ul{list-style:none;margin-top:6px}.hc li{padding:9px 0;border-bottom:1px solid var(--rule);font-size:16px;line-height:1.4}
+.qs:not(.open) .hc{display:none}
 .ql .fine{font-family:'SM';font-size:11.5px;color:var(--slate);line-height:1.6;padding-top:12px}
-/* how we check */
-.how{background:var(--ink);color:var(--paper);padding:72px 72px 80px}
-.how .eb{color:var(--mustard)}
-.how h2{font-size:56px;letter-spacing:-.04em;line-height:.95;font-weight:800;max-width:760px}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:44px;border-top:2px solid var(--paper)}
-.st{padding:24px 28px 8px 0;border-right:1px solid #3A3A3A;margin-right:28px}
-.st:last-child{border-right:0;margin-right:0}
-.st .mono{font-size:13px;color:var(--mustard);letter-spacing:.1em}
-.st h3{font-size:22px;letter-spacing:-.02em;margin:12px 0 10px}
-.st p{font-size:16px;line-height:1.5;color:#CFCAC0}
-.ins{padding:56px 72px;display:flex;justify-content:space-between;align-items:center;gap:40px;border-bottom:2px solid var(--ink)}
-.ins h3{font-size:34px;letter-spacing:-.03em;font-weight:800}
-.ins p{font-size:17px;margin-top:8px;max-width:620px;line-height:1.45}
 @media (max-width:760px){
  .ak{padding:32px 20px 48px;grid-template-columns:minmax(0,1fr);gap:48px}.ak>div{min-width:0}
  .ak h1{font-size:52px}
@@ -87,15 +76,11 @@
  .rb .pl{grid-column:3;grid-row:1}
  .nm{font-size:19px}
  .det{padding:0 0 18px 44px}.det .tool{grid-template-columns:80px 1fr 42px}
- .how{padding:48px 20px 56px}.how h2{font-size:36px}
- .steps{grid-template-columns:1fr;margin-top:28px}.st{border-right:0;margin-right:0;border-bottom:1px solid #3A3A3A;padding:20px 0}
- .ins{padding:40px 20px;flex-direction:column;align-items:flex-start;gap:20px}.ins h3{font-size:26px}
 }
 .tool.pd{color:#8a8a8a}.tool.pd .pt{font-family:'SM';font-size:11px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;font-weight:400}
-.nx{list-style:none;counter-reset:n;margin-top:22px;border-top:1.5px solid var(--rule)}
-.nx li{counter-increment:n;display:grid;grid-template-columns:36px 1fr;column-gap:6px;padding:12px 0;border-bottom:1px solid var(--rule)}
-.nx li:before{content:'0' counter(n);grid-row:span 2;font-family:'SM';font-size:13px;color:var(--red);font-weight:700;padding-top:3px}
-.nx b{font-size:17px;letter-spacing:-.01em}.nx span{font-size:14.5px;line-height:1.4;color:var(--slate);margin-top:2px}
+.nx{list-style:none;counter-reset:n;margin-top:22px;border-top:1.5px solid var(--rule);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.nx li{counter-increment:n;padding:14px 0 6px;font-size:17px;font-weight:700;letter-spacing:-.01em;line-height:1.25}
+.nx li:before{content:'0' counter(n);display:block;font-family:'SM';font-size:13px;color:var(--red);font-weight:700;margin-bottom:8px}
 .seeflow{display:inline-block;margin-top:18px;font-weight:700;font-size:16px;border-bottom:2px solid var(--ink);padding-bottom:2px}
 .flow{padding:80px 72px 88px;border-top:2px solid var(--ink)}
 .fh{display:flex;justify-content:space-between;align-items:end;gap:24px}
@@ -121,10 +106,8 @@
 .em{display:grid;gap:10px}.em input{font:600 16px 'IT';padding:13px 14px;background:#fff;border:0;border-bottom:3px solid var(--red);color:var(--ink);outline:0;width:100%}.em .btn{width:100%}
 .fine2{font-family:'SM';font-size:11px;line-height:1.6;color:#A9A49A;margin-top:10px}
 @media (max-width:1100px) and (min-width:761px){.fg{grid-template-columns:1fr 1fr}.fc.dark{grid-column:span 2}}
-@media (max-width:760px){.flow{padding:48px 20px 56px}.flow h2{font-size:34px}.fh{flex-direction:column;align-items:flex-start;gap:12px}.fg{grid-template-columns:1fr;margin-top:28px;gap:18px}.fc{padding:22px 18px}.nx b{font-size:16px}}
+@media (max-width:760px){.nx{grid-template-columns:1fr;gap:0}.nx li{display:grid;grid-template-columns:36px 1fr;padding:12px 0;border-bottom:1px solid var(--rule)}.nx li:before{margin:2px 0 0}.flow{padding:48px 20px 56px}.flow h2{font-size:34px}.fh{flex-direction:column;align-items:flex-start;gap:12px}.fg{grid-template-columns:1fr;margin-top:28px;gap:18px}.fc{padding:22px 18px}.nx b{font-size:16px}}
 html{scroll-behavior:smooth}#leaderboard,#how{scroll-margin-top:84px}
-.jl{display:inline-block;margin-top:16px;font-size:15px;font-weight:700;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--red);padding-bottom:2px}.jl span{color:var(--red)}
-.how .jl.back{margin-top:40px;color:var(--paper);border-bottom-color:var(--mustard)}.how .jl.back span{color:var(--mustard)}
 .optin{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.45;color:var(--paper);cursor:pointer}.optin input{width:18px;height:18px;margin:1px 0 0;accent-color:var(--mustard);flex:0 0 auto}
 </style></head><body><div class="review"><span><b>REVIEW</b>&nbsp; Free AI check / company review - Jack and Joe</span><span class="long">Internal mockup for Hyper Pixel. Not live. All business names and scores are example data.</span></div><nav class="top"><a href="index.html"><img src="assets/marks/hyperpixel-A-primary-color.svg" alt="hyperpixel."></a><ul><li><a href="services.html">Services</a></li><li><a href="plans-builder.html">Plans</a></li><li><a href="how-we-work.html">How we work</a></li><li><a href="about.html">About</a></li><li><a href="ai-knows.html">Free AI Check</a></li><li><a class="btn" href="contact.html">Book a call</a></li></ul><div class="burger"></div></nav>
 
@@ -134,14 +117,8 @@ html{scroll-behavior:smooth}#leaderboard,#how{scroll-margin-top:84px}
   <h1>Does AI know your business<span style="color:var(--red)">?</span></h1>
   <p class="lede">When locals ask ChatGPT, Perplexity or Gemini for a recommendation, does your name come up? Check it free.</p>
   <div class="chk">
-   <div class="lab">Check your business</div>
-   <form id="ck"><input type="text" inputmode="url" name="site" placeholder="yourbusiness.com" required><button class="btn red" type="submit">Check my business</button><div class="fine">Free. Enter your business website and we do the rest.</div></form>
-   <ol class="nx">
-    <li><b>We read your website</b><span>Your name, town and what you do, from your public pages.</span></li>
-    <li><b>We write 3 local questions</b><span>The kind a customer near you would actually ask.</span></li>
-    <li><b>You see your score free</b><span>How often ChatGPT, Perplexity and Gemini name you.</span></li>
-    <li><b>Full report by email</b><span>Every answer, who AI picks instead, and what to fix.</span></li>
-   </ol>
+      <form id="ck"><input type="text" inputmode="url" name="site" placeholder="yourbusiness.com" aria-label="Your business website" required><button class="btn red" type="submit">Check my business</button><div class="fine">Free. Enter your business website and we do the rest.</div></form>
+   <ol class="nx"><li>We read your site</li><li>You get your score free</li><li>The full report comes by email</li></ol>
    <a class="seeflow" href="#flow">See what you get <span>&darr;</span></a>
   </div>
  </div>
@@ -150,9 +127,8 @@ html{scroll-behavior:smooth}#leaderboard,#how{scroll-margin-top:84px}
   <div class="bh"><h2>AI knows these Sacramento area businesses<span class="sq"></span></h2><div class="asof" id="asof"><span class="ex">Example data</span><br>As of [month year]</div></div>
   <div class="tlab" id="tlab">Example categories <span>/ sample only until the Google ranking is in</span></div><div class="tabs" id="tabs"></div>
   <div class="rows" id="rows"></div>
-  <div class="qs" id="qs"><button class="qbtn" type="button"><span>See the questions we asked</span><span class="pl">+</span></button><ol class="ql" id="ql"></ol></div>
+  <div class="qs" id="qs"><button class="qbtn" type="button"><span>See the questions we asked</span><span class="pl">+</span></button><ol class="ql" id="ql"></ol><div class="hc"><div class="hc-t">How we check</div><ul><li>The top 12 searched categories</li><li>3 questions on 3 AI tools, 10 times each</li><li>Sacramento-headquartered businesses only, refreshed monthly</li></ul></div></div>
   <p class="src" id="src">Categories are based on Sacramento-area Google search volume as of November 1, 2026.</p>
-  <a class="jl" href="#how">How we check the leaderboard <span>&darr;</span></a>
  </div>
 </section>
 
@@ -162,11 +138,6 @@ html{scroll-behavior:smooth}#leaderboard,#how{scroll-margin-top:84px}
   <div class="fc">
    <div class="fn">01 / WE READ YOUR SITE</div>
    <div class="url">examplebakery.com</div>
-   <dl class="found">
-    <div><dt>Business</dt><dd>Example Bakery</dd></div>
-    <div><dt>Town</dt><dd>Carmichael</dd></div>
-    <div><dt>What you do</dt><dd>Bakery, custom cakes, catering</dd></div>
-   </dl>
    <div class="fl">Your 3 questions</div>
    <ol class="gq">
     <li>What's the best bakery in Carmichael?</li>
@@ -186,33 +157,16 @@ html{scroll-behavior:smooth}#leaderboard,#how{scroll-margin-top:84px}
   <div class="fc dark">
    <div class="fn">03 / THE FULL REPORT</div>
    <ul class="rp">
-    <li><b>Every AI answer, word for word</b><span>See exactly how each tool describes you, or why it skipped you.</span></li>
-    <li><b>Who AI recommends instead</b><span>The 6 businesses named in your place, and how often.</span></li>
-    <li><b>Question by question</b><span>Where you show up and where you don't.</span></li>
-    <li><b>What to fix first</b><span>A short, plain list of changes most likely to move your score.</span></li>
+    <li><b>Every AI answer, word for word</b></li>
+    <li><b>Who AI recommends instead</b></li>
+    <li><b>Question by question</b></li>
+    <li><b>What to fix first</b></li>
    </ul>
    <div class="lock"><div class="blur"><i></i><i></i><i></i></div><span>Locked until you add your email</span></div>
    <form class="em" onsubmit="return false"><input type="email" placeholder="you@yourbusiness.com"><label class="optin"><input type="checkbox" name="insider"><span>Send me the Hyper Pixel Insider newsletter.</span></label><button class="btn red" type="submit">Email my full report</button></form>
    <div class="fine2">Your full report arrives by email within one business day.</div>
   </div>
  </div>
-</section>
-
-<section class="how" id="how">
- <div class="eb">HOW WE CHECK THE LEADERBOARD</div>
- <h2>Same questions. Same tools. Same rules for everyone.</h2>
- <div class="steps">
-  <div class="st"><div class="mono">01</div><h3>The 12 most-searched categories</h3><p>Each month's categories are the types of local business people in the Sacramento area search for most on Google. We recheck every month, and a category that moves up gets a <span class="hw-nw">New this month</span> tag.</p></div>
-  <div class="st"><div class="mono">02</div><h3>3 local questions, 3 AI tools, 10 times</h3><p>Each category gets three everyday questions a local customer would ask. We ask ChatGPT, Perplexity and Gemini each one 10 times, because AI answers change from run to run.</p></div>
-  <div class="st"><div class="mono">03</div><h3>Sacramento area only</h3><p>Only businesses headquartered in the Sacramento area count. National chains are left out, even when AI names them.</p></div>
-  <div class="st"><div class="mono">04</div><h3>Top 5, refreshed monthly</h3><p>We show the top 5 per category with an as-of date. Hyper Pixel clients are marked as clients.</p></div>
- </div>
- <a class="jl back" href="#leaderboard"><span>&uarr;</span> Back to leaderboard</a>
-</section>
-
-<section class="ins">
- <div><div class="lab">Sacramento Marketing Insider</div><h3>Who moved up this month, and why.</h3><p>A monthly email on what's working for Sacramento area businesses right now.</p></div>
- <a class="btn" href="contact.html">Get the Insider</a>
 </section>
 
 <footer class="ft"><img src="assets/marks/hyperpixel-A-primary-reverse.svg" alt="hyperpixel."><div class="mono">2 Scripps Drive, Suite 205<br>Sacramento, CA 95825<br>(916) 607-4190<br>hyperpixelca@gmail.com</div></footer>
@@ -250,7 +204,7 @@ function draw(ci){
  rows.innerHTML=h;
  rows.querySelectorAll('.rb').forEach(function(b){b.onclick=function(){b.parentNode.classList.toggle('open')}});
  var f=rows.querySelector('.r');if(f)f.classList.add('open');
- ql.innerHTML=c.questions.map(function(q){return '<li>'+esc(q)+'</li>'}).join('')+'<div class="fine">Each question is asked 10 times on ChatGPT, Perplexity and Gemini. Scores are the average across '+(PART?'the tools with results so far. Tools marked Pending join when their run finishes.':'the three tools.')+'</div>';
+ ql.innerHTML=c.questions.map(function(q){return '<li>'+esc(q)+'</li>'}).join('')+'<div class="fine">Scores are the average across '+(PART?'the tools with results so far. Tools marked Pending join when their run finishes.':'the three tools.')+'</div>';
 }
 function build(){
  tabs.innerHTML='';

@@ -76,8 +76,8 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--red);outline-offse
 
 /* Featured Content band + reels + compact Brands we market */
 .content-band{background:var(--ink);color:var(--paper);padding:72px 72px 0}
-.content-band-top{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.95fr);gap:56px;align-items:start;margin-bottom:48px}
-.content-band .eb{color:var(--red);margin-bottom:16px}
+.content-band-top{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.95fr);gap:56px;align-items:start;margin-bottom:0}
+.content-band .eb{color:var(--ion);margin-bottom:16px}
 .content-band h2{font-size:clamp(36px,4.2vw,60px);letter-spacing:-.035em;line-height:1;color:var(--paper);font-weight:800}
 .content-band .lede{font-size:19px;line-height:1.5;color:#d6d6d6;max-width:540px;margin-top:18px}
 .content-feature{border:1.5px solid #3a3a3a;border-top:6px solid var(--red);padding:28px 28px 22px;background:#1c1c1c;min-width:0}
@@ -86,12 +86,22 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--red);outline-offse
 .content-feature-title p{font-size:16px;line-height:1.4;color:#cfcfcf;margin-top:10px;max-width:280px}
 .content-feature .service-rate{text-align:right;padding-top:0}
 .content-feature .service-rate b{color:var(--paper)}
-.content-feature .scope-label{color:var(--red)}
+.content-feature .scope-label{color:var(--ion)}
+.content-feature .prop{color:var(--ion);border-color:var(--ion)}
+.content-feature .deliv li:before{background:var(--ion)}
+.content-feature .service-link span{color:var(--ion)}
 .content-feature .deliv{border-top-color:#3a3a3a}
 .content-feature .deliv li{border-bottom-color:#3a3a3a;color:var(--paper);font-size:17px;padding:10px 0 10px 28px}
 .content-feature .deliv li:before{top:18px}
 .content-feature .scope-note{color:#9a9a9a;margin-top:14px;margin-bottom:8px;font-size:15px}
 .content-feature .service-link{color:var(--paper);border-bottom-color:var(--paper)}
+
+/* Recent reels header: original homepage wording, dark-band spacing, set apart from the Content card */
+.content-band .reels-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin:0 0 40px;padding-top:48px;border-top:1.5px solid #3a3a3a}
+.content-band .reels-head .mono-l{font-family:'SM',monospace;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--ion);margin-bottom:18px}
+.content-band .reels-head h2{font-size:clamp(44px,4.6vw,64px);letter-spacing:-.035em;line-height:1;color:var(--paper);font-weight:800;text-transform:none;font-family:'IT',sans-serif}
+.content-band .reels-head .lede{max-width:420px;font-size:18px;line-height:1.5;color:#bdbdbd;margin:0}
+
 .content-band .rgrid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px}
 .content-band .reel .fr{position:relative;aspect-ratio:9/16;background:repeating-linear-gradient(135deg,#2a2a2a 0 14px,#222 14px 28px);border:2px solid #3a3a3a;display:flex;align-items:center;justify-content:center}
 .content-band .reel .fr .tag{position:absolute;top:10px;left:10px;font-family:'SM',monospace;font-size:10px;letter-spacing:.1em;background:#161616;color:#F0ECE1;padding:3px 6px}
@@ -103,8 +113,9 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--red);outline-offse
 
 /* Compact brands strip, directly under the reels */
 .content-band .brands{margin:28px -72px 0;padding:18px 72px 20px;border-top:1px solid #3a3a3a;background:#1a1a1a}
-.content-band .brands-head{display:flex;align-items:baseline;gap:16px;margin-bottom:12px;flex-wrap:wrap}
-.content-band .brands-head h2{font-family:'SM',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--red);font-weight:400;line-height:1.3}
+.content-band .brands-head{display:flex;align-items:baseline;gap:12px 18px;margin-bottom:12px;flex-wrap:wrap}
+.content-band .brands-head .mono-l{font-family:'SM',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ion);font-weight:400;flex-shrink:0}
+.content-band .brands-head h2{font-family:'IT',sans-serif;font-size:22px;letter-spacing:-.03em;text-transform:none;color:var(--paper);font-weight:800;line-height:1.15}
 .content-band .brands-head p{font-size:13px;color:#8a8a8a;margin:0;font-weight:400}
 .bgrid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));column-gap:16px;row-gap:0;border-top:1px solid #3a3a3a}
 .bgrid div{padding:9px 0 10px;font-weight:700;font-size:13px;line-height:1.25;letter-spacing:-.02em;color:var(--paper);border-bottom:1px solid #2e2e2e;min-width:0}
@@ -115,7 +126,9 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--red);outline-offse
 @media(min-width:761px) and (max-width:1100px){
  .hero-grid h1{font-size:clamp(36px,5.2vw,56px)}
  .content-band{padding:56px 40px 0}
- .content-band-top{gap:32px;margin-bottom:36px}
+ .content-band-top{gap:32px;margin-bottom:0}
+ .content-band .reels-head{padding-top:40px;margin-bottom:32px;gap:28px}
+ .content-band .reels-head h2{font-size:48px}
  .content-band h2{font-size:40px}
  .content-feature{padding:22px}
  .content-feature-title h3{font-size:28px}
@@ -126,18 +139,22 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--red);outline-offse
  .hero-grid{gap:24px}
  .hero-grid h1{font-size:clamp(32px,10vw,44px);max-width:none}
  .content-band{padding:40px 20px 0}
- .content-band-top{grid-template-columns:1fr;gap:28px;margin-bottom:28px}
+ .content-band-top{grid-template-columns:1fr;gap:28px;margin-bottom:0}
  .content-band h2{font-size:34px}
  .content-band .lede{font-size:16px;margin-top:14px}
  .content-feature{padding:22px 18px 18px}
  .content-feature-title h3{font-size:28px}
  .content-feature .deliv li{font-size:16px}
+ .content-band .reels-head{display:block;padding-top:32px;margin-bottom:22px}
+ .content-band .reels-head .mono-l{margin-bottom:12px}
+ .content-band .reels-head h2{font-size:40px;margin-bottom:12px}
+ .content-band .reels-head .lede{font-size:16px;max-width:none}
  .content-band .rgrid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-right:-20px;padding-right:20px}
  .content-band .reel{flex:0 0 62%;scroll-snap-align:start;min-width:0}
  .content-band .note{margin-top:16px}
  .content-band .brands{margin:22px -20px 0;padding:16px 20px 18px}
- .content-band .brands-head{margin-bottom:10px;gap:8px}
- .content-band .brands-head h2{font-size:12px}
+ .content-band .brands-head{margin-bottom:10px;gap:8px 12px}
+ .content-band .brands-head h2{font-size:20px}
  .bgrid{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:12px}
  .bgrid div{font-size:12px;padding:8px 0}
  .service-index{grid-template-columns:1fr 1fr}

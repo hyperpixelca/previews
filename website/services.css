@@ -68,3 +68,77 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--red);outline-offse
 @media(max-width:760px){.svc-faq{margin:44px 20px 0;grid-template-columns:1fr;gap:20px}.deliv li{font-size:18px}.svc-q h3{font-size:19px}.svc-q p{font-size:16px}}
 .scope-gap{height:24px}
 .svc-q[open] summary:after{content:none}
+
+/* DRAFT 2026-11-25: long Services H1 sized to two lines, wording unchanged */
+.hero-grid{grid-template-columns:1fr;gap:32px}
+.hero-grid h1{font-size:clamp(40px,4.7vw,72px);line-height:.98;letter-spacing:-.04em;max-width:18.5ch}
+.hero-copy{max-width:640px}
+
+/* Featured Content band + reels + compact Brands we market */
+.content-band{background:var(--ink);color:var(--paper);padding:72px 72px 0}
+.content-band-top{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.95fr);gap:56px;align-items:start;margin-bottom:48px}
+.content-band .eb{color:var(--red);margin-bottom:16px}
+.content-band h2{font-size:clamp(36px,4.2vw,60px);letter-spacing:-.035em;line-height:1;color:var(--paper);font-weight:800}
+.content-band .lede{font-size:19px;line-height:1.5;color:#d6d6d6;max-width:540px;margin-top:18px}
+.content-feature{border:1.5px solid #3a3a3a;border-top:6px solid var(--red);padding:28px 28px 22px;background:#1c1c1c;min-width:0}
+.content-feature-top{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:start;margin-bottom:22px}
+.content-feature-title h3{font-size:34px;letter-spacing:-.03em;line-height:1;font-weight:800}
+.content-feature-title p{font-size:16px;line-height:1.4;color:#cfcfcf;margin-top:10px;max-width:280px}
+.content-feature .service-rate{text-align:right;padding-top:0}
+.content-feature .service-rate b{color:var(--paper)}
+.content-feature .scope-label{color:var(--red)}
+.content-feature .deliv{border-top-color:#3a3a3a}
+.content-feature .deliv li{border-bottom-color:#3a3a3a;color:var(--paper);font-size:17px;padding:10px 0 10px 28px}
+.content-feature .deliv li:before{top:18px}
+.content-feature .scope-note{color:#9a9a9a;margin-top:14px;margin-bottom:8px;font-size:15px}
+.content-feature .service-link{color:var(--paper);border-bottom-color:var(--paper)}
+.content-band .rgrid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px}
+.content-band .reel .fr{position:relative;aspect-ratio:9/16;background:repeating-linear-gradient(135deg,#2a2a2a 0 14px,#222 14px 28px);border:2px solid #3a3a3a;display:flex;align-items:center;justify-content:center}
+.content-band .reel .fr .tag{position:absolute;top:10px;left:10px;font-family:'SM',monospace;font-size:10px;letter-spacing:.1em;background:#161616;color:#F0ECE1;padding:3px 6px}
+.content-band .reel .fr .play{width:48px;height:48px;border-radius:50%;background:#B23A2C;position:relative}
+.content-band .reel .fr .play:after{content:'';position:absolute;left:19px;top:14px;border-left:14px solid #F0ECE1;border-top:10px solid transparent;border-bottom:10px solid transparent}
+.content-band .reel .cap{margin-top:12px;font-weight:700;font-size:14px;color:var(--paper)}
+.content-band .reel .cap span{display:block;font-family:'SM',monospace;font-weight:400;font-size:11px;color:#8a8a8a;margin-top:3px;letter-spacing:.06em}
+.content-band .note{margin:20px 0 0;font-family:'SM',monospace;font-size:11px;color:#8a8a8a;letter-spacing:.08em}
+
+/* Compact brands strip, directly under the reels */
+.content-band .brands{margin:28px -72px 0;padding:18px 72px 20px;border-top:1px solid #3a3a3a;background:#1a1a1a}
+.content-band .brands-head{display:flex;align-items:baseline;gap:16px;margin-bottom:12px;flex-wrap:wrap}
+.content-band .brands-head h2{font-family:'SM',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--red);font-weight:400;line-height:1.3}
+.content-band .brands-head p{font-size:13px;color:#8a8a8a;margin:0;font-weight:400}
+.bgrid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));column-gap:16px;row-gap:0;border-top:1px solid #3a3a3a}
+.bgrid div{padding:9px 0 10px;font-weight:700;font-size:13px;line-height:1.25;letter-spacing:-.02em;color:var(--paper);border-bottom:1px solid #2e2e2e;min-width:0}
+
+/* Jump nav with six services */
+.service-index{grid-template-columns:repeat(3,minmax(0,1fr))}
+
+@media(min-width:761px) and (max-width:1100px){
+ .hero-grid h1{font-size:clamp(36px,5.2vw,56px)}
+ .content-band{padding:56px 40px 0}
+ .content-band-top{gap:32px;margin-bottom:36px}
+ .content-band h2{font-size:40px}
+ .content-feature{padding:22px}
+ .content-feature-title h3{font-size:28px}
+ .content-band .brands{margin-left:-40px;margin-right:-40px;padding:16px 40px 18px}
+ .service-index{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:760px){
+ .hero-grid{gap:24px}
+ .hero-grid h1{font-size:clamp(32px,10vw,44px);max-width:none}
+ .content-band{padding:40px 20px 0}
+ .content-band-top{grid-template-columns:1fr;gap:28px;margin-bottom:28px}
+ .content-band h2{font-size:34px}
+ .content-band .lede{font-size:16px;margin-top:14px}
+ .content-feature{padding:22px 18px 18px}
+ .content-feature-title h3{font-size:28px}
+ .content-feature .deliv li{font-size:16px}
+ .content-band .rgrid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-right:-20px;padding-right:20px}
+ .content-band .reel{flex:0 0 62%;scroll-snap-align:start;min-width:0}
+ .content-band .note{margin-top:16px}
+ .content-band .brands{margin:22px -20px 0;padding:16px 20px 18px}
+ .content-band .brands-head{margin-bottom:10px;gap:8px}
+ .content-band .brands-head h2{font-size:12px}
+ .bgrid{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:12px}
+ .bgrid div{font-size:12px;padding:8px 0}
+ .service-index{grid-template-columns:1fr 1fr}
+}

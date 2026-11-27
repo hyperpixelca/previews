@@ -44,8 +44,10 @@ h1{margin:0;font-size:24px;letter-spacing:.5px;color:var(--text)}
 .day.sunday .dn{color:var(--sun)}
 .ev{display:block;border-radius:5px;padding:1px 4px;margin:2px 0;font-size:10.5px;font-weight:700;color:#0B1020;background:var(--c);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .ev.past{opacity:.45}
-.ev .k{font-weight:900}
-@media(max-width:599px){.ev .cap{display:none}.day{min-height:56px}}
+.ev .k{font-weight:900;border-radius:4px;padding:0 3px;margin-right:3px;background:#0B1020}
+.ev .k.V{color:var(--v)}.ev .k.NV{color:var(--nv)}
+.ev .ec{color:#0B1020}
+@media(max-width:599px){.ev .ec{display:none}.ev .k{background:transparent;padding:0;color:#0B1020!important}.day{min-height:56px}}
 @media(min-width:900px){.day{min-height:110px;padding:5px}.ev{font-size:12px;padding:2px 6px}}
 .dayhead{margin:16px 0 6px;font-weight:800;color:var(--head);font-size:15px;display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:4px}
 .dayhead.sunday{color:var(--sun)}
@@ -113,18 +115,18 @@ function card(p){const past=p.datetime<NOW;const vn=p.video?'V':'NV';
 function dayList(posts){const by={};posts.forEach(p=>(by[p.date]=by[p.date]||[]).push(p));
   return Object.keys(by).sort().map(d=>{const sun=new Date(d+'T12:00Z').getUTCDay()==0;return `<div class="dayhead ${sun?'sunday':''}"><span>${fmtDay(d)}${d==TODAY?' (today)':''}</span><span>${by[d].length}</span></div>`+by[d].map(card).join('')}).join('')}
 function calendar(){
-  const [y,m]=cur;const first=new Date(Date.UTC(y,m,1));const start=new Date(first);start.setUTCDate(1-first.getUTCDay());
+  const start=new Date(cur);const end=new Date(start);end.setUTCDate(start.getUTCDate()+41);
+  const lab=d=>MON[d.getUTCMonth()].slice(0,3)+' '+d.getUTCDate();
   const posts=shown();const by={};posts.forEach(p=>(by[p.date]=by[p.date]||[]).push(p));
-  let h=`<div class="month"><button class="btn" id="prev" aria-label="Previous month">&lsaquo;</button><h2>${MON[m]} ${y}</h2><button class="btn" id="next" aria-label="Next month">&rsaquo;</button></div><div class="grid">`+DOW.map((d,i)=>`<div class="dow ${i==0?'sun':''}">${d}</div>`).join('');
-  for(let i=0;i<42;i++){const dt=new Date(start);dt.setUTCDate(start.getUTCDate()+i);const ds=dt.toISOString().slice(0,10);
-    if(i==35&&dt.getUTCMonth()!=m)break;
-    const ev=(by[ds]||[]).map(p=>`<span class="ev ${p.datetime<NOW?'past':''}" style="--c:${COLORS[p.client]}" title="${esc(p.client+' '+p.time+' '+p.caption)}"><span class="k">${p.video?'V':'NV'} ${short(p.time)}</span><span class="cap"> ${esc(p.caption)}</span></span>`).join('');
-    h+=`<div class="day ${dt.getUTCMonth()!=m?'out':''} ${ds==TODAY?'today':''} ${ds==sel?'sel':''} ${dt.getUTCDay()==0?'sunday':''}" data-d="${ds}"><div class="dn">${dt.getUTCDate()}</div>${ev}</div>`}
+  let h=`<div class="month"><button class="btn" id="prev" aria-label="Previous 6 weeks">&lsaquo;</button><h2>${lab(start)} to ${lab(end)}</h2><button class="btn" id="next" aria-label="Next 6 weeks">&rsaquo;</button></div><div class="grid">`+DOW.map((d,i)=>`<div class="dow ${i==0?'sun':''}">${d}</div>`).join('');
+  for(let i=0;i<42;i++){const dt=new Date(start);dt.setUTCDate(start.getUTCDate()+i);const ds=dt.toISOString().slice(0,10);const mlab=dt.getUTCDate()==1||i==0?MON[dt.getUTCMonth()].slice(0,3)+' ':'';
+    const ev=(by[ds]||[]).map(p=>`<span class="ev ${p.datetime<NOW?'past':''}" style="--c:${COLORS[p.client]}" title="${esc(p.client+' '+p.time+' '+p.caption)}"><span class="k ${p.video?'V':'NV'}">${p.video?'V':'NV'}</span><b>${short(p.time)}</b><span class="ec"> ${esc(p.caption)}</span></span>`).join('');
+    h+=`<div class="day ${ds<TODAY?'out':''} ${ds==TODAY?'today':''} ${ds==sel?'sel':''} ${dt.getUTCDay()==0?'sunday':''}" data-d="${ds}"><div class="dn">${mlab}${dt.getUTCDate()}</div>${ev}</div>`}
   h+='</div>';
   const pick=sel?posts.filter(p=>p.date==sel):[];
   h+=sel?(pick.length?dayList(pick):`<div class="dayhead"><span>${fmtDay(sel)}</span><span>0</span></div><div class="empty">Nothing queued this day.</div>`):`<div class="empty">Tap a day to see its posts.</div>`;
   $('#cal').innerHTML=h;
-  $('#prev').onclick=()=>{cur=m==0?[y-1,11]:[y,m-1];render()};$('#next').onclick=()=>{cur=m==11?[y+1,0]:[y,m+1];render()};
+  $('#prev').onclick=()=>{cur.setUTCDate(cur.getUTCDate()-42);render()};$('#next').onclick=()=>{cur.setUTCDate(cur.getUTCDate()+42);render()};
   document.querySelectorAll('.day').forEach(el=>el.onclick=()=>{sel=sel==el.dataset.d?null:el.dataset.d;render()});
 }
 function render(){badges();
@@ -135,7 +137,7 @@ document.querySelectorAll('#views button').forEach(b=>b.onclick=()=>{view=b.data
 fetch('queue.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(d=>{D=d;
   const age=(Date.now()-Date.parse(d.generatedAt))/36e5;
   $('#updated').innerHTML=`Last updated ${esc(d.generatedAtLabel)} | ${d.posts.length} posts queued`+(age>14?` <span class="stale">| Data is ${Math.round(age)} hours old</span>`:'');
-  const [y,m]=TODAY.split('-').map(Number);cur=[y,m-1];sel=TODAY;render();
+  cur=new Date(TODAY+'T00:00Z');cur.setUTCDate(cur.getUTCDate()-cur.getUTCDay());sel=TODAY;render();
 }).catch(e=>{$('#updated').innerHTML='<span class="stale">Could not load queue.json</span>'});
 </script>
 </body>

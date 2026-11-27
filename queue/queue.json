@@ -1,0 +1,409 @@
+{
+ "generatedAt": "2026-11-27T14:01:56-08:00",
+ "generatedAtLabel": "Fri Nov 27, 2026 2:01 PM PT",
+ "source": "SocialPilot QueuedPosts",
+ "rawRows": 62,
+ "clients": [
+  "Bella Bru",
+  "East Lawn",
+  "RHR",
+  "SactoMoFo"
+ ],
+ "summary": {
+  "Bella Bru": {
+   "total": 6,
+   "video": 2,
+   "nonvideo": 4,
+   "furthest": "2026-12-09"
+  },
+  "East Lawn": {
+   "total": 7,
+   "video": 0,
+   "nonvideo": 7,
+   "furthest": "2026-12-18"
+  },
+  "RHR": {
+   "total": 6,
+   "video": 3,
+   "nonvideo": 3,
+   "furthest": "2026-12-09"
+  },
+  "SactoMoFo": {
+   "total": 3,
+   "video": 0,
+   "nonvideo": 3,
+   "furthest": "2026-12-06"
+  }
+ },
+ "posts": [
+  {
+   "client": "Bella Bru",
+   "datetime": "2026-11-27T17:30",
+   "date": "2026-11-27",
+   "time": "5:30 PM",
+   "platforms": [
+    "FB",
+    "IG",
+    "GBP"
+   ],
+   "video": false,
+   "caption": "Make dinner the best part of your day.",
+   "thumb": "https://sp-production-image.s3.amazonaws.com/1462969/1794449653683-m9iMymukZv.jpg",
+   "images": 4,
+   "kind": "carousel",
+   "rows": 3
+  },
+  {
+   "client": "RHR",
+   "datetime": "2026-11-27T18:30",
+   "date": "2026-11-27",
+   "time": "6:30 PM",
+   "platforms": [
+    "FB",
+    "IG",
+    "LinkedIn"
+   ],
+   "video": true,
+   "caption": "Just another day at the office. #RemarkableHomeRemodeling",
+   "thumb": "https://sp-production-image.s3.amazonaws.com/1462969/1794420259468-VK9iiFgWSu.png",
+   "images": 0,
+   "kind": "video",
+   "rows": 3
+  },
+  {
+   "client": "RHR",
+   "datetime": "2026-11-29T08:30",
+   "date": "2026-11-29",
+   "time": "8:30 AM",
+   "platforms": [
+    "FB",
+    "IG",
+    "LinkedIn",
+    "GBP"
+   ],
+   "video": false,
+   "caption": "This whole-home remodel runs from a hardworking kitchen into a vanity, shower, and laundry that all feel like they belong together.",
+   "thumb": "https://sp-production-image.s3.amazonaws.com/1462969/1795577985665-osinRTNKw.jpg",
+   "images": 4,
+   "kind": "carousel",
+   "rows": 4
+  },
+  {
+   "client": "Bella Bru",
+   "datetime": "2026-11-29T11:30",
+   "date": "2026-11-29",
+   "time": "11:30 AM",
+   "platforms": [
+    "FB",
+    "IG",
+    "GBP"
+   ],
+   "video": false,
+   "caption": "Game day is better together.",
+   "thumb": "https://sp-production-image.s3.amazonaws.com/1462969/1794449626679-9em-Q-9yo.png",
+   "images": 1,
+   "kind": "single",
+   "rows": 3
+  },
+  {
+   "client": "East Lawn",
+   "datetime": "2026-11-30T13:00",
+   "date": "2026-11-30",
+   "time": "1:00 PM",
+   "platforms": [
+    "FB",
+    "IG",
+    "GBP Elk Grove"
+   ],
+   "video": false,
+   "caption": "East Lawn Elk Grove Memorial Park stretches across more than 100 acres of open lawns and quiet grounds.",
+   "thumb": "https://sp-production-image.s3.amazonaws.com/1462969/1795800505824-eZWPZFnU1.webp",
+   "images": 3,
+   "kind": "carousel",
+   "rows": 3
+  },
+  {
+   "client": "SactoMoFo",
+   "datetime": "2026-11-30T17:30",
+   "date": "2026-11-30",
+   "time": "5:30 PM",
+   "platforms": [
+    "FB",
+    "IG"
+   ],
+   "video": false,
+   "caption": "Food trucks make any gathering better. Great food, happy guests and less stress for you.",
+   "thumb": "https://sp-production-image.s3.amazonaws.com/1462969/1794449755531-ZrYEo37yzI.jpg",
+   "images": 4,
+   "kind": "carousel",
+   "rows": 2
+  },
+  {
+   "client": "RHR",
+   "datetime": "2026-12-02T12:30",
+   "date": "2026-12-02",
+   "time": "12:30 PM",
+   "platforms": [
+    "FB",
+    "IG",
+    "LinkedIn"
+   ],
+   "video": true,
+   "caption": "We're back out in Fair Oaks, and this whole-home remodel is really opening up.",
+   "thumb": "https://sp-production-image.s3.amazonaws.com/1462969/e597cc99-b37e-4d65-b1f8-b7539af94c58.jpeg",
+   "images": 0,
+   "kind": "video",
+   "rows": 3
+  },
+  {
+   "client": "Bella Bru",
+   "datetime": "2026-12-02T17:30",
+   "date": "2026-12-02",
+   "time": "5:30 PM",
+   "platforms": [
+    "FB",
+    "IG"
+   ],
+   "video": true,
+   "caption": "Come for the drinks, take home a pie.",
+   "thumb": "https://sp-production-image.s3.amazonaws.com/1462969/6533348d-3144-4343-abcd-7a60a16e78b8.jpeg",
+   "images": 0,
+   "kind": "video",
+   "rows": 2
+  },
+  {
+   "client": "East Lawn",
+   "datetime": "2026-12-03T11:00",
+   "date": "2026-12-03",
+   "time": "11:00 AM",
+   "platforms": [
+    "FB",
+    "IG",
+    "GBP Sierra Hills"
+   ],
+   "video": false,
+   "caption": "At East Lawn Sierra Hills, on Greenback and I-80, memorials sit among rolling hills with the foothills beyond.",
+   "thumb": "https://sp-production-image.s3.amazonaws.com/1462969/1795800523433-aMl23hgP0.webp",
+   "images": 3,
+   "kind": "carousel",
+   "rows": 3
+  },
+  {
+   "client": "SactoMoFo",
+   "datetime": "2026-12-03T12:30",
+   "date": "2026-12-03",
+   "time": "12:30 PM",
+   "platforms": [
+    "FB",
+    "IG"
+   ],
+   "video": false,
+   "caption": "Hungry crowds and happy faces. Food trucks bring the kind of food people talk about long after the event is over.",
+   "thumb": "https://sp-production-image.s3.amazonaws.com/1462969/1794449774418-ZEUfFI410.jpg",
+   "images": 4,
+   "kind": "carousel",
+   "rows": 2
+  },
+  {
+   "client": "Bella Bru",
+   "datetime": "2026-12-04T08:30",
+   "date": "2026-12-04",
+   "time": "8:30 AM",
+   "platforms": [
+    "FB",
+    "IG"
+   ],
+   "video": true,
+   "caption": "Your neighborhood cafe in Carmichael and Natomas.",
+   "thumb": "https://sp-production-image.s3.amazonaws.com/1462969/9ce844e4-03c5-4191-abfb-338c39e429bb.jpeg",
+   "images": 0,
+   "kind": "video",
+   "rows": 2
+  },
+  {
+   "client": "RHR",
+   "datetime": "2026-12-04T18:30",
+   "date": "2026-12-04",
+   "time": "6:30 PM",
+   "platforms": [
+    "FB",
+    "IG",
+    "LinkedIn",
+    "GBP"
+   ],
+   "video": false,
+   "caption": "This kitchen is all about contrast. Cream cabinets, black marble, and glass globe pendants over the island.",
+   "thumb": "https://sp-production-image.s3.amazonaws.com/1462969/1795578023835-3WSrdwUcc.jpg",
+   "images": 4,
+   "kind": "carousel",
+   "rows": 4
+  },
+  {
+   "client": "East Lawn",
+   "datetime": "2026-12-06T10:00",
+   "date": "2026-12-06",
+   "time": "10:00 AM",
+   "platforms": [
+    "FB",
+    "IG",
+    "GBP South Sac"
+   ],
+   "video": false,
+   "caption": "East Lawn South Sacramento welcomes families of all faiths, and often serves veterans as well.",
+   "thumb": "https://sp-production-image.s3.amazonaws.com/1462969/1795800529017-O_zj3fwyA.webp",
+   "images": 3,
+   "kind": "carousel",
+   "rows": 3
+  },
+  {
+   "client": "Bella Bru",
+   "datetime": "2026-12-06T11:30",
+   "date": "2026-12-06",
+   "time": "11:30 AM",
+   "platforms": [
+    "FB",
+    "IG",
+    "GBP"
+   ],
+   "video": false,
+   "caption": "Sunday hangout mode: on.",
+   "thumb": "https://sp-production-image.s3.amazonaws.com/1462969/1794449711978-PO6UUD7bA.png",
+   "images": 1,
+   "kind": "single",
+   "rows": 3
+  },
+  {
+   "client": "SactoMoFo",
+   "datetime": "2026-12-06T11:30",
+   "date": "2026-12-06",
+   "time": "11:30 AM",
+   "platforms": [
+    "FB",
+    "IG"
+   ],
+   "video": false,
+   "caption": "Great events start with great food, and there is something for every guest to enjoy.",
+   "thumb": "https://sp-production-image.s3.amazonaws.com/1462969/1794449793686-GCDmWffpd.jpg",
+   "images": 4,
+   "kind": "carousel",
+   "rows": 2
+  },
+  {
+   "client": "RHR",
+   "datetime": "2026-12-06T12:30",
+   "date": "2026-12-06",
+   "time": "12:30 PM",
+   "platforms": [
+    "FB",
+    "IG",
+    "LinkedIn"
+   ],
+   "video": true,
+   "caption": "The grout is in on this Saltillo tile deck. Each clay tile is hand-painted and hand-glazed, and the color really comes through once the joints are filled.",
+   "thumb": "https://sp-production-image.s3.amazonaws.com/1462969/c5e8a191-1a16-4608-99d9-db4048b39095.jpeg",
+   "images": 0,
+   "kind": "video",
+   "rows": 3
+  },
+  {
+   "client": "RHR",
+   "datetime": "2026-12-09T08:30",
+   "date": "2026-12-09",
+   "time": "8:30 AM",
+   "platforms": [
+    "FB",
+    "IG",
+    "LinkedIn",
+    "GBP"
+   ],
+   "video": false,
+   "caption": "Soft blue-gray cabinets, gold fixtures, and a makeup vanity with a little stool in the middle. The details are what make this bathroom.",
+   "thumb": "https://sp-production-image.s3.amazonaws.com/1462969/1795578033862-oi7jrG5xt.jpg",
+   "images": 4,
+   "kind": "carousel",
+   "rows": 5
+  },
+  {
+   "client": "Bella Bru",
+   "datetime": "2026-12-09T12:30",
+   "date": "2026-12-09",
+   "time": "12:30 PM",
+   "platforms": [
+    "FB",
+    "IG",
+    "GBP"
+   ],
+   "video": false,
+   "caption": "Give your lunch break something to look forward to.",
+   "thumb": "https://sp-production-image.s3.amazonaws.com/1462969/1794449685380-CCb5BIs62q.jpg",
+   "images": 4,
+   "kind": "carousel",
+   "rows": 3
+  },
+  {
+   "client": "East Lawn",
+   "datetime": "2026-12-09T13:00",
+   "date": "2026-12-09",
+   "time": "1:00 PM",
+   "platforms": [
+    "FB",
+    "IG"
+   ],
+   "video": false,
+   "caption": "Planning ahead can ease later decisions and give your family peace of mind.",
+   "thumb": "https://sp-production-image.s3.amazonaws.com/1462969/1795800534920-ibYmweExP.webp",
+   "images": 3,
+   "kind": "carousel",
+   "rows": 2
+  },
+  {
+   "client": "East Lawn",
+   "datetime": "2026-12-12T17:00",
+   "date": "2026-12-12",
+   "time": "5:00 PM",
+   "platforms": [
+    "FB",
+    "IG",
+    "GBP Sierra Hills"
+   ],
+   "video": false,
+   "caption": "At East Lawn Sierra Hills, a lounge, reception room, and chapel are ready when families need a quiet place to come together.",
+   "thumb": "https://sp-production-image.s3.amazonaws.com/1462969/1795800540561-zVUl7G2ZM.webp",
+   "images": 3,
+   "kind": "carousel",
+   "rows": 3
+  },
+  {
+   "client": "East Lawn",
+   "datetime": "2026-12-15T10:00",
+   "date": "2026-12-15",
+   "time": "10:00 AM",
+   "platforms": [
+    "FB",
+    "IG"
+   ],
+   "video": false,
+   "caption": "Since 1904, East Lawn has been part of Sacramento. What began as a 40-acre park has grown into four locations serving families across the region.",
+   "thumb": "https://sp-production-image.s3.amazonaws.com/1462969/1795814602565-j_q84TG3X.webp",
+   "images": 3,
+   "kind": "carousel",
+   "rows": 2
+  },
+  {
+   "client": "East Lawn",
+   "datetime": "2026-12-18T13:00",
+   "date": "2026-12-18",
+   "time": "1:00 PM",
+   "platforms": [
+    "FB",
+    "IG"
+   ],
+   "video": false,
+   "caption": "Did you know you can still have a full funeral and celebration of life, even with cremation?",
+   "thumb": "https://sp-production-image.s3.amazonaws.com/1462969/1795800552261-GF7kJC_h5.webp",
+   "images": 1,
+   "kind": "single",
+   "rows": 2
+  }
+ ]
+}

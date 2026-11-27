@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0B1020">
+<title>HyPx Queue Calendar</title>
+<style>
+:root{--bg:#0B1020;--panel:#111833;--line:#2A3555;--soft:#1E2742;--head:#E8EEF9;--text:#FFFFFF;--muted:#B8C4DD;--dim:#9FB0D0;
+--v:#5EEAD4;--nv:#FBBF24;--far:#C4B5FD;--red:#FF6B6B;--sun:#F9A8D4;
+--bb:#7FB79A;--el:#93C5FD;--rhr:#F9A8D4;--smf:#EF6723}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font:15px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:16px 12px calc(32px + env(safe-area-inset-bottom))}
+h1{margin:0;font-size:24px;letter-spacing:.5px;color:var(--text)}
+.sub{color:var(--muted);font-size:13px;margin-top:4px}
+.stale{color:var(--red);font-weight:700}
+.badges{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:14px 0}
+@media(min-width:760px){.badges{grid-template-columns:repeat(4,1fr)}}
+.badge{background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--c);border-radius:12px;padding:10px 12px;cursor:pointer;text-align:left;color:inherit;font:inherit}
+.badge.on{outline:2px solid var(--c)}
+.badge .n{font-weight:800;font-size:16px;color:var(--head)}
+.badge .t{color:var(--dim);font-size:12px}
+.badge .row{display:flex;gap:12px;margin-top:6px;font-weight:800;font-size:14px;flex-wrap:wrap}
+.badge .v{color:var(--v)}.badge .nv{color:var(--nv)}.badge .f{color:var(--far)}.badge .f.empty{color:var(--red)}
+.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:6px 0 12px}
+.seg{display:flex;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.seg button,.btn{background:transparent;color:var(--head);border:0;padding:9px 14px;font:inherit;font-weight:700;cursor:pointer;min-height:40px}
+.seg button.on{background:#2A3A6A}
+.btn{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:9px 12px}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:var(--panel);color:var(--head);border-radius:999px;padding:7px 12px;font:inherit;font-weight:700;font-size:13px;cursor:pointer;min-height:36px}
+.chip.on{background:var(--c,#2A3A6A);color:#0B1020;border-color:transparent}
+.chip.all.on{background:#E8EEF9}
+.month{display:flex;align-items:center;gap:8px;margin:4px 0 8px}
+.month h2{margin:0;font-size:18px;color:var(--head);flex:1;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px}
+.dow{color:var(--head);font-weight:800;font-size:11px;text-align:center;padding:4px 0;text-transform:uppercase}
+.dow.sun{color:var(--sun)}
+.day{background:var(--panel);border:1px solid var(--soft);border-radius:8px;min-height:64px;padding:3px;cursor:pointer;overflow:hidden}
+.day.out{opacity:.35}.day.today{border-color:var(--head)}.day.sel{outline:2px solid var(--far)}
+.day .dn{font-size:11px;font-weight:800;color:var(--muted);padding:1px 3px}
+.day.sunday .dn{color:var(--sun)}
+.ev{display:block;border-radius:5px;padding:1px 4px;margin:2px 0;font-size:10.5px;font-weight:700;color:#0B1020;background:var(--c);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ev.past{opacity:.45}
+.ev .k{font-weight:900}
+@media(max-width:599px){.ev .cap{display:none}.day{min-height:56px}}
+@media(min-width:900px){.day{min-height:110px;padding:5px}.ev{font-size:12px;padding:2px 6px}}
+.dayhead{margin:16px 0 6px;font-weight:800;color:var(--head);font-size:15px;display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:4px}
+.dayhead.sunday{color:var(--sun)}
+.card{display:flex;gap:10px;background:var(--panel);border:1px solid var(--soft);border-left:5px solid var(--c);border-radius:12px;padding:10px;margin:8px 0}
+.card.past{opacity:.5}
+.thumb{width:64px;height:64px;border-radius:8px;object-fit:cover;background:#1E2742;flex:none}
+.thumb.none{display:flex;align-items:center;justify-content:center;color:var(--dim);font-size:11px}
+.meta{min-width:0;flex:1}
+.top{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.time{font-weight:900;color:var(--text)}
+.cl{font-weight:800;color:var(--c)}
+.pill{font-size:11px;font-weight:900;border-radius:999px;padding:2px 8px;color:#0B1020}
+.pill.V{background:var(--v)}.pill.NV{background:var(--nv)}
+.plats{color:var(--muted);font-size:12px;margin-top:3px}
+.cap{color:var(--text);margin-top:3px;font-size:14px;overflow-wrap:anywhere}
+.empty{color:var(--dim);padding:20px;text-align:center}
+.legend{display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:12px;margin-top:14px}
+.legend span b{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.foot{color:var(--dim);font-size:12px;margin-top:18px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Social Queue Calendar</h1>
+  <div class="sub" id="updated">Loading live SocialPilot data...</div>
+  <div class="badges" id="badges"></div>
+  <div class="bar">
+    <div class="seg" id="views"><button data-v="cal" class="on">Calendar</button><button data-v="list">List</button></div>
+    <div class="chips" id="chips"></div>
+  </div>
+  <div id="cal"></div>
+  <div id="list" hidden></div>
+  <div class="legend">
+    <span><b style="background:var(--v)"></b>VIDEO</span><span><b style="background:var(--nv)"></b>NON-VIDEO</span>
+    <span><b style="background:var(--bb)"></b>Bella Bru</span><span><b style="background:var(--el)"></b>East Lawn</span>
+    <span><b style="background:var(--rhr)"></b>RHR</span><span><b style="background:var(--smf)"></b>SactoMoFo</span>
+  </div>
+  <div class="foot">Read-only view of queued SocialPilot posts. Refreshed twice a day. Times are Pacific.</div>
+</div>
+<script>
+const COLORS={"Bella Bru":"var(--bb)","East Lawn":"var(--el)","RHR":"var(--rhr)","SactoMoFo":"var(--smf)"};
+const NAMES={"RHR":"Remarkable (RHR)"};
+const MON=["January","February","March","April","May","June","July","August","September","October","November","December"];
+const DOW=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+let D=null, filter=new Set(), view=localStorage.getItem('qview')||(innerWidth<600?'cal':'cal'), cur=null, sel=null;
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function ptNow(){const p=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date());const g=t=>p.find(x=>x.type==t).value;return `${g('year')}-${g('month')}-${g('day')}T${g('hour')}:${g('minute')}`}
+const NOW=ptNow(), TODAY=NOW.slice(0,10);
+const fmtDay=d=>{const [y,m,dd]=d.split('-').map(Number);const dt=new Date(Date.UTC(y,m-1,dd));return DOW[dt.getUTCDay()]+', '+MON[m-1].slice(0,3)+' '+dd};
+const shown=()=>D.posts.filter(p=>!filter.size||filter.has(p.client));
+const short=t=>t.replace(':00','').replace(' AM','a').replace(' PM','p');
+function badges(){
+  $('#badges').innerHTML=D.clients.map(c=>{const s=D.summary[c];return `<button class="badge ${filter.has(c)?'on':''}" style="--c:${COLORS[c]}" data-c="${esc(c)}">
+  <div class="n">${esc(NAMES[c]||c)}</div><div class="t">${s.total} in queue</div>
+  <div class="row"><span class="v">V ${s.video}</span><span class="nv">NV ${s.nonvideo}</span><span class="f ${s.total?'':'empty'}">${s.furthest?'to '+fmtDay(s.furthest).replace(/^\w+, /,''):'Empty'}</span></div></button>`}).join('');
+  $('#chips').innerHTML=`<button class="chip all ${filter.size?'':'on'}" data-c="">All</button>`+D.clients.map(c=>`<button class="chip ${filter.has(c)?'on':''}" style="--c:${COLORS[c]}" data-c="${esc(c)}">${esc(c)}</button>`).join('');
+  document.querySelectorAll('[data-c]').forEach(b=>b.onclick=()=>{const c=b.dataset.c;if(!c)filter.clear();else filter.has(c)?filter.delete(c):filter.add(c);render()});
+}
+function card(p){const past=p.datetime<NOW;const vn=p.video?'V':'NV';
+  const img=p.thumb?`<img class="thumb" loading="lazy" src="${esc(p.thumb)}" alt="">`:`<div class="thumb none">No image</div>`;
+  const cnt=p.video?'Video':(p.images>1?p.images+' images':(p.images==1?'1 image':'Text'));
+  return `<div class="card ${past?'past':''}" style="--c:${COLORS[p.client]}">${img}<div class="meta"><div class="top"><span class="time">${esc(p.time)}</span><span class="cl">${esc(p.client)}</span><span class="pill ${vn}">${p.video?'VIDEO':'NON-VIDEO'}</span></div>
+  <div class="plats">${esc(p.platforms.join(' | '))} | ${cnt}${past?' | posting time passed':''}</div><div class="cap">${esc(p.caption)}</div></div></div>`}
+function dayList(posts){const by={};posts.forEach(p=>(by[p.date]=by[p.date]||[]).push(p));
+  return Object.keys(by).sort().map(d=>{const sun=new Date(d+'T12:00Z').getUTCDay()==0;return `<div class="dayhead ${sun?'sunday':''}"><span>${fmtDay(d)}${d==TODAY?' (today)':''}</span><span>${by[d].length}</span></div>`+by[d].map(card).join('')}).join('')}
+function calendar(){
+  const [y,m]=cur;const first=new Date(Date.UTC(y,m,1));const start=new Date(first);start.setUTCDate(1-first.getUTCDay());
+  const posts=shown();const by={};posts.forEach(p=>(by[p.date]=by[p.date]||[]).push(p));
+  let h=`<div class="month"><button class="btn" id="prev" aria-label="Previous month">&lsaquo;</button><h2>${MON[m]} ${y}</h2><button class="btn" id="next" aria-label="Next month">&rsaquo;</button></div><div class="grid">`+DOW.map((d,i)=>`<div class="dow ${i==0?'sun':''}">${d}</div>`).join('');
+  for(let i=0;i<42;i++){const dt=new Date(start);dt.setUTCDate(start.getUTCDate()+i);const ds=dt.toISOString().slice(0,10);
+    if(i==35&&dt.getUTCMonth()!=m)break;
+    const ev=(by[ds]||[]).map(p=>`<span class="ev ${p.datetime<NOW?'past':''}" style="--c:${COLORS[p.client]}" title="${esc(p.client+' '+p.time+' '+p.caption)}"><span class="k">${p.video?'V':'NV'} ${short(p.time)}</span><span class="cap"> ${esc(p.caption)}</span></span>`).join('');
+    h+=`<div class="day ${dt.getUTCMonth()!=m?'out':''} ${ds==TODAY?'today':''} ${ds==sel?'sel':''} ${dt.getUTCDay()==0?'sunday':''}" data-d="${ds}"><div class="dn">${dt.getUTCDate()}</div>${ev}</div>`}
+  h+='</div>';
+  const pick=sel?posts.filter(p=>p.date==sel):[];
+  h+=sel?(pick.length?dayList(pick):`<div class="dayhead"><span>${fmtDay(sel)}</span><span>0</span></div><div class="empty">Nothing queued this day.</div>`):`<div class="empty">Tap a day to see its posts.</div>`;
+  $('#cal').innerHTML=h;
+  $('#prev').onclick=()=>{cur=m==0?[y-1,11]:[y,m-1];render()};$('#next').onclick=()=>{cur=m==11?[y+1,0]:[y,m+1];render()};
+  document.querySelectorAll('.day').forEach(el=>el.onclick=()=>{sel=sel==el.dataset.d?null:el.dataset.d;render()});
+}
+function render(){badges();
+  document.querySelectorAll('#views button').forEach(b=>b.classList.toggle('on',b.dataset.v==view));
+  $('#cal').hidden=view!='cal';$('#list').hidden=view!='list';
+  if(view=='cal')calendar();else{const p=shown().filter(p=>p.date>=TODAY);$('#list').innerHTML=p.length?dayList(p):'<div class="empty">Nothing queued.</div>'}}
+document.querySelectorAll('#views button').forEach(b=>b.onclick=()=>{view=b.dataset.v;localStorage.setItem('qview',view);render()});
+fetch('queue.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(d=>{D=d;
+  const age=(Date.now()-Date.parse(d.generatedAt))/36e5;
+  $('#updated').innerHTML=`Last updated ${esc(d.generatedAtLabel)} | ${d.posts.length} posts queued`+(age>14?` <span class="stale">| Data is ${Math.round(age)} hours old</span>`:'');
+  const [y,m]=TODAY.split('-').map(Number);cur=[y,m-1];sel=TODAY;render();
+}).catch(e=>{$('#updated').innerHTML='<span class="stale">Could not load queue.json</span>'});
+</script>
+</body>
+</html>

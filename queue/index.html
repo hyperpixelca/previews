@@ -47,7 +47,7 @@ h1{margin:0;font-size:24px;letter-spacing:.5px;color:var(--text)}
 .ev .k{font-weight:900;border-radius:4px;padding:0 3px;margin-right:3px;background:#0B1020}
 .ev .k.V{color:var(--v)}.ev .k.NV{color:var(--nv)}
 .ev .ec{color:#0B1020}
-@media(max-width:599px){.ev .ec{display:none}.ev .k{background:transparent;padding:0;color:#0B1020!important}.day{min-height:56px}}
+@media(max-width:599px){.ev .ec,.ev .k{display:none}.ev{border-left:4px solid var(--t);padding:1px 2px;font-size:10px;text-overflow:clip}.day{min-height:56px}}
 @media(min-width:900px){.day{min-height:110px;padding:5px}.ev{font-size:12px;padding:2px 6px}}
 .dayhead{margin:16px 0 6px;font-weight:800;color:var(--head);font-size:15px;display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:4px}
 .dayhead.sunday{color:var(--sun)}
@@ -82,6 +82,7 @@ h1{margin:0;font-size:24px;letter-spacing:.5px;color:var(--text)}
   <div id="list" hidden></div>
   <div class="legend">
     <span><b style="background:var(--v)"></b>VIDEO</span><span><b style="background:var(--nv)"></b>NON-VIDEO</span>
+    <span>On phones, the chip edge shows VIDEO or NON-VIDEO</span>
     <span><b style="background:var(--bb)"></b>Bella Bru</span><span><b style="background:var(--el)"></b>East Lawn</span>
     <span><b style="background:var(--rhr)"></b>RHR</span><span><b style="background:var(--smf)"></b>SactoMoFo</span>
   </div>
@@ -120,7 +121,7 @@ function calendar(){
   const posts=shown();const by={};posts.forEach(p=>(by[p.date]=by[p.date]||[]).push(p));
   let h=`<div class="month"><button class="btn" id="prev" aria-label="Previous 6 weeks">&lsaquo;</button><h2>${lab(start)} to ${lab(end)}</h2><button class="btn" id="next" aria-label="Next 6 weeks">&rsaquo;</button></div><div class="grid">`+DOW.map((d,i)=>`<div class="dow ${i==0?'sun':''}">${d}</div>`).join('');
   for(let i=0;i<42;i++){const dt=new Date(start);dt.setUTCDate(start.getUTCDate()+i);const ds=dt.toISOString().slice(0,10);const mlab=dt.getUTCDate()==1||i==0?MON[dt.getUTCMonth()].slice(0,3)+' ':'';
-    const ev=(by[ds]||[]).map(p=>`<span class="ev ${p.datetime<NOW?'past':''}" style="--c:${COLORS[p.client]}" title="${esc(p.client+' '+p.time+' '+p.caption)}"><span class="k ${p.video?'V':'NV'}">${p.video?'V':'NV'}</span><b>${short(p.time)}</b><span class="ec"> ${esc(p.caption)}</span></span>`).join('');
+    const ev=(by[ds]||[]).map(p=>`<span class="ev ${p.datetime<NOW?'past':''}" style="--c:${COLORS[p.client]};--t:${p.video?'var(--v)':'var(--nv)'}" title="${esc(p.client+' '+p.time+' '+p.caption)}"><span class="k ${p.video?'V':'NV'}">${p.video?'V':'NV'}</span><b>${short(p.time)}</b><span class="ec"> ${esc(p.caption)}</span></span>`).join('');
     h+=`<div class="day ${ds<TODAY?'out':''} ${ds==TODAY?'today':''} ${ds==sel?'sel':''} ${dt.getUTCDay()==0?'sunday':''}" data-d="${ds}"><div class="dn">${mlab}${dt.getUTCDate()}</div>${ev}</div>`}
   h+='</div>';
   const pick=sel?posts.filter(p=>p.date==sel):[];

@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-11-27T16:04:49-08:00",
- "generatedAtLabel": "Fri Nov 27, 2026 4:04 PM PT",
+ "generatedAt": "2026-11-28T07:04:16-08:00",
+ "generatedAtLabel": "Sat Nov 28, 2026 7:04 AM PT",
  "source": "SocialPilot QueuedPosts",
- "rawRows": 62,
+ "rawRows": 56,
  "clients": [
   "Bella Bru",
   "East Lawn",
@@ -11,9 +11,9 @@
  ],
  "summary": {
   "Bella Bru": {
-   "total": 6,
+   "total": 5,
    "video": 2,
-   "nonvideo": 4,
+   "nonvideo": 3,
    "furthest": "2026-12-09"
   },
   "East Lawn": {
@@ -23,8 +23,8 @@
    "furthest": "2026-12-18"
   },
   "RHR": {
-   "total": 6,
-   "video": 3,
+   "total": 5,
+   "video": 2,
    "nonvideo": 3,
    "furthest": "2026-12-09"
   },
@@ -36,40 +36,6 @@
   }
  },
  "posts": [
-  {
-   "client": "Bella Bru",
-   "datetime": "2026-11-27T17:30",
-   "date": "2026-11-27",
-   "time": "5:30 PM",
-   "platforms": [
-    "FB",
-    "IG",
-    "GBP"
-   ],
-   "video": false,
-   "caption": "Make dinner the best part of your day.",
-   "thumb": "https://sp-production-image.s3.amazonaws.com/1462969/1794449653683-m9iMymukZv.jpg",
-   "images": 4,
-   "kind": "carousel",
-   "rows": 3
-  },
-  {
-   "client": "RHR",
-   "datetime": "2026-11-27T18:30",
-   "date": "2026-11-27",
-   "time": "6:30 PM",
-   "platforms": [
-    "FB",
-    "IG",
-    "LinkedIn"
-   ],
-   "video": true,
-   "caption": "Just another day at the office. #RemarkableHomeRemodeling",
-   "thumb": "https://sp-production-image.s3.amazonaws.com/1462969/1794420259468-VK9iiFgWSu.png",
-   "images": 0,
-   "kind": "video",
-   "rows": 3
-  },
   {
    "client": "RHR",
    "datetime": "2026-11-29T08:30",
